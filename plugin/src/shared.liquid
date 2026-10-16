@@ -3,29 +3,34 @@
 {% assign sc = cfv.show_context | append: "" | downcase %}
 {% assign show_context = true %}
 {% if sc == "false" or sc == "no" or sc == "0" or sc == "off" %}{% assign show_context = false %}{% endif %}
-{% assign big = false %}
-{% if cfv.text_size == "large" %}{% assign big = true %}{% endif %}
-{% if big %}{% assign name_cls = "description description--large font--bold" %}{% else %}{% assign name_cls = "description lg:description--large font--bold" %}{% endif %}
-{% if big %}{% assign body_cls = "description description--large" %}{% else %}{% assign body_cls = "description lg:description--large lg:font--regular" %}{% endif %}
+{% comment %} the framework's own clamp script measures once at load and would cut a title whose size changes later: the title is clamped by CSS instead {% endcomment %}
+{% assign tclamp = "display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden" %}
+{% comment %} text_size is the smallest size; the script below picks the largest that fits (levels 0 to 5, the framework's own size classes) {% endcomment %}
+{% assign min_level = 0 %}
+{% if cfv.text_size == "large" %}{% assign min_level = 1 %}{% endif %}
+{% if min_level == 1 %}{% assign name_cls = "description description--large font--bold" %}{% assign body_cls = "description description--large font--regular" %}{% else %}{% assign name_cls = "description font--bold" %}{% assign body_cls = "description font--regular" %}{% endif %}
 <style>
-/* One name colour per person on colour screens, from the framework's own palette variables for that screen; on
-   1-bit, 2-bit and grey screens no rule applies: the names are bold and in the normal text colour, not dithered. */
-.screen[class*="screen--color"] .tp-p0 { color: var(--text-blue-color); }
-.screen[class*="screen--color"] .tp-p1 { color: var(--text-red-color); }
-.screen[class*="screen--color"] .tp-p2 { color: var(--text-green-color); }
-.screen[class*="screen--color"] .tp-p3 { color: var(--text-purple-color); }
+/* Name colours per person, from the framework's own palette variables, chosen by the screen's palette class.
+   Full-colour screens (6 or 7 colours, 12 or 24 bit): blue, red, green, purple. Black, white and red (BWR) and black,
+   white, red and yellow (BWRY): red and black bold, alternating (yellow does not read on white). Black, white and
+   yellow, grey and 1-bit screens: no rule, the names are bold in the normal text colour, never dithered. */
+.screen--color-6a .tp-p0, .screen--color-7a .tp-p0, .screen--color-full .tp-p0 { color: var(--text-blue-color); }
+.screen--color-6a .tp-p1, .screen--color-7a .tp-p1, .screen--color-full .tp-p1 { color: var(--text-red-color); }
+.screen--color-6a .tp-p2, .screen--color-7a .tp-p2, .screen--color-full .tp-p2 { color: var(--text-green-color); }
+.screen--color-6a .tp-p3, .screen--color-7a .tp-p3, .screen--color-full .tp-p3 { color: var(--text-purple-color); }
+.screen--color-4bwry .tp-p0, .screen--color-3bwr .tp-p0, .screen--color-4bwry .tp-p2, .screen--color-3bwr .tp-p2 { color: var(--text-red-color); }
 </style>
 {% if email %}
 <div class="layout layout--col layout--top layout--left gap--none">
   {% comment %} header: the subject (chat: the people) and the date; only a full view has room for the recipient lines and a rule {% endcomment %}
   {% if compact %}
   <div class="flex flex--row flex--between gap--small w--full shrink-0 pb--2" data-head="1">
-    <span class="text--left title title--small lg:title--base text--bold grow min-w--0" data-clamp="1">{{ email.title | escape }}</span>
+    <span class="text--left title title--small text--bold grow min-w--0 tp-t" data-tcap="1" style="{{ tclamp }}">{{ email.title | escape }}</span>
     {% unless narrow %}<span class="text--left label label--small lg:label--base shrink-0">{{ email.date_label }}</span>{% endunless %}
   </div>
   {% else %}
   <div class="flex flex--col flex--left gap--none w--full shrink-0" data-head="1">
-    <span class="text--left title title--small lg:title--large text--bold" data-clamp="2">{{ email.title | escape }}</span>
+    <span class="text--left title title--small text--bold tp-t" style="{{ tclamp }}">{{ email.title | escape }}</span>
     <span class="text--left label label--small lg:label--base">{{ email.date_label }}</span>
     {% if email.to.size > 0 %}{% assign more = email.to.size | minus: 2 %}<span class="text--left label label--small lg:label--base" data-clamp="1">To: {{ email.to | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
     {% if email.cc.size > 0 %}{% assign more = email.cc.size | minus: 2 %}<span class="text--left label label--small lg:label--base" data-clamp="1">Cc: {{ email.cc | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
@@ -34,13 +39,16 @@
   {% endif %}
   {% comment %} the messages: the script keeps as many whole messages as the box holds, then the ellipsis line {% endcomment %}
   <div class="tp-body text--left grow min-h--0 w--full" style="overflow:hidden" data-kind="{{ email.kind }}">
+    {% assign prev = "" %}
     {% for m in email.messages %}
-    <div class="tp-msg flex flex--col flex--left gap--none pb--2" data-msg="1">
-      <span class="text--left {{ name_cls }} tp-who tp-p{{ m.p }}">{{ m.from | escape }}</span>
-      <span class="text--left {{ body_cls }} tp-text">{{ m.text | escape }}</span>
+    {% comment %} the sender's name only when it changes: consecutive messages of one person are one block {% endcomment %}
+    <div class="tp-msg flex flex--col flex--left gap--none" data-msg="1" data-name="{% if m.from != prev %}1{% endif %}" style="padding-top:{% if forloop.first %}0{% elsif m.from != prev %}10px{% else %}4px{% endif %}">
+      {% if m.from != prev %}<span class="text--left {{ name_cls }} tp-b tp-who tp-p{{ m.p }}">{{ m.from | escape }}</span>{% endif %}
+      <span class="text--left {{ body_cls }} tp-b tp-text">{{ m.text | escape }}</span>
     </div>
+    {% assign prev = m.from %}
     {% endfor %}
-    <div class="tp-more" data-more="1" style="display:none"><span class="text--left {{ body_cls }}">...</span></div>
+    <div class="tp-more" data-more="1" style="display:none"><span class="text--left {{ body_cls }} tp-b">...</span></div>
   </div>
   {% unless compact %}
   <div class="flex flex--col flex--left gap--none w--full shrink-0 pt--2" data-foot="1">
@@ -60,35 +68,57 @@
   {% if email.date != blank %}<span class="instance">{{ email.date | slice: 0, 4 }}</span>{% endif %}
 </div>
 <script>
-// Messages: keep as many whole messages as the box holds, then "..."; one message too long for the box is cut at a
-// whole line (layout pixels: clientHeight and lineHeight, never getBoundingClientRect, which is scaled on a zoomed screen).
+// Text size: the largest level (framework classes, never a scaled font) at which every message fits the box; none
+// fits: the smallest level, as many whole messages as fit, then "...", and one message too long for the box is cut at a
+// whole line. Layout pixels throughout (clientHeight, scrollHeight, lineHeight): getBoundingClientRect is scaled on a
+// zoomed screen.
 (function () {
+  var MIN = {{ min_level }};
+  var BODY = ['', 'description--large', 'description--xlarge', 'description--xxlarge', 'text--xxlarge', 'text--xxxlarge'];
+  var TITLE = ['title--small', 'title--base', 'title--large', 'title--xlarge', 'title--xxlarge', 'title--xxlarge'];
+  var TOP = BODY.length - 1;
+  function level(k) {
+    document.querySelectorAll('.tp-b').forEach(function (e) {
+      BODY.concat(['description']).forEach(function (c) { if (c) e.classList.remove(c); });
+      if (k < 4) e.classList.add('description');
+      if (BODY[k]) e.classList.add(BODY[k]);
+    });
+    document.querySelectorAll('.tp-t').forEach(function (e) {
+      TITLE.forEach(function (c) { e.classList.remove(c); });
+      e.classList.add(TITLE[Math.min(k, Number(e.getAttribute('data-tcap') || TOP))]);
+    });
+  }
   function fit() {
     var box = document.querySelector('.tp-body');
     if (!box) return;
     var msgs = [].slice.call(box.querySelectorAll('[data-msg]')), more = box.querySelector('[data-more]');
+    msgs.forEach(function (m) { var t = m.querySelector('.tp-text'); ['display', 'webkitBoxOrient', 'overflow', 'webkitLineClamp', 'maxHeight'].forEach(function (p) { t.style[p] = ''; }); });
     function show(n, dots) {
       msgs.forEach(function (m, i) { m.style.display = i < n ? '' : 'none'; });
       more.style.display = dots ? '' : 'none';
     }
     function fits() { return box.scrollHeight <= box.clientHeight + 0.5; }
-    var k = msgs.length;
-    show(k, false);
-    if (!fits()) {
-      while (k > 0) { k--; show(k, true); if (fits()) break; }
+    var best = -1;
+    for (var k = TOP; k >= MIN; k--) {
+      level(k); show(msgs.length, false);
+      if (fits()) { best = k; break; }
     }
-    if (k === 0) {
+    if (best >= 0) return;
+    level(MIN);
+    var n = msgs.length;
+    show(n, false);
+    while (n > 0) { n--; show(n, true); if (fits()) break; }
+    if (n === 0) {
       // not even one whole message: the first, cut at a whole line, after its name
       show(1, false);
       var who = msgs[0].querySelector('.tp-who'), t = msgs[0].querySelector('.tp-text');
       var cs = getComputedStyle(t), lh = parseFloat(cs.lineHeight) || Math.round(parseFloat(cs.fontSize) * 1.25) || 16;
-      var n = Math.max(1, Math.floor((box.clientHeight - who.offsetHeight + 0.5) / lh));
+      var lines = Math.max(1, Math.floor((box.clientHeight - (who ? who.offsetHeight : 0) + 0.5) / lh));
       t.style.display = '-webkit-box';
       t.style.webkitBoxOrient = 'vertical';
       t.style.overflow = 'hidden';
-      t.style.webkitLineClamp = String(n);
-      t.style.maxHeight = (n * lh) + 'px';
-      msgs[0].style.paddingBottom = '0';
+      t.style.webkitLineClamp = String(lines);
+      t.style.maxHeight = (lines * lh) + 'px';
     }
   }
   fit();

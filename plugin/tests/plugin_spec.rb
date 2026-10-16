@@ -24,6 +24,9 @@ RSpec.describe 'Tech Emails' do
 
   def mocks_for(*records) = { %r{emails\.json} => { json: records } }
   DEVICES = [{ device: 'og_png' }, { device: 'v2' }].freeze
+  # colour screens: black, white, red and yellow (BWRY), and a 7-colour one; the cases that matter most for them
+  COLOR_DEVICES = [{ device: 'og_bwry' }, { device: 'inky_impression_7_3', palette: 'color-7a' }].freeze
+  COLOR_CASES = ['a short email', 'a very long email', 'a chat of 2', 'a chat of 12'].freeze
   VIEWS = %w[full half_horizontal half_vertical quadrant].freeze
 
   def screen(view, records, device: 'og_png', fields: {}, **opts)
@@ -46,8 +49,8 @@ RSpec.describe 'Tech Emails' do
 
   CASES.each do |name, (records, title, body)|
     VIEWS.each do |view|
-      DEVICES.each do |dev|
-        describe "#{name}, #{view} on #{dev[:device]}" do
+      (DEVICES + (COLOR_CASES.include?(name) ? COLOR_DEVICES : [])).each do |dev|
+        describe "#{name}, #{view} on #{dev[:device]} #{dev[:palette]}".strip do
           let(:page) { screen(view, instance_exec(&records), **dev) }
 
           it 'draws without overflow, errors or a leaked Liquid tag' do
@@ -116,11 +119,44 @@ RSpec.describe 'Tech Emails' do
     expect(screen('full', [email('date' => '2012')])).to have_css(".label", exact_text: "2012")
   end
 
-  it 'text_size large sets the body in the large framework size' do
-    sizes = %w[normal large].map do |s|
-      screen('full', [email], fields: { 'text_size' => s }).evaluate("getComputedStyle(document.querySelector('.tp-text')).fontSize")
+  def font(page, sel = '.tp-text') = page.evaluate("parseFloat(getComputedStyle(document.querySelector('#{sel}')).fontSize)")
+
+  # the size of the framework's own classes on this device, from a probe outside the body
+  def native(page, cls)
+    page.evaluate("(() => { const p = document.createElement('span'); p.className = '#{cls}'; document.querySelector('.view').appendChild(p); const f = parseFloat(getComputedStyle(p).fontSize); p.remove(); return f; })()")
+  end
+
+  it 'a short record is set big: larger than the base size, filling the box' do
+    DEVICES.each do |dev|
+      page = screen('full', [email], **dev)
+      page.has_css?('.tp-body')
+      expect(font(page)).to be > native(page, 'description')
+      expect(font(page)).to be > native(page, 'description') * 1.4
     end
-    expect(sizes[1].to_f).to be > sizes[0].to_f
+  end
+
+  it 'a record too long for the box is set small, a short one big, and the title follows the size' do
+    page = screen('full', [chat(12)])
+    page.has_css?('.tp-body')
+    short = screen('full', [email])
+    expect(font(page)).to be < font(short)
+    expect(font(short, '.tp-t')).to be > font(page, '.tp-t')
+    expect(font(page)).to eq(native(page, 'description'))
+  end
+
+  it 'text_size large is a minimum: a long text never goes below the large size' do
+    long = email('excerpt' => ('We should talk about the plan for the next quarter and what it means. ' * 14).strip)
+    page = screen('full', [long], fields: { 'text_size' => 'large' })
+    page.has_css?('.tp-body')
+    expect(font(page)).to be >= native(page, 'description description--large') - 0.5
+  end
+
+  it 'a chat shows a name only when the sender changes' do
+    msgs = [['Sundar', 'one'], ['Sundar', 'two'], ['Sergey', 'three'], ['Sundar', 'four']].map { |f, t| { 'from' => f, 'text' => t } }
+    page = screen('full', [chat(1).merge('messages' => msgs)])
+    page.has_css?('.tp-body')
+    expect(page.evaluate("[...document.querySelectorAll('.tp-who')].map((e) => e.textContent)")).to eq(%w[Sundar Sergey Sundar])
+    expect(page.evaluate("document.querySelectorAll('.tp-text').length")).to eq(4)
   end
 
   # a very long text is cut at a whole line: the clamp leaves no half line
@@ -179,12 +215,20 @@ RSpec.describe 'Tech Emails' do
       end
     end
 
-    it 'a colour screen: each person has a colour of their own, in order of first appearance, text stays black' do
-      page = screen('full', two, device: 'seeed_e1002', palette: 'color-6a')
+    it 'a 7-colour screen: each person has a colour of their own, in order of first appearance, text stays black' do
+      page = screen('full', two, device: 'inky_impression_7_3', palette: 'color-7a')
       colors = name_colors(page)
       expect(colors.uniq.size).to eq(2)
       expect(colors).not_to include('rgb(0, 0, 0)')
       expect(page.evaluate("getComputedStyle(document.querySelector('.tp-text')).color")).to eq('rgb(0, 0, 0)')
+    end
+
+    it 'BWRY and BWR screens: the first speaker red, the second black, text black' do
+      %w[og_bwry waveshare_7_5_bwr].each do |dev|
+        page = screen('full', two, device: dev)
+        expect(name_colors(page).first(2)).to eq(['rgb(255, 0, 0)', 'rgb(0, 0, 0)'])
+        expect(page.evaluate("getComputedStyle(document.querySelector('.tp-text')).color")).to eq('rgb(0, 0, 0)')
+      end
     end
   end
 end
