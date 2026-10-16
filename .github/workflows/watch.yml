@@ -6,29 +6,64 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  id-token: write
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      HAS_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -r requirements.txt
-      - run: python scripts/watch.py
+      - run: sudo apt-get install -y --no-install-recommends poppler-utils
+      - run: pip install -r requirements.txt -r requirements-test.txt
+      - name: Tests
+        run: python -m pytest -q
+      - name: Watch sources
+        run: python scripts/watch.py
         env:
           COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
-      - name: Open PR when candidates changed
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Extract new documents
+        id: extract
         run: |
-          if git diff --quiet -- data/candidates.json; then exit 0; fi
-          branch="watch/$(date +%F)"
+          python scripts/extract.py > new_ids.txt
+          echo "n=$(grep -c . new_ids.txt || true)" >> "$GITHUB_OUTPUT"
+      - name: Select records
+        id: select
+        if: steps.extract.outputs.n != '0' && env.HAS_KEY == 'true'
+        # pinned to the commit of tag v1
+        uses: anthropics/claude-code-action@374f254f5efaf968abfe15d399fd90972e8138b9
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: '--allowedTools "Read,Write,Glob,Grep" --max-turns 30'
+          prompt: |
+            Read data/BRIEF.md and follow its rules exactly.
+            Candidates: the files data/extracted/<id>.json for the ids in new_ids.txt.
+            Also read data/emails.json to skip what we already have.
+            Write the result as a JSON array to data/parts/auto-${{ github.run_id }}.json
+            (write [] when nothing is worth keeping). Change no other file.
+      - name: Skip notice
+        if: env.HAS_KEY != 'true'
+        run: echo "ANTHROPIC_API_KEY secret is not set: selection skipped, only candidates are updated."
+      - name: Verify and merge
+        run: |
+          shopt -s nullglob
+          files=(data/parts/auto-*.json)
+          if [ ${#files[@]} -gt 0 ]; then python scripts/verify.py; fi
+          python scripts/merge.py
+      - name: Open PR
+        run: |
+          git add data/candidates.json data/extracted data/parts data/emails.json
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          branch="watch/$(date +%F)-${{ github.run_id }}"
           git config user.name "ExcuseMi"
           git config user.email "ExcuseMi@users.noreply.github.com"
           git checkout -b "$branch"
-          git add data/candidates.json
-          git commit -m "New watcher candidates $(date +%F)"
+          git commit -m "Watcher run $(date +%F): candidates, new records"
           git push origin "$branch"
-          gh pr create --title "New watcher candidates $(date +%F)" --body "Tips for review. A person turns good ones into records in data/parts/." --base "${GITHUB_REF_NAME}"
+          gh pr create --title "Watcher run $(date +%F)" --base "${GITHUB_REF_NAME}" \
+            --body "New candidates and records. Every excerpt was checked word for word against the saved source text (scripts/verify.py). A person reviews before merging."

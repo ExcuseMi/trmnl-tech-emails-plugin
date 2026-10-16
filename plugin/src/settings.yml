@@ -1,0 +1,53 @@
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+framework_version: 3.4.2
+serverless_language: node
+refresh_interval_floor: '5'
+polling_url: "{% if source_url != blank %}{{ source_url }}{% else %}https://raw.githubusercontent.com/ExcuseMi/trmnl-tech-emails-plugin/main/data/emails.json{% endif %}"
+polling_headers: ''
+polling_body: ''
+oauth_enabled: 'false'
+oauth_pkce_enabled: 'no'
+custom_fields:
+- keyname: author_bio
+  field_type: author_bio
+  name: About This Plugin
+  description: Shows one email or chat message exchange at a time from the public record of tech companies, as an email. Each one is credited to its source document.
+  category: tech
+  github_url: https://github.com/ExcuseMi/trmnl-tech-emails-plugin
+- keyname: mode
+  field_type: select
+  name: Which emails
+  default: random
+  help_text: "<b>Random</b>: a new email at each refresh, none twice until the list is through.<br /><b>Newest</b>: the most recent one.<br /><b>On this day</b>: an email from this date in an earlier year, else the nearest date."
+  options:
+  - Random: random
+  - Newest: newest
+  - On this day: on_this_day
+- keyname: show_context
+  field_type: boolean
+  name: Show background line
+  default: 'true'
+  optional: true
+  help_text: "<b>On</b>: one small line on who the people were or why it mattered."
+- keyname: text_size
+  field_type: select
+  name: Text size
+  default: normal
+  help_text: Large text shows fewer lines.
+  options:
+  - Normal: normal
+  - Large: large
+- keyname: source_url
+  field_type: string
+  name: Emails file address
+  default: https://raw.githubusercontent.com/ExcuseMi/trmnl-tech-emails-plugin/main/data/emails.json
+  optional: true
+  help_text: Where the list of emails is read from. Leave as it is unless you host your own list.
+name: Tech Emails
+description: Emails and chats from the public record of tech
+refresh_interval: 15

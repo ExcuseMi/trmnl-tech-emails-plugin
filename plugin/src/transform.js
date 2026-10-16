@@ -25,17 +25,67 @@ function names(v) {
   return v.filter(function (x) { return typeof x === 'string' && x.trim(); }).map(function (x) { return str(x, 80); }).slice(0, 12);
 }
 
-/** A usable record, trimmed to what the views show; null for anything malformed. */
+var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var MAX_MESSAGES = 40;
+var MAX_BODY_CHARS = 6000;
+
+function dateLabel(date) {
+  var y = date.slice(0, 4), m = Number(date.slice(5, 7)), d = Number(date.slice(8, 10));
+  if (date.length >= 10) return MONTHS[m - 1] + ' ' + d + ', ' + y;
+  if (date.length >= 7) return MONTHS[m - 1] + ' ' + y;
+  return y;
+}
+
+/** Messages: { from, text } each; the colour slot p follows the order of first appearance (0 to 3). */
+function messagesOf(list) {
+  var out = [], seen = [], total = 0;
+  (Array.isArray(list) ? list : []).forEach(function (m) {
+    if (!m || typeof m !== 'object' || out.length >= MAX_MESSAGES) return;
+    var from = str(m.from, 80), text = str(m.text, 600);
+    if (!from || !text || total + text.length > MAX_BODY_CHARS) return;
+    if (seen.indexOf(from) < 0) seen.push(from);
+    total += text.length;
+    out.push({ from: from, text: text, p: Math.min(seen.indexOf(from), 3) });
+  });
+  return out;
+}
+
+function chatTitle(messages, to) {
+  var who = [];
+  messages.forEach(function (m) { if (who.indexOf(m.from) < 0) who.push(m.from); });
+  if (who.length === 1 && to.length) who.push(to[0]);
+  if (who.length >= 3) return who[0] + ', ' + who[1] + ' and ' + (who.length - 2) + ' more';
+  return who.length === 2 ? who[0] + ' texts ' + who[1] : who[0] + ' writes';
+}
+
+/**
+ * A usable record, in the one shape the views show, or null for anything malformed. Two kinds come in:
+ * email { from, to, cc, date, subject, excerpt } and chat { title?, messages: [{ from, text }] }. The output
+ * form (messages present) goes through again unchanged, so the state can be read back with this function.
+ */
 function clean(r) {
   if (!r || typeof r !== 'object' || Array.isArray(r)) return null;
   var date = typeof r.date === 'string' ? r.date.trim() : '';
-  var from = str(r.from, 80), subject = str(r.subject, 200), excerpt = str(r.excerpt, 700);
-  if (!from || !subject || !excerpt || !DATE_RE.test(date)) return null;
+  if (!DATE_RE.test(date)) return null;
   var src = r.source && typeof r.source === 'object' ? r.source : {};
-  return {
-    from: from, to: names(r.to), cc: names(r.cc), date: date, subject: subject, excerpt: excerpt,
-    context: str(r.context, 200), source: { title: str(src.title, 160) }
-  };
+  var base = { to: names(r.to), cc: names(r.cc), date: date, date_label: dateLabel(date), context: str(r.context, 200), source: { title: str(src.title, 160) } };
+  var messages, kind, title;
+  if (Array.isArray(r.messages)) {
+    messages = messagesOf(r.messages);
+    if (!messages.length) return null;
+    kind = r.kind === 'email' ? 'email' : 'chat';
+    title = str(r.title, 120) || str(r.subject, 200) || chatTitle(messages, base.to);
+  } else {
+    var from = str(r.from, 80), subject = str(r.subject, 200), excerpt = str(r.excerpt, 700);
+    if (!from || !subject || !excerpt || r.kind === 'chat') return null;
+    kind = 'email';
+    title = subject;
+    messages = [{ from: from, text: excerpt, p: 0 }];
+  }
+  base.kind = kind;
+  base.title = title;
+  base.messages = messages;
+  return base;
 }
 
 function records(input) {
@@ -111,7 +161,7 @@ function pickNewest(list) {
   return best;
 }
 
-function sameRecord(a, b) { return a.from === b.from && a.date === b.date && a.subject === b.subject; }
+function sameRecord(a, b) { return a.title === b.title && a.date === b.date && a.messages[0].from === b.messages[0].from; }
 
 function boundedState(recent, i) {
   var list = recent.slice(-RECENT_MAX);

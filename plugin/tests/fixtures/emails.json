@@ -1,0 +1,19 @@
+[
+ {
+  "kind": "email",
+  "from": "Mark Zuckerberg",
+  "to": [
+   "David Ebersman"
+  ],
+  "cc": [],
+  "date": "2012-02-27",
+  "subject": "Re: Instagram",
+  "excerpt": "One thing I'm thinking about is whether we should buy them.",
+  "context": "Zuckerberg was Facebook's chief executive.",
+  "source": {
+   "title": "House Judiciary Subcommittee on Antitrust, 2020",
+   "url": "https://example.com",
+   "locator": "p. 3"
+  }
+ }
+]

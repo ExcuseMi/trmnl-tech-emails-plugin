@@ -1,0 +1,98 @@
+{% template main %}
+{% assign cfv = trmnl.plugin_settings.custom_fields_values %}
+{% assign sc = cfv.show_context | append: "" | downcase %}
+{% assign show_context = true %}
+{% if sc == "false" or sc == "no" or sc == "0" or sc == "off" %}{% assign show_context = false %}{% endif %}
+{% assign big = false %}
+{% if cfv.text_size == "large" %}{% assign big = true %}{% endif %}
+{% if big %}{% assign body_cls = "description description--large" %}{% else %}{% assign body_cls = "description lg:description--large lg:font--regular" %}{% endif %}
+<style>
+/* One name colour per person on colour screens, from the framework's own palette variables for that screen; on
+   1-bit, 2-bit and grey screens no rule applies: the names are bold and in the normal text colour, not dithered. */
+.screen[class*="screen--color"] .tp-p0 { color: var(--text-blue-color); }
+.screen[class*="screen--color"] .tp-p1 { color: var(--text-red-color); }
+.screen[class*="screen--color"] .tp-p2 { color: var(--text-green-color); }
+.screen[class*="screen--color"] .tp-p3 { color: var(--text-purple-color); }
+</style>
+{% if email %}
+<div class="layout layout--col layout--top gap--none">
+  {% comment %} header: the subject (chat: the people) and the date; only a full view has room for the recipient lines and a rule {% endcomment %}
+  {% if compact %}
+  <div class="flex flex--row flex--between gap--small w--full shrink-0 pb--2" data-head="1">
+    <span class="title title--small lg:title--base text--bold grow min-w--0" data-clamp="1">{{ email.title | escape }}</span>
+    {% unless narrow %}<span class="label label--small lg:label--base shrink-0">{{ email.date_label }}</span>{% endunless %}
+  </div>
+  {% else %}
+  <div class="flex flex--col gap--none w--full shrink-0" data-head="1">
+    <span class="title title--small lg:title--large text--bold" data-clamp="2">{{ email.title | escape }}</span>
+    <span class="label label--small lg:label--base">{{ email.date_label }}</span>
+    {% if email.to.size > 0 %}{% assign more = email.to.size | minus: 2 %}<span class="label label--small lg:label--base" data-clamp="1">To: {{ email.to | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
+    {% if email.cc.size > 0 %}{% assign more = email.cc.size | minus: 2 %}<span class="label label--small lg:label--base" data-clamp="1">Cc: {{ email.cc | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
+  </div>
+  <div class="border--h-black w--full shrink-0 mt--2 mb--2" data-rule="1"></div>
+  {% endif %}
+  {% comment %} the messages: the script keeps as many whole messages as the box holds, then the ellipsis line {% endcomment %}
+  <div class="tp-body grow min-h--0 w--full" style="overflow:hidden" data-kind="{{ email.kind }}">
+    {% for m in email.messages %}
+    <div class="tp-msg flex flex--col gap--none pb--2" data-msg="1">
+      <span class="{{ body_cls }} text--bold tp-who tp-p{{ m.p }}">{{ m.from | escape }}</span>
+      <span class="{{ body_cls }} tp-text">{{ m.text | escape }}</span>
+    </div>
+    {% endfor %}
+    <div class="tp-more" data-more="1" style="display:none"><span class="{{ body_cls }}">...</span></div>
+  </div>
+  {% unless compact %}
+  <div class="flex flex--col gap--none w--full shrink-0 pt--2" data-foot="1">
+    {% if show_context and email.context != blank %}<span class="label label--small lg:label--base" style="font-style:italic" data-clamp="1">{{ email.context | escape }}</span>{% endif %}
+    {% if email.source.title != blank %}<span class="label label--small lg:label--base" data-clamp="1">Source: {{ email.source.title | escape }}</span>{% endif %}
+  </div>
+  {% endunless %}
+</div>
+{% else %}
+<div class="layout layout--col layout--center">
+  <span class="description">No email right now. The next refresh tries again.</span>
+</div>
+{% endif %}
+<div class="title_bar">
+  <img class="image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48dGl0bGU+VGVjaCBFbWFpbHM8L3RpdGxlPjxyZWN0IHg9IjQiIHk9IjEyIiB3aWR0aD0iNTYiIGhlaWdodD0iNDAiIHJ4PSI0IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik02IDE2IEwzMiAzOCBMNTggMTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+" />
+  {% unless narrow %}<span class="title">{{ trmnl.plugin_settings.instance_name | default: "Tech Emails" }}</span>{% endunless %}
+  {% if email.date != blank %}<span class="instance">{{ email.date | slice: 0, 4 }}</span>{% endif %}
+</div>
+<script>
+// Messages: keep as many whole messages as the box holds, then "..."; one message too long for the box is cut at a
+// whole line (layout pixels: clientHeight and lineHeight, never getBoundingClientRect, which is scaled on a zoomed screen).
+(function () {
+  function fit() {
+    var box = document.querySelector('.tp-body');
+    if (!box) return;
+    var msgs = [].slice.call(box.querySelectorAll('[data-msg]')), more = box.querySelector('[data-more]');
+    function show(n, dots) {
+      msgs.forEach(function (m, i) { m.style.display = i < n ? '' : 'none'; });
+      more.style.display = dots ? '' : 'none';
+    }
+    function fits() { return box.scrollHeight <= box.clientHeight + 0.5; }
+    var k = msgs.length;
+    show(k, false);
+    if (!fits()) {
+      while (k > 0) { k--; show(k, true); if (fits()) break; }
+    }
+    if (k === 0) {
+      // not even one whole message: the first, cut at a whole line, after its name
+      show(1, false);
+      var who = msgs[0].querySelector('.tp-who'), t = msgs[0].querySelector('.tp-text');
+      var cs = getComputedStyle(t), lh = parseFloat(cs.lineHeight) || Math.round(parseFloat(cs.fontSize) * 1.25) || 16;
+      var n = Math.max(1, Math.floor((box.clientHeight - who.offsetHeight + 0.5) / lh));
+      t.style.display = '-webkit-box';
+      t.style.webkitBoxOrient = 'vertical';
+      t.style.overflow = 'hidden';
+      t.style.webkitLineClamp = String(n);
+      t.style.maxHeight = (n * lh) + 'px';
+      msgs[0].style.paddingBottom = '0';
+    }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  window.addEventListener('load', fit);
+})();
+</script>
+{% endtemplate %}

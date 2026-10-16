@@ -1,0 +1,668 @@
+[
+  {
+    "kind": "email",
+    "id": "uspg-2014-kolotouros-mada-soften",
+    "from": "Jim Kolotouros",
+    "to": [
+      "Joan Braddi"
+    ],
+    "cc": [
+      "David Thevenon"
+    ],
+    "date": "2014-09-04",
+    "subject": "Android Leads update - L team follow-up",
+    "excerpt": "Sundar was supportive and confirmed he would discuss with L-team next Monday. His other feedback was that i) we should not pro-actively amend existing MADA's; adjusting language at renewal is fine, and ii) he'd like to soften the MADA to make it more gentle. We also discussed that the OEM search revenue share deals is a good place to re-insert this kind of language/commitment.",
+    "context": "A Google Android partnerships lead reports Sundar Pichai's view on search-default language in the phone maker contract.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Jim Kolotouros",
+      "Joan Braddi",
+      "Sundar Pichai"
+    ],
+    "source": {
+      "title": "United States v. Google (search), trial exhibit UPX0616, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1321376/dl",
+      "locator": "GOOG-DOJ-26786540"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "uspg-2016-kolotouros-samsung-placement",
+    "from": "Jim Kolotouros",
+    "to": [],
+    "cc": [],
+    "date": "2016-08-23",
+    "subject": "Re: [Samsung Sidewinder] Quick question about placement discussion in global MADA",
+    "excerpt": "let me state it more stringently. The widget and Play Store icon are staying. And there is a 99% chance the folder stays on the default home screen as well.",
+    "context": "A Google partnerships VP tells colleagues how firm Google is on home screen placement terms in talks with Samsung.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Jim Kolotouros",
+      "Jinyoung Baik"
+    ],
+    "source": {
+      "title": "United States v. Google (search), trial exhibit UPX0741, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1321416/dl",
+      "locator": "GOOG-DOJ-06406799"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "uspg-2020-kolotouros-samsung-talking-points",
+    "from": "Jim Kolotouros",
+    "to": [],
+    "cc": [],
+    "date": "2020-06-25",
+    "subject": "Re: Call between Patrick & Hiroshi",
+    "excerpt": "-if Samsung threatens Wear, that's fine ... (call their bluff)... \"it is disappointing\" - \"Maybe we need to reconsider our model for MADA\" - \"sounds like you can treat us transactionally on display, memory, SLSI, TV but you want us to do unnatural things for Mobile and give us zero credit for what we have contributed (and I mean zero).\"",
+    "context": "Draft talking points for a Google executive's call with a Samsung executive during contract talks.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Jim Kolotouros",
+      "Christopher Li",
+      "Hiroshi Lockheimer"
+    ],
+    "source": {
+      "title": "United States v. Google (search), trial exhibit UPX0643, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1322071/dl",
+      "locator": "GOOG-DOJ-15980024"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "uspg-2020-kolotouros-chrome-gms",
+    "from": "Jim Kolotouros",
+    "to": [
+      "Donald Harrison",
+      "Anil Sabharwal"
+    ],
+    "cc": [],
+    "date": "2020-05-28",
+    "subject": "Re: Android OEM Revenue Share 3.0",
+    "excerpt": "uh oh... Don: I think that somebody forgot to tell Anil that Sundar authorized the removal of Chrome from GMS a few months ago ... How do you suggest we break the news? Oops, I included Anil on the thread! Anil: kidding aside, we never deviate from MADA obligations and Chrome distribution via GMS. No exceptions.",
+    "context": "A joking exchange between Google Android and Chrome leaders about Chrome distribution rules for phone makers.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Jim Kolotouros",
+      "Donald Harrison",
+      "Anil Sabharwal",
+      "Sundar Pichai"
+    ],
+    "source": {
+      "title": "United States v. Google (search), trial exhibit UPX0608, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1322081/dl",
+      "locator": "GOOG-DOJ-20950767 to -770"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "uspg-2020-kolotouros-assistant-icon",
+    "from": "Jim Kolotouros",
+    "to": [
+      "Polina Chernikova"
+    ],
+    "cc": [
+      "Sam Dollery",
+      "Anne Laurenson"
+    ],
+    "date": "2020-10-13",
+    "subject": "Re: Sync on RU - question and heads-up",
+    "excerpt": "also, is it possible to summarize what we are getting in the Xiaomi and Samsung RSA deals to show what gaps exist? i.e., in the new Samsung deal, we already get S-browser with Google default on a device by device basis. and as I mentioned earlier, I don't place much value on the Assistant icon on the home screen (primarily because it just confuses users and they have no idea what the difference is between search and Assistant).",
+    "context": "A Google Android partnerships VP weighs which placements are worth paying phone makers for.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Jim Kolotouros",
+      "Polina Chernikova"
+    ],
+    "source": {
+      "title": "United States v. Google (search), trial exhibit UPX0809, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1321386/dl",
+      "locator": "GOOG-DOJ-21181510"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "uspg-2008-coughran-walker-write-carefully",
+    "from": "Bill Coughran",
+    "to": [
+      "Googlers"
+    ],
+    "cc": [
+      "Kent Walker"
+    ],
+    "date": "2008-09-16",
+    "subject": "[Googlers] Business communications in a complicated world",
+    "excerpt": "First, please write carefully and thoughtfully. We're an email and instant-messaging culture. We conduct much of our work online. We believe that information is good. But anything you write can become subject to review in legal discovery, misconstrued, or taken out of context, and may be used against you or us in ways you wouldn't expect.",
+    "context": "A company-wide note from two senior Google leaders on how to write in email and chat while legal matters were pending.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Bill Coughran",
+      "Kent Walker"
+    ],
+    "source": {
+      "title": "United States v. Google (search), trial exhibit UPX1101, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1322046/dl",
+      "locator": "GOOG-DOJ-29864619"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "uspg-2008-coughran-walker-off-the-record",
+    "from": "Bill Coughran",
+    "to": [
+      "Googlers"
+    ],
+    "cc": [],
+    "date": "2008-09-16",
+    "subject": "[Googlers] Business communications in a complicated world",
+    "excerpt": "To help avoid inadvertent retention of instant messages, we have decided to make \"off the record\" the Google corporate default setting for Google Talk. We'll also be providing this option to our Google Apps enterprise customers.",
+    "context": "The same 2008 note announced that Google Talk chats would no longer be saved by default.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Bill Coughran",
+      "Kent Walker"
+    ],
+    "source": {
+      "title": "United States v. Google (search), trial exhibit UPX1101, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1322046/dl",
+      "locator": "GOOG-DOJ-29864619"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "uspg-2018-dischler-youtube-brand",
+    "from": "Jerry Dischler",
+    "to": [
+      "Prabhakar Raghavan"
+    ],
+    "cc": [
+      "Vivek Raghunathan",
+      "Vishal Sharma"
+    ],
+    "date": "2018-10-22",
+    "subject": "Re: Really basic video ads questions",
+    "excerpt": "Yes! Although no advertiser really says zero tolerance and we're still trying to seek out what an acceptable level is for many of the top brand advertisers.",
+    "context": "A Google ads executive answers a question about how much unsafe content brand advertisers on YouTube will accept.",
+    "company": [
+      "Google",
+      "YouTube"
+    ],
+    "people": [
+      "Jerry Dischler",
+      "Prabhakar Raghavan"
+    ],
+    "source": {
+      "title": "United States v. Google (search), trial exhibit UPX0342, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1321856/dl",
+      "locator": "GOOG-DOJ-04183957"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2009-mohan-hatchet",
+    "from": "Neal Mohan",
+    "to": [
+      "Nikesh Arora"
+    ],
+    "cc": [
+      "Susan Wojcicki",
+      "Amy Lambert",
+      "Dennis Woodside",
+      "Henrique De Castro"
+    ],
+    "date": "2009-03-23",
+    "subject": "Re: sale reductions",
+    "excerpt": "I was the hatchet man at DCLK back in 2000-2001 during the dotcom bust so have lived through this painful period before on display before. The biggest mistake made back then was the \"death by a thousand cuts\" scenario. That is, every quarter layoffs were made and the next quarter revenue shrank a bit more (because we didnt have the resources to keep the footprint in tact) and then more cuts were made until the business needed to be resurrected by a private equity firm.",
+    "context": "Neal Mohan, then at DoubleClick inside Google, argues against deep cuts to the display ads business.",
+    "company": [
+      "Google",
+      "DoubleClick"
+    ],
+    "people": [
+      "Neal Mohan",
+      "Nikesh Arora"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0041, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1368441/dl",
+      "locator": "GOOG-DOJ-02148005"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2009-mohan-glue",
+    "from": "Neal Mohan",
+    "to": [
+      "Nikesh Arora"
+    ],
+    "cc": [
+      "Susan Wojcicki",
+      "Amy Lambert",
+      "Dennis Woodside",
+      "Henrique De Castro"
+    ],
+    "date": "2009-03-23",
+    "subject": "Re: sale reductions",
+    "excerpt": "Fundamentally the glue that seals DFP to GCN is AdX (that is why it is the second pillar of our three-pillared strategy). It is essentially teh DFP - AdSense backfill we bought DCLK for but with the features that will actually get pubs to put their inventory into our ecosystem (dynamic allocation, competitive bidding from other networks, etc.).",
+    "context": "Mohan explains why the AdX exchange ties Google's publisher ad server to its ad network.",
+    "company": [
+      "Google",
+      "DoubleClick"
+    ],
+    "people": [
+      "Neal Mohan",
+      "Nikesh Arora"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0041, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1368441/dl",
+      "locator": "GOOG-DOJ-02148005 to -006"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2009-mohan-openx",
+    "from": "Neal Mohan",
+    "to": [
+      "Scott Spencer"
+    ],
+    "cc": [
+      "Joerg Heilig",
+      "Jeff Huber",
+      "Susan Wojcicki"
+    ],
+    "date": "2009-04-21",
+    "subject": "Re: OpenX Market Launches!",
+    "excerpt": "OpenX is the only relatively smaller player to offer the same three-pillared approach to the display market as us, Yahoo. MSFT and AOL -- platform, exchange and network. Therefore I think we need to take them even more seriously than the other exchanges / yield managers that are gaining traction out there (Rubicon etc.).",
+    "context": "Neal Mohan sizes up a small rival ad exchange after its product launch.",
+    "company": [
+      "Google",
+      "OpenX"
+    ],
+    "people": [
+      "Neal Mohan",
+      "Scott Spencer"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0044, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1368446/dl",
+      "locator": "PTX0044"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2013-spencer-adx-redirect",
+    "from": "Scott Spencer",
+    "to": [
+      "Martin Pal"
+    ],
+    "cc": [
+      "Eyal Manor",
+      "Drew Bradstock",
+      "Rivka Spivak",
+      "Aparna Pappu"
+    ],
+    "date": "2013-03-22",
+    "subject": "Re: AdX TOS effectively prohibits publisher from using an adserver?",
+    "excerpt": "This was a strategic decision. We allow redirection from 3rd party ad servers, but not from other exchanges or yield managers. Why? Because if we did then those systems would immediately have a super set of demand - anything the SSP had + all of AdX (including AdWords). No one would sign up for AdX directly.",
+    "context": "A Google ad exchange product lead explains why AdX rules blocked rival exchanges from calling it.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Scott Spencer",
+      "Martin Pal"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0128, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1369466/dl",
+      "locator": "GOOG-TEX-00149044"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2017-adx-spinoff",
+    "from": "A Google ad-tech employee",
+    "to": [
+      "Donald Harrison"
+    ],
+    "cc": [],
+    "date": "2017-08-31",
+    "subject": "Thanks - and we're asking the wrong question",
+    "excerpt": "I would be remiss if I left CA without answering your question with an emphatic NO. Owning the ad serving tag is the right strategy and AdX (and DBM & Adwords) benefits from the direct line of inventory provided by DFP via dynamic allocation.",
+    "context": "An employee answers a Google executive who had asked whether Google should spin off DoubleClick.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Donald Harrison"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0551, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1367231/dl",
+      "locator": "GOOG-DOJ-04830048"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2017-pal-last-look",
+    "from": "Martin Pal",
+    "to": [],
+    "cc": [],
+    "date": "2017-08-11",
+    "subject": "Re: GOOGLE INTERNAL Copy of Q1 Programmatic OKR: margin manipulation investigation - Invitation to comment",
+    "excerpt": "My take is that the main culprit is not dynamic revshare, but rather the fact that AdX gets last look over AppNexus (assuming AppNexus demand is booked as price priority LIs in DFP). AdX gets to pay high and win whenever AppNexus is present with a high CPM, and can pay low when AppNexus bids low.",
+    "context": "A Google engineer describes how AdX could use a last look at rival bids, discussed after a rival's complaint.",
+    "company": [
+      "Google",
+      "AppNexus"
+    ],
+    "people": [
+      "Martin Pal"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0542, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1367301/dl",
+      "locator": "GOOG-DOJ-14162335"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2018-pal-bernanke",
+    "from": "Martin Pal",
+    "to": [
+      "Nitish Korula"
+    ],
+    "cc": [
+      "Rahul Srinivasan",
+      "Sam Cox",
+      "George Levitte",
+      "Jim Giles",
+      "Max Loubser",
+      "Max Lin"
+    ],
+    "date": "2018-05-31",
+    "subject": "Re: Floors",
+    "excerpt": "For #4 I'd say Bernanke in general. Any time we're willing to take negative revshare on a slice of traffic, we create an incentive for the pub to exploit that by setting a higher ask price.",
+    "context": "A Google engineer comments on the pricing program known internally as Bernanke.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Martin Pal",
+      "Nitish Korula"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0609, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1367556/dl",
+      "locator": "PTX0609"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2017-giles-ssp-commodity",
+    "from": "Jim Giles",
+    "to": [
+      "Eisar Lipkovitz"
+    ],
+    "cc": [
+      "Jonathan Bellack",
+      "Payam Shodjai",
+      "Chris LaSala",
+      "Sam Cox",
+      "Ali Nasiri Amini",
+      "Aparna Pappu",
+      "Brad Bender",
+      "Paul Muret"
+    ],
+    "date": "2017-11-04",
+    "subject": "Re: Rubicon margins",
+    "excerpt": "I think the other important thing to keep in mind versus most SSPs is that we also have the ad server. I think pure SSP is definitely commoditizing (and ultimately, I think only SSPs that also have an ad server will survive), but the combination is still more unique and not trivial to do well.",
+    "context": "A Google ad tech leader explains why Google can charge more than rival ad exchanges.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Jim Giles",
+      "Eisar Lipkovitz"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0562, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1367051/dl",
+      "locator": "PTX0562"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2018-openx-dbm",
+    "from": "Tim Cadogan",
+    "to": [
+      "Sam Cox"
+    ],
+    "cc": [
+      "John Gentry"
+    ],
+    "date": "2018-11-21",
+    "subject": "GCP / DBM problem",
+    "excerpt": "As you can see, things were largely on track through May; then went sideways in June & July, recovered partially in August and then started to slide more in September and kept getting worse, to the point where November is looking like -40% in spend YoY. I don't need to belabor the significance of this for us. How can you help here?",
+    "context": "The CEO of rival exchange OpenX tells Google that spend from its DBM buying tool was falling sharply.",
+    "company": [
+      "OpenX",
+      "Google"
+    ],
+    "people": [
+      "Tim Cadogan",
+      "Sam Cox"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX1600, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1368806/dl",
+      "locator": "OPENX-00006011"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2019-amini-sellside-margin",
+    "from": "Ali Nasiri Amini",
+    "to": [
+      "Suresh Kumar"
+    ],
+    "cc": [],
+    "date": "2019-03-03",
+    "subject": "Future of our margin on buyside and sellside",
+    "excerpt": "Sellside, i.e. Adx 20% margin is not sustainable in my opinion. I argued for many years that it is not justifiable to charge more for a simpler service which is sellside (just sort bids and declare the winner) and charge less for more expensive margin which is buyside.",
+    "context": "A Google ads product leader questions the 20 percent AdX fee.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Ali Nasiri Amini",
+      "Suresh Kumar"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0737, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1368901/dl",
+      "locator": "GOOG-DOJ-AT-00568160"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2019-shodjai-adx-fee",
+    "from": "Payam Shodjai",
+    "to": [],
+    "cc": [],
+    "date": "2019-02-28",
+    "subject": "Re: TTD and Poirot",
+    "excerpt": "I think we are maxed out on the \"shift mix\" strategy towards AdX. I'm also worried about erosion of the 20% AdX fee.",
+    "context": "A Google ads leader worries about pressure on AdX fees while discussing how to price a new bidding feature.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Payam Shodjai"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0734, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1368896/dl",
+      "locator": "GOOG-DOJ-12857593"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2019-amini-ttd",
+    "from": "Ali Nasiri Amini",
+    "to": [
+      "Duke Dukellis"
+    ],
+    "cc": [
+      "Sam Cox",
+      "Nirmal Jayaram"
+    ],
+    "date": "2019-12-04",
+    "subject": "Re: TTD",
+    "excerpt": "It seems that TTD is spending 30% to 40% with Adx now whereas DBM is 75% with Adx. If TTD spend share on Adx drops further, it makes it harder to explain 75% DBM spend on Adx to external clients.",
+    "context": "A Google ads leader on what a rival buying platform shifting spend away from AdX would mean for Google's own spend.",
+    "company": [
+      "Google",
+      "The Trade Desk"
+    ],
+    "people": [
+      "Ali Nasiri Amini",
+      "Duke Dukellis"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0897, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1368876/dl",
+      "locator": "GOOG-DOJ-10422489"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2019-lasala-nontransparent",
+    "from": "Chris LaSala",
+    "to": [
+      "Nitish Korula"
+    ],
+    "cc": [],
+    "date": "2019-01-04",
+    "subject": "Re: OpenX lays off 100, more pressure on sellside take rates",
+    "excerpt": "Are we comfortable telling the market that generally Google is comfortable with being 'non-transparent.'",
+    "context": "A Google ad tech executive asks whether to disclose that the company keeps an undisclosed fee on some ad sales.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Chris LaSala",
+      "Nitish Korula"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0719, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1367931/dl",
+      "locator": "PTX0719"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2019-lasala-pipes",
+    "from": "Chris LaSala",
+    "to": [
+      "Sissie Hsiao",
+      "Ted Lazarus",
+      "Jason Spero"
+    ],
+    "cc": [
+      "Dan Taylor"
+    ],
+    "date": "2019-10-03",
+    "subject": "Re: \"Source\" advertising consortium",
+    "excerpt": "My POV: When a buyer brings incremental demand in a network model - pubs don't seem to complain. Nobody complains about the take-rate from FB, Criteo, AMZ, Google Ads through AFC or AdMob ... they only complain about the take-rate when we are pipes.",
+    "context": "A Google ad tech executive explains why publishers object to some ad fees and not others.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Chris LaSala"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX0864, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1367921/dl",
+      "locator": "GOOG-AT-MDL-007344222"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usad-2014-mohan-delay",
+    "from": "Neal Mohan",
+    "to": [
+      "Eisar Lipkovitz"
+    ],
+    "cc": [],
+    "date": "2014-12-15",
+    "subject": "Re: AWBID decision?",
+    "excerpt": "the 6-9 month delay due to indecision is pure bullshit of course.",
+    "context": "Neal Mohan, then a Google ads senior vice president, reacts to a long delay in a decision on the AdWords buying tool for the exchange.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Neal Mohan",
+      "Eisar Lipkovitz"
+    ],
+    "source": {
+      "title": "United States v. Google (ad tech), trial exhibit PTX1510, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1367061/dl",
+      "locator": "PTX1510"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "uspg-2021-pichai-history-off",
+    "title": "Sundar Pichai and an aide, prepping answers for a leaders event",
+    "date": "2021-10-12",
+    "people": [
+      "Sundar Pichai",
+      "Emily Singer"
+    ],
+    "company": [
+      "Google"
+    ],
+    "messages": [
+      {
+        "from": "Sundar Pichai",
+        "text": "Need the link for my leaders circle tomorrow"
+      },
+      {
+        "from": "Sundar Pichai",
+        "text": "also can we change the setting of this group to history off"
+      },
+      {
+        "from": "Sundar Pichai",
+        "text": "the third question is a bit of a mess"
+      },
+      {
+        "from": "Sundar Pichai",
+        "text": "the other three are good"
+      }
+    ],
+    "context": "Google's CEO asks for a chat group to be set to history off, shown in the search trial.",
+    "source": {
+      "title": "United States v. Google (search), trial exhibit UPX0973, published by the Department of Justice",
+      "url": "https://www.justice.gov/atr/media/1322061/dl",
+      "locator": "GOOG-DOJ-32680443"
+    }
+  }
+]

@@ -13,12 +13,17 @@ ROOT = Path(__file__).resolve().parent.parent
 MAX_EXCERPT = 600
 MAX_CONTEXT = 160
 DATE_RE = re.compile(r"^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$")
-REQUIRED = {
-    "id": str, "from": str, "to": list, "cc": list, "date": str,
-    "subject": str, "excerpt": str, "context": str,
+COMMON = {
+    "id": str, "date": str, "context": str,
     "company": list, "people": list, "source": dict,
 }
+EMAIL = {
+    "from": str, "to": list, "cc": list,
+    "subject": str, "excerpt": str,
+}
+CHAT = {"messages": list}
 SOURCE_REQUIRED = ("title", "url", "locator")
+MAX_MESSAGES = 30
 
 
 def check_date(value):
@@ -36,28 +41,55 @@ def check_date(value):
     return True
 
 
-def validate(rec):
-    """Return a list of problems (empty when the record is valid)."""
-    errs = []
-    if not isinstance(rec, dict):
-        return ["record is not an object"]
-    for key, typ in REQUIRED.items():
+def _check_types(rec, spec, errs):
+    for key, typ in spec.items():
         if key not in rec:
             errs.append(f"missing {key}")
         elif not isinstance(rec[key], typ):
             errs.append(f"{key} must be {typ.__name__}")
+
+
+def validate(rec):
+    """Return a list of problems (empty when the record is valid).
+
+    kind is "email" (default when absent) or "chat".
+    """
+    errs = []
+    if not isinstance(rec, dict):
+        return ["record is not an object"]
+    kind = rec.get("kind", "email")
+    if kind not in ("email", "chat"):
+        return [f"bad kind {kind!r}"]
+    _check_types(rec, COMMON, errs)
+    _check_types(rec, EMAIL if kind == "email" else CHAT, errs)
     if errs:
         return errs
-    for key in ("id", "from", "excerpt", "context"):
+    for key in ("id", "context"):
         if not rec[key].strip():
             errs.append(f"{key} is empty")
-    for key in ("to", "cc", "company", "people"):
+    for key in ("company", "people") + (("to", "cc") if kind == "email" else ()):
         if not all(isinstance(x, str) for x in rec[key]):
             errs.append(f"{key} must hold strings")
     if not rec["company"]:
         errs.append("company is empty")
-    if len(rec["excerpt"]) > MAX_EXCERPT:
-        errs.append(f"excerpt over {MAX_EXCERPT} chars ({len(rec['excerpt'])})")
+    if kind == "email":
+        for key in ("from", "excerpt"):
+            if not rec[key].strip():
+                errs.append(f"{key} is empty")
+        if len(rec["excerpt"]) > MAX_EXCERPT:
+            errs.append(f"excerpt over {MAX_EXCERPT} chars ({len(rec['excerpt'])})")
+    else:
+        msgs = rec["messages"]
+        if not msgs:
+            errs.append("messages is empty")
+        if len(msgs) > MAX_MESSAGES:
+            errs.append(f"more than {MAX_MESSAGES} messages ({len(msgs)})")
+        for i, m in enumerate(msgs):
+            if not (isinstance(m, dict) and isinstance(m.get("speaker"), str)
+                    and isinstance(m.get("text"), str) and m["speaker"].strip() and m["text"].strip()):
+                errs.append(f"message {i} needs speaker and text")
+            elif len(m["text"]) > MAX_EXCERPT:
+                errs.append(f"message {i} text over {MAX_EXCERPT} chars ({len(m['text'])})")
     if len(rec["context"]) > MAX_CONTEXT:
         errs.append(f"context over {MAX_CONTEXT} chars ({len(rec['context'])})")
     if not check_date(rec["date"]):
@@ -72,6 +104,9 @@ def validate(rec):
 
 
 def dedupe_key(rec):
+    if rec.get("kind") == "chat":
+        m = rec["messages"][0]
+        return (m["speaker"].strip().lower(), rec["date"], m["text"].strip()[:60].lower())
     return (rec["from"].strip().lower(), rec["date"], rec["excerpt"].strip()[:60].lower())
 
 

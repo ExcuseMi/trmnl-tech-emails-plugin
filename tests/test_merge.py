@@ -71,3 +71,35 @@ def test_output_is_minified(tmp_path):
     text = out.read_text()
     assert text == json.dumps(json.loads(text), ensure_ascii=False, separators=(",", ":"))
     assert json.loads(text)[0]["id"] == "t-1"
+
+
+def chat():
+    return {"id": "c-1", "kind": "chat", "date": "2014-03", "context": "Two people chat.",
+            "company": ["Meta"], "people": ["A", "B"],
+            "messages": [{"speaker": "A", "text": "hi"}, {"speaker": "B", "text": "yo"}],
+            "source": {"title": "T", "url": "https://example.org/c", "locator": "p. 1"}}
+
+
+def test_chat_valid():
+    assert merge.validate(chat()) == []
+
+
+@pytest.mark.parametrize("mutate,word", [
+    (lambda r: r.update(messages=[{"speaker": "A", "text": "x"}] * 31), "more than 30"),
+    (lambda r: r.update(messages=[]), "empty"),
+    (lambda r: r.update(messages=[{"speaker": "A", "text": "x" * 601}]), "text over"),
+    (lambda r: r.update(messages=[{"speaker": "A"}]), "needs speaker"),
+    (lambda r: r.pop("messages"), "missing messages"),
+    (lambda r: r.update(kind="memo"), "bad kind"),
+])
+def test_chat_rejected(mutate, word):
+    r = chat()
+    mutate(r)
+    assert any(word in e for e in merge.validate(r))
+
+
+def test_email_with_kind_field_valid_and_chat_dedupe(tmp_path):
+    e = good()
+    e["kind"] = "email"
+    recs, problems = merge.merge(parts(tmp_path, [e, chat(), dict(chat(), id="c-2")]))
+    assert problems == [] and [r["id"] for r in recs] == ["t-1", "c-1"]
