@@ -85,9 +85,9 @@ def validate(rec):
         if len(msgs) > MAX_MESSAGES:
             errs.append(f"more than {MAX_MESSAGES} messages ({len(msgs)})")
         for i, m in enumerate(msgs):
-            if not (isinstance(m, dict) and isinstance(m.get("speaker"), str)
-                    and isinstance(m.get("text"), str) and m["speaker"].strip() and m["text"].strip()):
-                errs.append(f"message {i} needs speaker and text")
+            if not (isinstance(m, dict) and isinstance(m.get("from"), str)
+                    and isinstance(m.get("text"), str) and m["from"].strip() and m["text"].strip()):
+                errs.append(f"message {i} needs from and text")
             elif len(m["text"]) > MAX_EXCERPT:
                 errs.append(f"message {i} text over {MAX_EXCERPT} chars ({len(m['text'])})")
     if len(rec["context"]) > MAX_CONTEXT:
@@ -106,7 +106,7 @@ def validate(rec):
 def dedupe_key(rec):
     if rec.get("kind") == "chat":
         m = rec["messages"][0]
-        return (m["speaker"].strip().lower(), rec["date"], m["text"].strip()[:60].lower())
+        return (m["from"].strip().lower(), rec["date"], m["text"].strip()[:60].lower())
     return (rec["from"].strip().lower(), rec["date"], rec["excerpt"].strip()[:60].lower())
 
 

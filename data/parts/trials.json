@@ -85,7 +85,7 @@
     "cc": [],
     "date": "2020-05-28",
     "subject": "Re: Android OEM Revenue Share 3.0",
-    "excerpt": "uh oh... Don: I think that somebody forgot to tell Anil that Sundar authorized the removal of Chrome from GMS a few months ago ... How do you suggest we break the news? Oops, I included Anil on the thread! Anil: kidding aside, we never deviate from MADA obligations and Chrome distribution via GMS. No exceptions.",
+    "excerpt": "uh oh... Don: I think that somebody forgot to tell Anil that Sundar authorized the removal of Chrome from GMS a few months ago... How do you suggest we break the news? Oops, I included Anil on the thread! Anil: kidding aside, we never deviate from MADA obligations and Chrome distribution via GMS. No exceptions.",
     "context": "A joking exchange between Google Android and Chrome leaders about Chrome distribution rules for phone makers.",
     "company": [
       "Google"
@@ -287,7 +287,7 @@
     ],
     "date": "2009-04-21",
     "subject": "Re: OpenX Market Launches!",
-    "excerpt": "OpenX is the only relatively smaller player to offer the same three-pillared approach to the display market as us, Yahoo. MSFT and AOL -- platform, exchange and network. Therefore I think we need to take them even more seriously than the other exchanges / yield managers that are gaining traction out there (Rubicon etc.).",
+    "excerpt": "OpenX is the only relatively smaller player to offer the same three-pillared approach to the display market as us, Yahoo, MSFT and AOL - platform, exchange and network. Therefore I think we need to take them even more seriously than the other exchanges / yield managers that are gaining traction out there (Rubicon, etc.).",
     "context": "Neal Mohan sizes up a small rival ad exchange after its product launch.",
     "company": [
       "Google",
@@ -300,7 +300,7 @@
     "source": {
       "title": "United States v. Google (ad tech), trial exhibit PTX0044, published by the Department of Justice",
       "url": "https://www.justice.gov/atr/media/1368446/dl",
-      "locator": "PTX0044"
+      "locator": "GOOG-AT-MDL-009398914"
     }
   },
   {
@@ -343,8 +343,8 @@
     "cc": [],
     "date": "2017-08-31",
     "subject": "Thanks - and we're asking the wrong question",
-    "excerpt": "I would be remiss if I left CA without answering your question with an emphatic NO. Owning the ad serving tag is the right strategy and AdX (and DBM & Adwords) benefits from the direct line of inventory provided by DFP via dynamic allocation.",
-    "context": "An employee answers a Google executive who had asked whether Google should spin off DoubleClick.",
+    "excerpt": "I would be remiss if I left CA without answering your question with an emphatic NO.",
+    "context": "An employee gives a flat no when a Google executive asks whether to spin off DoubleClick.",
     "company": [
       "Google"
     ],
@@ -409,7 +409,7 @@
     "source": {
       "title": "United States v. Google (ad tech), trial exhibit PTX0609, published by the Department of Justice",
       "url": "https://www.justice.gov/atr/media/1367556/dl",
-      "locator": "PTX0609"
+      "locator": "GOOG-DOJ-13473146"
     }
   },
   {
@@ -443,7 +443,7 @@
     "source": {
       "title": "United States v. Google (ad tech), trial exhibit PTX0562, published by the Department of Justice",
       "url": "https://www.justice.gov/atr/media/1367051/dl",
-      "locator": "PTX0562"
+      "locator": "GOOG-TEX-00106259"
     }
   },
   {
@@ -484,7 +484,7 @@
     "cc": [],
     "date": "2019-03-03",
     "subject": "Future of our margin on buyside and sellside",
-    "excerpt": "Sellside, i.e. Adx 20% margin is not sustainable in my opinion. I argued for many years that it is not justifiable to charge more for a simpler service which is sellside (just sort bids and declare the winner) and charge less for more expensive margin which is buyside.",
+    "excerpt": "I argued for many years that it is not justifiable to charge more for a simpler service which is sellside (just sort bids and declare the winner) and charge less for more expensive margin which is buyside.",
     "context": "A Google ads product leader questions the 20 percent AdX fee.",
     "company": [
       "Google"
@@ -518,7 +518,7 @@
     "source": {
       "title": "United States v. Google (ad tech), trial exhibit PTX0734, published by the Department of Justice",
       "url": "https://www.justice.gov/atr/media/1368896/dl",
-      "locator": "GOOG-DOJ-12857593"
+      "locator": "GOOG-DOJ-12857594"
     }
   },
   {
@@ -534,7 +534,7 @@
     ],
     "date": "2019-12-04",
     "subject": "Re: TTD",
-    "excerpt": "It seems that TTD is spending 30% to 40% with Adx now whereas DBM is 75% with Adx. If TTD spend share on Adx drops further, it makes it harder to explain 75% DBM spend on Adx to external clients.",
+    "excerpt": "It seems that TDD is spending 30% to 40% with Adx now whereas DBM is 75% with Adx. If TDD spend share on Adx drops further, it makes it harder to explain 75% DBM spend on Adx to external clients.",
     "context": "A Google ads leader on what a rival buying platform shifting spend away from AdX would mean for Google's own spend.",
     "company": [
       "Google",
@@ -572,7 +572,7 @@
     "source": {
       "title": "United States v. Google (ad tech), trial exhibit PTX0719, published by the Department of Justice",
       "url": "https://www.justice.gov/atr/media/1367931/dl",
-      "locator": "PTX0719"
+      "locator": "GOOG-DOJ-AT-01019463"
     }
   },
   {
@@ -589,8 +589,8 @@
     ],
     "date": "2019-10-03",
     "subject": "Re: \"Source\" advertising consortium",
-    "excerpt": "My POV: When a buyer brings incremental demand in a network model - pubs don't seem to complain. Nobody complains about the take-rate from FB, Criteo, AMZ, Google Ads through AFC or AdMob ... they only complain about the take-rate when we are pipes.",
-    "context": "A Google ad tech executive explains why publishers object to some ad fees and not others.",
+    "excerpt": "My POV: When a buyer brings incremental demand in a network model - pubs don't seem to complain.",
+    "context": "A Google ad tech executive on why publishers object to fees on Google's ad pipes and not on other buyers.",
     "company": [
       "Google"
     ],
@@ -625,7 +625,7 @@
     "source": {
       "title": "United States v. Google (ad tech), trial exhibit PTX1510, published by the Department of Justice",
       "url": "https://www.justice.gov/atr/media/1367061/dl",
-      "locator": "PTX1510"
+      "locator": "GOOG-DOJ-03546944"
     }
   },
   {

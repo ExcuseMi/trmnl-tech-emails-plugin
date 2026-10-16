@@ -1,0 +1,591 @@
+[
+  {
+    "kind": "email",
+    "id": "usvms-1995-05-31-gates-netscape-deal",
+    "from": "Bill Gates",
+    "to": [
+      "Paul Maritz"
+    ],
+    "cc": [
+      "Brad Silverberg",
+      "Nathan Myhrvold",
+      "Dan Rosen",
+      "Peter Neupert"
+    ],
+    "date": "1995-05-31",
+    "subject": "Netscape discussions",
+    "excerpt": "This kind of deal could be a big win win. Of course over time we will compete on servers but we can help them a lot in the meantime. We could even pay them money as part of the deal buying some piece of them or something.",
+    "context": "Gates floats a cooperation deal with Netscape; the DOJ later used the Microsoft-Netscape talks of 1995 as evidence.",
+    "company": [
+      "Microsoft",
+      "Netscape"
+    ],
+    "people": [
+      "Bill Gates",
+      "Paul Maritz"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 22, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/22.pdf",
+      "locator": "Gov. Ex. 22"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usvms-1995-05-31-rosen-barksdale",
+    "from": "Dan Rosen",
+    "to": [
+      "Bill Gates",
+      "Paul Maritz"
+    ],
+    "cc": [
+      "Brad Silverberg",
+      "Nathan Myhrvold"
+    ],
+    "date": "1995-05-31",
+    "subject": "RE: Netscape discussions",
+    "excerpt": "This is very much along the lines of the discussions I've already initiated with Jim Barksdale. He seems to be favorably disposed to the discussions. Bottom line: if we go to war with each other, then other industry players will set the terms of engagement (e.g. Visa and MasterCard on processing fees; AT&T and MCI on network issues) and we both loose more than we gain.",
+    "context": "A Microsoft business development executive reports on early talks with Netscape's CEO.",
+    "company": [
+      "Microsoft",
+      "Netscape"
+    ],
+    "people": [
+      "Dan Rosen",
+      "Bill Gates",
+      "Paul Maritz",
+      "Jim Barksdale"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 22, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/22.pdf",
+      "locator": "Gov. Ex. 22"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usvms-1995-06-22-rosen-netscape-meeting",
+    "from": "Dan Rosen",
+    "to": [
+      "Bill Gates",
+      "Nathan Myhrvold",
+      "Paul Maritz",
+      "Pete Higgins"
+    ],
+    "cc": [],
+    "date": "1995-06-22",
+    "subject": "Netscape meeting",
+    "excerpt": "Our goals going into the meeting were (in priority order): 1. Establish Microsoft ownership of the Internet client platform for Win95.",
+    "context": "Summary of a four-hour meeting between seven Microsoft people and Netscape's leadership.",
+    "company": [
+      "Microsoft",
+      "Netscape"
+    ],
+    "people": [
+      "Dan Rosen",
+      "Bill Gates"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 35, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/35.pdf",
+      "locator": "Gov. Ex. 35, p. 34"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usvms-1996-01-08-gates-steve-case-aol",
+    "from": "Bill Gates",
+    "to": [
+      "Brad Silverberg"
+    ],
+    "cc": [
+      "Paul Maritz",
+      "John Ludwig",
+      "Christine Turner"
+    ],
+    "date": "1996-01-08",
+    "subject": "Steve Case - AOL",
+    "excerpt": "I talked to him this afternoon. He said they are on a path to close with Netscape before the end of the month. I told him I wanted to convince him to pay a visit and really talk about our goals. I said I wasn't going to be able to put AOL in the Windows box except in the sense that with a few strings typed in the user would be able to connect to AOL.",
+    "context": "Gates reports a call with AOL's Steve Case as AOL weighed Netscape's browser against Microsoft's.",
+    "company": [
+      "Microsoft",
+      "AOL",
+      "Netscape"
+    ],
+    "people": [
+      "Bill Gates",
+      "Steve Case"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 335, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/335.pdf",
+      "locator": "Gov. Ex. 335"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usvms-1996-05-19-gates-thoughts-on-netscape",
+    "from": "Bill Gates",
+    "to": [
+      "Paul Maritz",
+      "Brad Silverberg",
+      "Jim Allchin",
+      "Brad Chase",
+      "Rich Tong",
+      "John Ludwig"
+    ],
+    "cc": [],
+    "date": "1996-05-19",
+    "subject": "Some Thoughts on Netscape",
+    "excerpt": "During this Thinkweek I had a chance to play with a number of Netscape products. This reinforced the impression that I think all of us share that Netscape is quite an impressive competitor. They are moving at full speed.",
+    "context": "Gates circulates a memo after his Thinkweek assessing Netscape's product line.",
+    "company": [
+      "Microsoft",
+      "Netscape"
+    ],
+    "people": [
+      "Bill Gates"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 41, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/41.pdf",
+      "locator": "Gov. Ex. 41"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usvms-1996-12-09-gates-ie-netscape-ui",
+    "from": "Bill Gates",
+    "to": [
+      "Brad Chase",
+      "Paul Maritz"
+    ],
+    "cc": [
+      "Brad Silverberg",
+      "Steve Ballmer"
+    ],
+    "date": "1996-12-09",
+    "subject": "RE: Downloads of IE",
+    "excerpt": "I think on the UI front and the technology front Netscape has taken the basic IE 4 idea and is executing on it far better than we are.",
+    "context": "Gates, in a thread about AOL and Internet Explorer downloads, says Netscape is ahead on IE 4's own ideas.",
+    "company": [
+      "Microsoft",
+      "Netscape",
+      "AOL"
+    ],
+    "people": [
+      "Bill Gates",
+      "Brad Chase"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 346, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/346.pdf",
+      "locator": "Gov. Ex. 346"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usvms-1997-01-28-gates-html-openness",
+    "from": "Bill Gates",
+    "to": [
+      "Paul Maritz",
+      "Brad Silverberg"
+    ],
+    "cc": [
+      "Nathan Myhrvold",
+      "Aaron Contorer",
+      "Jim Allchin",
+      "John Ludwig",
+      "Richard Fade",
+      "Jon DeVaan",
+      "Steven Sinofsky"
+    ],
+    "date": "1997-01-28",
+    "subject": "HTML \"Openness\"",
+    "excerpt": "I think we want to make Trident extremely hard to clone. I think we want to patent elements of Trident. I think we want to make extensions to Trident on an ongoing basis. I reconcile this with our statements about HTML by saying that we need to have \"tags\" that we view as Office/Windows/Microsoft specific.",
+    "context": "Gates on Trident, the browser engine behind Internet Explorer, and how far Microsoft should extend HTML.",
+    "company": [
+      "Microsoft"
+    ],
+    "people": [
+      "Bill Gates"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 351, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/351.pdf",
+      "locator": "Gov. Ex. 351"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usvms-1997-02-20-gates-amd-3dx-java",
+    "from": "Bill Gates",
+    "to": [
+      "Jim Allchin",
+      "Paul Maritz"
+    ],
+    "cc": [],
+    "date": "1997-02-20",
+    "subject": "RE: AMD 3DX thoughts",
+    "excerpt": "If Intel has a real problem with us supporting this then they will have to stop supporting Java Multimedia the way they are. I would gladly give up supporting this if they would back off from their work on JAVA which is terrible for Intel.",
+    "context": "Gates links Microsoft's support for AMD's 3DX instructions to Intel's Java work.",
+    "company": [
+      "Microsoft",
+      "Intel",
+      "AMD"
+    ],
+    "people": [
+      "Bill Gates",
+      "Jim Allchin"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 290, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/290.pdf",
+      "locator": "Gov. Ex. 290"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usvms-1997-04-14-slivka-java-questions",
+    "from": "Ben Slivka",
+    "to": [
+      "Bill Gates"
+    ],
+    "cc": [],
+    "date": "1997-04-14",
+    "subject": "java review with you",
+    "excerpt": "2. How do we wrest control of Java away from Sun? 3. How do we turn Java into just the latest, best way to write Windows applications?",
+    "context": "A Microsoft Java manager lists the questions Gates had put to him, ahead of a review.",
+    "company": [
+      "Microsoft",
+      "Sun Microsystems"
+    ],
+    "people": [
+      "Ben Slivka",
+      "Bill Gates"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 58, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/58.pdf",
+      "locator": "Gov. Ex. 58"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usvms-1997-06-16-gates-java-schism",
+    "from": "Bill Gates",
+    "to": [
+      "Paul Maritz"
+    ],
+    "cc": [
+      "Aaron Contorer",
+      "Nathan Myhrvold",
+      "John Ludwig",
+      "Paul Gross",
+      "Ben Slivka"
+    ],
+    "date": "1997-06-16",
+    "subject": "Java schism",
+    "excerpt": "Since we do want to run JAVA applets in the browser we have to provide some JAVA support there. It may be that some of the JAVA runtime should ONLY be available through the browser - like AWT versus our equivalent. I think restricting some things to the browser is an important idea that should be explored.",
+    "context": "Gates on how to limit pure Java applications while still running applets in Internet Explorer.",
+    "company": [
+      "Microsoft",
+      "Sun Microsystems"
+    ],
+    "people": [
+      "Bill Gates",
+      "Paul Maritz"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 254, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/254.pdf",
+      "locator": "Gov. Ex. 254"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usvms-1997-10-30-gates-ibm-java",
+    "from": "Bill Gates",
+    "to": [
+      "Joachim Kempin"
+    ],
+    "cc": [
+      "Steve Ballmer",
+      "Christine Turner",
+      "Paul Maritz",
+      "Jim Allchin"
+    ],
+    "date": "1997-10-30",
+    "subject": "RE: IBM",
+    "excerpt": "Overall we will never have the same relationship with IBM that we have with Compaq, Dell and even HP because of their software ambitions. I could deal with this just fine if they weren't such rabid JAVA backers.",
+    "context": "Gates replies to Microsoft's head of OEM sales on how to approach IBM's PC business.",
+    "company": [
+      "Microsoft",
+      "IBM"
+    ],
+    "people": [
+      "Bill Gates",
+      "Joachim Kempin"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 257, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/257.pdf",
+      "locator": "Gov. Ex. 257, MS7 007936"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "usvms-1995-05-25-gates-grove-nsp",
+    "from": "Bill Gates",
+    "to": [
+      "Andy Grove"
+    ],
+    "cc": [],
+    "date": "1995-05-25",
+    "subject": "NSP",
+    "excerpt": "I don't understand why Intel funds a group that is against Windows95.",
+    "context": "Gates writes to Intel's Andy Grove about Intel's Native Signal Processing software.",
+    "company": [
+      "Microsoft",
+      "Intel"
+    ],
+    "people": [
+      "Bill Gates",
+      "Andy Grove"
+    ],
+    "source": {
+      "title": "US v. Microsoft (1998), government trial exhibit 277, DOJ Antitrust Division",
+      "url": "https://www.justice.gov/atr/cases/exhibits/277.pdf",
+      "locator": "Gov. Ex. 277, p. 305"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "enron-2001-04-03-fastow-raptor-avici",
+    "from": "Andrew Fastow",
+    "to": [
+      "John Lavorato"
+    ],
+    "cc": [],
+    "date": "2001-04-03",
+    "subject": "RE:",
+    "excerpt": "However, one position that has lost a significant amount of value since we were free to sell it is Avici. Do you think that at PRC, this \"loss\" of value, which does not show up in a P/L since it is hedged by Raptor, should be taken into account when we evaluate the person? My point is only that each of these investments are \"positions\" that should be \"owned\" by someone, like a book.",
+    "context": "Enron's CFO on how the Raptor hedging vehicles kept a loss on a held investment out of the profit and loss figures.",
+    "company": [
+      "Enron"
+    ],
+    "people": [
+      "Andrew Fastow",
+      "John Lavorato"
+    ],
+    "source": {
+      "title": "Enron Email Dataset, FERC release (CMU copy, 2015-05-07 version)",
+      "url": "https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz",
+      "locator": "maildir/kitchen-l/_americas/mrha/ooc/262."
+    }
+  },
+  {
+    "kind": "email",
+    "id": "enron-2001-08-16-lay-microsoft-skilling",
+    "from": "Kenneth Lay",
+    "to": [
+      "Rick (Microsoft)"
+    ],
+    "cc": [],
+    "date": "2001-08-16",
+    "subject": "(no subject)",
+    "excerpt": "As I am sure you have read by now, Jeff Skilling has chosen to leave Enron. Jeff is resigning for personal reasons and his decision is voluntary. I regret his decision, but I accept and understand it.",
+    "context": "Enron's chairman tells a Microsoft contact about Skilling's resignation as CEO after six months in the job.",
+    "company": [
+      "Enron",
+      "Microsoft"
+    ],
+    "people": [
+      "Kenneth Lay",
+      "Jeff Skilling"
+    ],
+    "source": {
+      "title": "Enron Email Dataset, FERC release (CMU copy, 2015-05-07 version)",
+      "url": "https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz",
+      "locator": "maildir/lay-k/sent_items/11."
+    }
+  },
+  {
+    "kind": "email",
+    "id": "enron-2001-08-23-lay-associate-analyst",
+    "from": "Kenneth Lay",
+    "to": [],
+    "cc": [],
+    "date": "2001-08-23",
+    "subject": "Associate/Analyst Program",
+    "excerpt": "As most of you know, Jeff Skilling created the Associate/Analyst Program in 1990. This Program is one of his most successful and important contributions to Enron, and will continue as a cornerstone of the Company. It remains our single most important source of new talent.",
+    "context": "Lay's memo to the Associate/Analyst Program a week after Skilling's departure.",
+    "company": [
+      "Enron"
+    ],
+    "people": [
+      "Kenneth Lay",
+      "Jeff Skilling"
+    ],
+    "source": {
+      "title": "Enron Email Dataset, FERC release (CMU copy, 2015-05-07 version)",
+      "url": "https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz",
+      "locator": "maildir/lay-k/sent_items/10."
+    }
+  },
+  {
+    "kind": "email",
+    "id": "enron-2000-11-10-belden-freak-show",
+    "from": "Tim Belden",
+    "to": [
+      "John Lavorato",
+      "David Delainey"
+    ],
+    "cc": [],
+    "date": "2000-11-10",
+    "subject": "2001 Plan",
+    "excerpt": "While I intend to make as much money as I possibly can next year, the $170 number seemed high. Particularly given the regulatory freak show that is going down in California right now.",
+    "context": "Enron's West power trading head questions his 2001 profit target during the California energy crisis.",
+    "company": [
+      "Enron"
+    ],
+    "people": [
+      "Tim Belden",
+      "John Lavorato",
+      "David Delainey"
+    ],
+    "source": {
+      "title": "Enron Email Dataset, FERC release (CMU copy, 2015-05-07 version)",
+      "url": "https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz",
+      "locator": "maildir/delainey-d/_sent_mail/122."
+    }
+  },
+  {
+    "kind": "email",
+    "id": "enron-2000-06-29-delainey-california",
+    "from": "David Delainey",
+    "to": [
+      "Richard Shapiro",
+      "David Parquet"
+    ],
+    "cc": [],
+    "date": "2000-06-29",
+    "subject": "california",
+    "excerpt": "Guys, good job with the California issues - we didn't get everything but we managed the position in a very effective manner.",
+    "context": "The head of Enron's North American wholesale unit reviews a round of California market rules.",
+    "company": [
+      "Enron"
+    ],
+    "people": [
+      "David Delainey",
+      "Richard Shapiro",
+      "David Parquet"
+    ],
+    "source": {
+      "title": "Enron Email Dataset, FERC release (CMU copy, 2015-05-07 version)",
+      "url": "https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz",
+      "locator": "maildir/delainey-d/_sent_mail/539."
+    }
+  },
+  {
+    "kind": "email",
+    "id": "enron-2001-02-19-delainey-cdwr",
+    "from": "David Delainey",
+    "to": [
+      "Christopher Calger"
+    ],
+    "cc": [],
+    "date": "2001-02-19",
+    "subject": "Freeman and CDWR",
+    "excerpt": "Like our discussion, we have to find a way to be supportive to the re-development of this market without creating un-acceptable credit or market losses. We also have to support Lay's efforts in California.",
+    "context": "Delainey on selling power to the California Department of Water Resources during the energy crisis.",
+    "company": [
+      "Enron"
+    ],
+    "people": [
+      "David Delainey",
+      "Christopher Calger",
+      "Kenneth Lay"
+    ],
+    "source": {
+      "title": "Enron Email Dataset, FERC release (CMU copy, 2015-05-07 version)",
+      "url": "https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz",
+      "locator": "maildir/delainey-d/_sent_mail/697."
+    }
+  },
+  {
+    "kind": "email",
+    "id": "enron-2001-05-05-lavorato-dwr",
+    "from": "John Lavorato",
+    "to": [
+      "Louise Kitchen"
+    ],
+    "cc": [],
+    "date": "2001-05-05",
+    "subject": "RE: DWR Again",
+    "excerpt": "I have to say. It's kind of nice not having a deal with them.",
+    "context": "Enron's trading chief reacts to a colleague's note about another possible sale to California's Department of Water Resources.",
+    "company": [
+      "Enron"
+    ],
+    "people": [
+      "John Lavorato",
+      "Louise Kitchen"
+    ],
+    "source": {
+      "title": "Enron Email Dataset, FERC release (CMU copy, 2015-05-07 version)",
+      "url": "https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz",
+      "locator": "maildir/kitchen-l/_americas/portland/109."
+    }
+  },
+  {
+    "kind": "email",
+    "id": "enron-2001-01-04-kaminski-dhabol",
+    "from": "Vince Kaminski",
+    "to": [
+      "Jeff Skilling"
+    ],
+    "cc": [],
+    "date": "2001-01-04",
+    "subject": "Dhabol",
+    "excerpt": "The first article describes recent power outage in northern India affecting millions of people. One possible line of defense is pointing out to the value of output lost due to power shortages. It is obvious that the value of lost production exceeds the cost of power produced by the Dhabol plant (expensive as it may be). The power cut affected 230 million people.",
+    "context": "Enron's head of research gives Skilling arguments for defending the Dabhol power plant in India.",
+    "company": [
+      "Enron"
+    ],
+    "people": [
+      "Vince Kaminski",
+      "Jeff Skilling"
+    ],
+    "source": {
+      "title": "Enron Email Dataset, FERC release (CMU copy, 2015-05-07 version)",
+      "url": "https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz",
+      "locator": "maildir/kaminski-v/_sent_mail/1082."
+    }
+  },
+  {
+    "kind": "email",
+    "id": "enron-2000-06-03-kaminski-universities",
+    "from": "Vince Kaminski",
+    "to": [
+      "Jeff Skilling"
+    ],
+    "cc": [],
+    "date": "2000-06-03",
+    "subject": "Managing Enron's relationships with the universities",
+    "excerpt": "We should rethink the way we work with universities. The efforts to get the best students look more and more like a hand-to-hand combat and often we are not very successful. It is critical that we increase our presence on the campuses and this can be accomplished in a number of different ways:",
+    "context": "Kaminski urges Skilling to change how Enron recruits from universities.",
+    "company": [
+      "Enron"
+    ],
+    "people": [
+      "Vince Kaminski",
+      "Jeff Skilling"
+    ],
+    "source": {
+      "title": "Enron Email Dataset, FERC release (CMU copy, 2015-05-07 version)",
+      "url": "https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz",
+      "locator": "maildir/kaminski-v/_sent_mail/3904."
+    }
+  }
+]

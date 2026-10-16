@@ -76,7 +76,7 @@ def test_output_is_minified(tmp_path):
 def chat():
     return {"id": "c-1", "kind": "chat", "date": "2014-03", "context": "Two people chat.",
             "company": ["Meta"], "people": ["A", "B"],
-            "messages": [{"speaker": "A", "text": "hi"}, {"speaker": "B", "text": "yo"}],
+            "messages": [{"from": "A", "text": "hi"}, {"from": "B", "text": "yo"}],
             "source": {"title": "T", "url": "https://example.org/c", "locator": "p. 1"}}
 
 
@@ -85,10 +85,10 @@ def test_chat_valid():
 
 
 @pytest.mark.parametrize("mutate,word", [
-    (lambda r: r.update(messages=[{"speaker": "A", "text": "x"}] * 31), "more than 30"),
+    (lambda r: r.update(messages=[{"from": "A", "text": "x"}] * 31), "more than 30"),
     (lambda r: r.update(messages=[]), "empty"),
-    (lambda r: r.update(messages=[{"speaker": "A", "text": "x" * 601}]), "text over"),
-    (lambda r: r.update(messages=[{"speaker": "A"}]), "needs speaker"),
+    (lambda r: r.update(messages=[{"from": "A", "text": "x" * 601}]), "text over"),
+    (lambda r: r.update(messages=[{"from": "A"}]), "needs from"),
     (lambda r: r.pop("messages"), "missing messages"),
     (lambda r: r.update(kind="memo"), "bad kind"),
 ])

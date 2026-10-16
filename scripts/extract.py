@@ -3,7 +3,7 @@
 
 For each candidate without data/extracted/<id>.json: download (bounded), turn a
 PDF into text with pdftotext, save data/sources/<id>.txt (gitignored), split
-into emails (From/To/Date/Subject headers) and chat lines (speaker lines),
+into emails (From/To/Date/Subject headers) and chat lines (sender lines),
 and write data/extracted/<id>.json.
 """
 import json
@@ -125,7 +125,7 @@ def split_emails(text):
 
 
 def split_chats(text):
-    """Runs of speaker lines ('Name: text') with at least 2 speakers and 3 lines."""
+    """Runs of sender lines ('Name: text') with at least 2 speakers and 3 lines."""
     lines = text.split("\n")
     offsets, pos = [], 0
     for ln in lines:
@@ -138,14 +138,14 @@ def split_chats(text):
             if cur is None or len(cur["messages"]) >= MAX_CHAT:
                 cur = {"start": i, "messages": []}
                 runs.append(cur)
-            cur["messages"].append({"speaker": m.group(1), "text": m.group(2).strip()})
+            cur["messages"].append({"from": m.group(1), "text": m.group(2).strip()})
         elif cur is not None and ln.strip() and ln.startswith((" ", "\t")):
             cur["messages"][-1]["text"] += " " + ln.strip()
         elif ln.strip():
             cur = None
     out = []
     for r in runs:
-        if len(r["messages"]) >= 3 and len({m["speaker"] for m in r["messages"]}) >= 2:
+        if len(r["messages"]) >= 3 and len({m["from"] for m in r["messages"]}) >= 2:
             out.append({"kind": "chat", "messages": r["messages"], "locator": _locator(text, offsets[r["start"]])})
     return out
 

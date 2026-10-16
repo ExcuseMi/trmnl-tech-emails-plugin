@@ -45,7 +45,7 @@ def test_missing_source_text_fails(tmp_path):
 def test_chat_every_message_checked(tmp_path):
     d = setup(tmp_path)
     ok = {"id": "c1", "kind": "chat", "source": {"url": URL},
-          "messages": [{"speaker": "A", "text": "It is cheap."}, {"speaker": "B", "text": "We should buy them"}]}
+          "messages": [{"from": "A", "text": "It is cheap."}, {"from": "B", "text": "We should buy them"}]}
     assert verify.verify_records([ok], d) == []
     ok["messages"][1]["text"] = "We should sell them"
     assert verify.verify_records([ok], d)

@@ -24,7 +24,7 @@ def test_splits_two_emails_with_locator():
 def test_splits_chat():
     chats = extract.split_chats(CHAT)
     assert len(chats) == 1
-    assert [m["speaker"] for m in chats[0]["messages"]] == ["Alice", "Bob", "Alice"]
+    assert [m["from"] for m in chats[0]["messages"]] == ["Alice", "Bob", "Alice"]
     assert chats[0]["messages"][1]["text"] == "hi and more"
 
 
