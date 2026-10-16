@@ -17,7 +17,10 @@ var DATE_RE = /^\d{4}(-\d{2}(-\d{2})?)?$/;
 function str(v, max) {
   if (typeof v !== 'string') return '';
   var t = v.replace(/\s+/g, ' ').trim();
-  return t.length > max ? t.slice(0, max - 1) + '…' : t;
+  if (t.length <= max) return t;
+  // cut at a word end, never inside a word
+  var cut = t.slice(0, max - 1), sp = cut.lastIndexOf(' ');
+  return (sp > max * 0.6 ? cut.slice(0, sp) : cut).replace(/[ ,;:.-]+$/, '') + '…';
 }
 
 function names(v) {

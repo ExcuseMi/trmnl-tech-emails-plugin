@@ -5,6 +5,7 @@
 {% if sc == "false" or sc == "no" or sc == "0" or sc == "off" %}{% assign show_context = false %}{% endif %}
 {% assign big = false %}
 {% if cfv.text_size == "large" %}{% assign big = true %}{% endif %}
+{% if big %}{% assign name_cls = "description description--large font--bold" %}{% else %}{% assign name_cls = "description lg:description--large font--bold" %}{% endif %}
 {% if big %}{% assign body_cls = "description description--large" %}{% else %}{% assign body_cls = "description lg:description--large lg:font--regular" %}{% endif %}
 <style>
 /* One name colour per person on colour screens, from the framework's own palette variables for that screen; on
@@ -15,36 +16,36 @@
 .screen[class*="screen--color"] .tp-p3 { color: var(--text-purple-color); }
 </style>
 {% if email %}
-<div class="layout layout--col layout--top gap--none">
+<div class="layout layout--col layout--top layout--left gap--none">
   {% comment %} header: the subject (chat: the people) and the date; only a full view has room for the recipient lines and a rule {% endcomment %}
   {% if compact %}
   <div class="flex flex--row flex--between gap--small w--full shrink-0 pb--2" data-head="1">
-    <span class="title title--small lg:title--base text--bold grow min-w--0" data-clamp="1">{{ email.title | escape }}</span>
-    {% unless narrow %}<span class="label label--small lg:label--base shrink-0">{{ email.date_label }}</span>{% endunless %}
+    <span class="text--left title title--small lg:title--base text--bold grow min-w--0" data-clamp="1">{{ email.title | escape }}</span>
+    {% unless narrow %}<span class="text--left label label--small lg:label--base shrink-0">{{ email.date_label }}</span>{% endunless %}
   </div>
   {% else %}
-  <div class="flex flex--col gap--none w--full shrink-0" data-head="1">
-    <span class="title title--small lg:title--large text--bold" data-clamp="2">{{ email.title | escape }}</span>
-    <span class="label label--small lg:label--base">{{ email.date_label }}</span>
-    {% if email.to.size > 0 %}{% assign more = email.to.size | minus: 2 %}<span class="label label--small lg:label--base" data-clamp="1">To: {{ email.to | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
-    {% if email.cc.size > 0 %}{% assign more = email.cc.size | minus: 2 %}<span class="label label--small lg:label--base" data-clamp="1">Cc: {{ email.cc | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
+  <div class="flex flex--col flex--left gap--none w--full shrink-0" data-head="1">
+    <span class="text--left title title--small lg:title--large text--bold" data-clamp="2">{{ email.title | escape }}</span>
+    <span class="text--left label label--small lg:label--base">{{ email.date_label }}</span>
+    {% if email.to.size > 0 %}{% assign more = email.to.size | minus: 2 %}<span class="text--left label label--small lg:label--base" data-clamp="1">To: {{ email.to | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
+    {% if email.cc.size > 0 %}{% assign more = email.cc.size | minus: 2 %}<span class="text--left label label--small lg:label--base" data-clamp="1">Cc: {{ email.cc | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
   </div>
   <div class="border--h-black w--full shrink-0 mt--2 mb--2" data-rule="1"></div>
   {% endif %}
   {% comment %} the messages: the script keeps as many whole messages as the box holds, then the ellipsis line {% endcomment %}
-  <div class="tp-body grow min-h--0 w--full" style="overflow:hidden" data-kind="{{ email.kind }}">
+  <div class="tp-body text--left grow min-h--0 w--full" style="overflow:hidden" data-kind="{{ email.kind }}">
     {% for m in email.messages %}
-    <div class="tp-msg flex flex--col gap--none pb--2" data-msg="1">
-      <span class="{{ body_cls }} text--bold tp-who tp-p{{ m.p }}">{{ m.from | escape }}</span>
-      <span class="{{ body_cls }} tp-text">{{ m.text | escape }}</span>
+    <div class="tp-msg flex flex--col flex--left gap--none pb--2" data-msg="1">
+      <span class="text--left {{ name_cls }} tp-who tp-p{{ m.p }}">{{ m.from | escape }}</span>
+      <span class="text--left {{ body_cls }} tp-text">{{ m.text | escape }}</span>
     </div>
     {% endfor %}
-    <div class="tp-more" data-more="1" style="display:none"><span class="{{ body_cls }}">...</span></div>
+    <div class="tp-more" data-more="1" style="display:none"><span class="text--left {{ body_cls }}">...</span></div>
   </div>
   {% unless compact %}
-  <div class="flex flex--col gap--none w--full shrink-0 pt--2" data-foot="1">
-    {% if show_context and email.context != blank %}<span class="label label--small lg:label--base" style="font-style:italic" data-clamp="1">{{ email.context | escape }}</span>{% endif %}
-    {% if email.source.title != blank %}<span class="label label--small lg:label--base" data-clamp="1">Source: {{ email.source.title | escape }}</span>{% endif %}
+  <div class="flex flex--col flex--left gap--none w--full shrink-0 pt--2" data-foot="1">
+    {% if show_context and email.context != blank %}<span class="text--left label label--small lg:label--base" style="font-style:italic" data-clamp="1">{{ email.context | escape }}</span>{% endif %}
+    {% if email.source.title != blank %}<span class="text--left label label--small lg:label--base" data-clamp="1">Source: {{ email.source.title | escape }}</span>{% endif %}
   </div>
   {% endunless %}
 </div>

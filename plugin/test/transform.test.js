@@ -188,3 +188,9 @@ test('a kept chat comes back from the state unchanged', () => {
   const out = run(input(null, 'newest', good.trmnl_state));
   assert.deepEqual(out.email, good.email);
 });
+
+test('a text over the limit is cut at a word end with an ellipsis, never inside a word', () => {
+  const out = run(input([{ ...rec(1), excerpt: 'alpha '.repeat(300) }], 'newest')).email.messages[0].text;
+  assert.ok(out.length <= 700);
+  assert.match(out, /alpha…$/);
+});

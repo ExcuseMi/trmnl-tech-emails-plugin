@@ -49,5 +49,5 @@ custom_fields:
   optional: true
   help_text: Where the list of emails is read from. Leave as it is unless you host your own list.
 name: Tech Emails
-description: Emails and chats from the public record of tech
+description: Public-record tech emails
 refresh_interval: 15
