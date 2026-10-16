@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Tech Emails</title>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#f8654b"/>
+  <rect x="12" y="18" width="40" height="28" rx="3" fill="#ffffff"/>
+  <path d="M13 20 L32 34 L51 20" fill="none" stroke="#f8654b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 40 h12" stroke="#f8654b" stroke-width="3" stroke-linecap="round"/>
+</svg>

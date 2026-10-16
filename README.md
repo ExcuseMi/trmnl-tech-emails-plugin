@@ -43,3 +43,19 @@ URLs and docket ids in `watch.yml` need a check by a person before the first run
 ## Tests
 
 `python -m venv .venv && .venv/bin/pip install -r requirements.txt -r requirements-test.txt && .venv/bin/pytest`
+
+Plugin views (from `plugin/`):
+
+| What | Command |
+|---|---|
+| Lint | `./bin/trmnlp lint` |
+| Tests, every view on OG, X, BWRY and 7-color | `./bin/trmnlp test` |
+| Preview PNGs of all four views from the live data | `./bin/trmnlp build --png` (writes `_build/*.png`; `--color-depth 8` for gray) |
+| Live preview in the browser | `./bin/trmnlp serve` |
+| Same without Ruby, with Docker | `docker run --rm -p 4567:4567 -v "$PWD:/plugin" trmnl/trmnlp serve` |
+
+`build --png` has no device option: BWRY and color looks are checked by the `trmnlp test` cases for `og_bwry` and `inky_impression_7_3`.
+
+## Icon
+
+`assets/icon.svg` (source) and `assets/icon-512.png` (upload), TRMNL coral `#f8654b`.
