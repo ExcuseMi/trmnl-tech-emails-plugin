@@ -1,0 +1,768 @@
+[
+  {
+    "kind": "email",
+    "id": "six4three-2012-fb-platform-fees-2012-10-07",
+    "from": "Mark Zuckerberg",
+    "to": [],
+    "cc": [],
+    "date": "2012-10-07",
+    "subject": "Platform business model",
+    "excerpt": "I’ve been thinking about platform business model a lot this weekend…if we make it so devs can generate revenue for us in different ways, then it makes it more acceptable for us to charge them quite a bit more for using platform. The basic idea is that any other revenue you generate for us earns you a credit towards whatever fees you own us for using plaform. For most developers this would probably cover cost completely.",
+    "context": "Facebook's CEO sketches charging developers for friends data, with credits for buying ads or using Facebook payments.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 6, Six4Three Exhibit 170"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2012-fb-leak-risk-2012-10-27",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "Sam Lessin"
+    ],
+    "cc": [],
+    "date": "2012-10-27",
+    "subject": "Platform revenue and data leaks",
+    "excerpt": "I’m generally sceptical that there is as much data leak strategic risk as you think. I agree there is clear risk on the advertiser side, but I haven’t figured out how that connects to the rest of the platform. I think we leak info to developers, but I just can’t think if any instances where that data has leaked from developer to developer and caused a real issue for us.",
+    "context": "Zuckerberg answers a colleague who argued for locking down friends data on Facebook's developer platform.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "Sam Lessin"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 7, Six4Three Exhibit 38"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2012-fb-pay-or-lock-2012-10-27",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "Sam Lessin"
+    ],
+    "cc": [],
+    "date": "2012-10-27",
+    "subject": "Platform revenue and data leaks",
+    "excerpt": "Without limiting distribution or access to friends who use this app, I don’t think we have any way to get developers to pay us at all besides offering payments and ad networks.",
+    "context": "In the same exchange Zuckerberg ties restricting friends data to getting developers to pay.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "Sam Lessin"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 7, Six4Three Exhibit 38"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2012-fb-data-reciprocity-2012-10-30",
+    "from": "Mike Vernal",
+    "to": [],
+    "cc": [],
+    "date": "2012-10-30",
+    "subject": "Data reciprocity",
+    "excerpt": "We are going to require that all platform partners agree to data reciprocity. If you access a certain type of data (e.g. music listens), you must allow the user to publish back that same kind of data.",
+    "context": "A Facebook platform executive announces the reciprocity rule for developers.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mike Vernal"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 9, Six4Three Exhibit 45"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2012-fb-full-reciprocity-2012-11-19",
+    "from": "Mark Zuckerberg",
+    "to": [],
+    "cc": [],
+    "date": "2012-11-19",
+    "subject": "Platform business",
+    "excerpt": "After thinking about platform business for a long time, I wanted to send out a note explaining where I’m leaning on this. This isn’t final and we’ll have a chance to discuss this in person before we decide this for sure, but since this is complex, I wanted to write out my thoughts. This is long, but hopefully helpful. The quick summary is that I think we should go with full reciprocity and access to app friends for no charge.",
+    "context": "Zuckerberg sets out his preferred model for Facebook's 2012 platform changes.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 9, Six4Three Exhibit 48"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2012-fb-sharing-back-2012-11-19",
+    "from": "Mark Zuckerberg",
+    "to": [],
+    "cc": [],
+    "date": "2012-11-19",
+    "subject": "Platform business",
+    "excerpt": "However, that may be good for the world but it’s not good for us unless people also share back to Facebook and that content increases the value of our network. So ultimately, I think the purpose of platform – even the read side – is to increase sharing back into Facebook.",
+    "context": "From the same note: Zuckerberg states what Facebook's developer platform is for.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 10, Six4Three Exhibit 48"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2012-fb-sandberg-reciprocity-2012-11-19",
+    "from": "Sheryl Sandberg",
+    "to": [],
+    "cc": [],
+    "date": "2012-11-19",
+    "subject": "Re: Platform business",
+    "excerpt": "I like full reciprocity and this is the heart of why.",
+    "context": "Facebook's COO replies to Zuckerberg's note on the platform business model.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Sheryl Sandberg"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 10, Six4Three Exhibit 48"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2013-fb-spend-or-lose-access-2013-09-18",
+    "from": "Konstantinos Papamiltiadis",
+    "to": [
+      "Ime Archibong"
+    ],
+    "cc": [],
+    "date": "2013-09-18",
+    "subject": "Slides for the developer talk",
+    "excerpt": "Key points: 1/ Find out what other apps like Refresh are out that we don’t want to share data with and figure out if they spend on NEKO. Communicate in one-go to all apps that don’t spend that those permission will be revoked. Communicate to the rest that they need to spend on NEKO $250k a year to maintain access to the data.",
+    "context": "A Facebook platform partnerships director links developer data access to ad spend.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Konstantinos Papamiltiadis",
+      "Ime Archibong"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 5, Six4Three Exhibit 79"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2013-fb-cost-cutting-2013-09-04",
+    "from": "Konstantinos Papamiltiadis",
+    "to": [
+      "Simon Cross",
+      "Ime Archibong",
+      "Jackie Chang"
+    ],
+    "cc": [],
+    "date": "2013-09-04",
+    "subject": "P3.0 rollout planning",
+    "excerpt": "Slide 5 – I am not sure about the revenue saved. Is this really a cost cutting exercise? Removing access to all friends lists seems more like an indirect way to drive NEKO adoption.",
+    "context": "A Facebook platform manager questions the stated reason for removing friends list access.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Konstantinos Papamiltiadis",
+      "Simon Cross",
+      "Ime Archibong",
+      "Jackie Chang"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 5, Six4Three Exhibit 80"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2013-fb-rbc-whitelist-2013-08-20",
+    "from": "Sachin Monga",
+    "to": [
+      "Jackie Chang"
+    ],
+    "cc": [],
+    "date": "2013-08-20",
+    "subject": "Royal Bank of Canada and the platform changes",
+    "excerpt": "Without the ability to access non-app friends, the Messages API becomes drastically less useful. It will also be impossible to build P2P payments within the RBC app, which would have dire consequences for our partnership with them.",
+    "context": "A Facebook employee argues for a bank to keep friends access, shortly before the 2014 restrictions.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Sachin Monga",
+      "Jackie Chang"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 4, Six4Three Exhibit 83"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2013-fb-extended-api-2013-10-25",
+    "from": "Bryan Hurren",
+    "to": [
+      "Sachin Monga",
+      "Jackie Chang",
+      "Simon Cross"
+    ],
+    "cc": [],
+    "date": "2013-10-25",
+    "subject": "Re: Royal Bank of Canada",
+    "excerpt": "From a PR perspective, the story is about the app, not the API, so the fact that is uses Titan isn’t a big deal. From a legal perspective, they need an “Extended API agreement” (we used with Netflix) which governs use going forward and should provide us with the freedom to make the changes that Simon mentions below (without being too explicit).",
+    "context": "A Facebook employee explains the paperwork for giving a partner special API access.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Bryan Hurren",
+      "Sachin Monga",
+      "Jackie Chang",
+      "Simon Cross"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 4, Six4Three Exhibit 83"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2013-fb-vine-2013-01-24",
+    "from": "Justin Osofsky",
+    "to": [],
+    "cc": [],
+    "date": "2013-01-24",
+    "subject": "Vine",
+    "excerpt": "Twitter launched Vine today which lets you shoot multiple short video segments to make one single, 6-second video. As part of their NUX, you can find friends via FB. Unless anyone raises objections, we will shut down their friends API access today. We’ve prepared reactive PR, and I will let Jana know our decision.",
+    "context": "A Facebook platform executive proposes cutting off Twitter's new app on launch day.",
+    "company": [
+      "Meta",
+      "Twitter"
+    ],
+    "people": [
+      "Justin Osofsky"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 15, Six4Three Exhibit 44"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2013-fb-vine-go-for-it-2013-01-24",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "Justin Osofsky"
+    ],
+    "cc": [],
+    "date": "2013-01-24",
+    "subject": "Re: Vine",
+    "excerpt": "Yup, go for it.",
+    "context": "Zuckerberg's one-line approval of the plan to cut Vine's access to Facebook friends data.",
+    "company": [
+      "Meta",
+      "Twitter"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "Justin Osofsky"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 15, Six4Three Exhibit 44"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2015-fb-call-log-2015-02-04",
+    "from": "Michael LeBeau",
+    "to": [],
+    "cc": [],
+    "date": "2015-02-04",
+    "subject": "Android permissions update",
+    "excerpt": "They are going to include the ‘read call log’ permission, which will trigger the Android permissions dialog on update, requiring users to accept the update. They will then provide an in-app opt in NUX for a feature that lets you continuously upload your SMS and call log history to Facebook to be used for improving things like PYMK, coefficient calculation, feed ranking etc. This is a pretty high-risk thing to do from a PR perspective but it appears that the growth team will charge ahead and do it.",
+    "context": "A Facebook product manager warns colleagues about the call log permission planned for the Android app.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Michael LeBeau"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 11, Six4Three Exhibit 172"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2015-fb-no-dialog-2015-02",
+    "from": "Yul Kwon",
+    "to": [],
+    "cc": [],
+    "date": "2015-02",
+    "subject": "Android permissions update",
+    "excerpt": "The Growth team is now exploring a path where we only request Read Call Log permission, and hold off on requesting any other permissions for now. Based on their initial testing, it seems this would allow us to upgrade users without subjecting them to an Android permissions dialog at all.",
+    "context": "A Facebook privacy executive describes how the permission change could avoid showing users a dialog.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Yul Kwon"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 11, Six4Three Exhibit 172"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2015-fb-tinder-moments-2015-03-12",
+    "from": "Konstantinos Papamiltiadis",
+    "to": [
+      "Tinder"
+    ],
+    "cc": [],
+    "date": "2015-03-12",
+    "subject": "Moments trademark",
+    "excerpt": "We have been working with xx and his team in true partnership spirit all this time, delivering value that we think is far greater than this trademark.",
+    "context": "A Facebook partnerships director presses Tinder over use of the name Moments; names inside the exhibit are redacted.",
+    "company": [
+      "Meta",
+      "Tinder"
+    ],
+    "people": [
+      "Konstantinos Papamiltiadis"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 6, Six4Three Exhibit 97"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "six4three-2015-fb-whitelist-dating-2015-02-05",
+    "from": "Konstantinos Papamiltiadis",
+    "to": [
+      "Badoo"
+    ],
+    "cc": [],
+    "date": "2015-02-05",
+    "subject": "Hashed Friends API",
+    "excerpt": "We have whitelisted Badoo App, HotorNot and Bumble for the Hashed Friends API that was shipped late last night.",
+    "context": "Facebook confirms three dating apps got a friends data API after the general cut-off.",
+    "company": [
+      "Meta",
+      "Badoo"
+    ],
+    "people": [
+      "Konstantinos Papamiltiadis"
+    ],
+    "source": {
+      "title": "DCMS Committee: Note by the Chair and selected documents ordered from Six4Three, published 2018-12-05",
+      "url": "https://www.parliament.uk/documents/commons-committees/culture-media-and-sport/Note-by-Chair-and-selected-documents-ordered-from-Six4Three.pdf",
+      "locator": "Chair's note p. 2, Six4Three Exhibit 84"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "oracle-google-2010-lindholm-java-license-2010-08",
+    "from": "Tim Lindholm",
+    "to": [
+      "Andy Rubin"
+    ],
+    "cc": [],
+    "date": "2010-08",
+    "subject": "Java alternatives",
+    "excerpt": "What we’ve actually been asked to do (by Larry and Sergey) is to investigate what technical alternatives exist to Java for Android and Chrome. We’ve been over a bunch of these, and think they all suck. We conclude that we need to negotiate a license for Java under the terms we need.",
+    "context": "A Google engineer writes to the head of Android; the email was shown to the jury in Oracle v. Google.",
+    "company": [
+      "Google",
+      "Oracle"
+    ],
+    "people": [
+      "Tim Lindholm",
+      "Andy Rubin",
+      "Larry Page",
+      "Sergey Brin"
+    ],
+    "source": {
+      "title": "Oracle v. Google, N.D. Cal. No. 3:10-cv-03561, Dkt 277 (Oracle letter to Magistrate Judge Ryu, 2011-08-05)",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.231846/gov.uscourts.cand.231846.277.0.pdf",
+      "locator": "p. 1, quoting GOOGLE-12-00039656 via 2011-07-21 hearing transcript, 23:22-24:2"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "oracle-google-2006-rubin-java-ip-2006-03",
+    "from": "Andy Rubin",
+    "to": [],
+    "cc": [],
+    "date": "2006-03",
+    "subject": "Java and Sun",
+    "excerpt": "I don’t see how you can open java without sun, since they own the brand and ip.",
+    "context": "The head of Android on Sun's ownership of Java, as quoted in Oracle's court motion.",
+    "company": [
+      "Google",
+      "Oracle"
+    ],
+    "people": [
+      "Andy Rubin"
+    ],
+    "source": {
+      "title": "Oracle v. Google, N.D. Cal. No. 3:10-cv-03561, Dkt 1168 (Oracle Rule 50(a) motion, 2012-05-16)",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.231846/gov.uscourts.cand.231846.1168.0.pdf",
+      "locator": "p. 22 of 30, TX 18"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "oracle-google-2006-rubin-patents-2006-11",
+    "from": "Andy Rubin",
+    "to": [],
+    "cc": [],
+    "date": "2006-11",
+    "subject": "Sun open sources Java",
+    "excerpt": "They still have patents and trademarks.",
+    "context": "Rubin on Sun's announcement that it would open source Java, as quoted in Oracle's court motion.",
+    "company": [
+      "Google",
+      "Oracle"
+    ],
+    "people": [
+      "Andy Rubin"
+    ],
+    "source": {
+      "title": "Oracle v. Google, N.D. Cal. No. 3:10-cv-03561, Dkt 1168 (Oracle Rule 50(a) motion, 2012-05-16)",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.231846/gov.uscourts.cand.231846.1168.0.pdf",
+      "locator": "p. 22 of 30, TX 155"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "oracle-google-2006-rubin-patent-protection-2006-02-06",
+    "from": "Andy Rubin",
+    "to": [],
+    "cc": [],
+    "date": "2006-02-06",
+    "subject": "Android and Sun license",
+    "excerpt": "If you and I can define the open source license and include patent protection, then Eric will be 100% supportive",
+    "context": "Rubin in early talks with Sun about a Java license for Android; Eric is Google's Eric Schmidt.",
+    "company": [
+      "Google",
+      "Oracle"
+    ],
+    "people": [
+      "Andy Rubin",
+      "Eric Schmidt"
+    ],
+    "source": {
+      "title": "Oracle v. Google, N.D. Cal. No. 3:10-cv-03561, Dkt 1168 (Oracle Rule 50(a) motion, 2012-05-16)",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.231846/gov.uscourts.cand.231846.1168.0.pdf",
+      "locator": "p. 21 of 30, TX 2714"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "oracle-google-2009-schmidt-buy-java-2009-02",
+    "from": "Eric Schmidt",
+    "to": [
+      "Brett Slatkin"
+    ],
+    "cc": [],
+    "date": "2009-02",
+    "subject": "Buying the rights to Java",
+    "excerpt": "Certainly a clever idea. I’ll ask our team to pursue.",
+    "context": "Google's CEO answers an engineer's proposal that Google buy the rights to Java and end the lawsuits.",
+    "company": [
+      "Google",
+      "Oracle"
+    ],
+    "people": [
+      "Eric Schmidt",
+      "Brett Slatkin"
+    ],
+    "source": {
+      "title": "Oracle v. Google, N.D. Cal. No. 3:10-cv-03561, Dkt 1168 (Oracle Rule 50(a) motion, 2012-05-16)",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.231846/gov.uscourts.cand.231846.1168.0.pdf",
+      "locator": "p. 23 of 30, TX 406"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "oracle-google-2009-cizek-two-options-2009-04-29",
+    "from": "Leo Cizek",
+    "to": [
+      "Vineet Gupta"
+    ],
+    "cc": [],
+    "date": "2009-04-29",
+    "subject": "Meeting with Google",
+    "excerpt": "Tom and I spoke with Martin Buccholz today. I delivered the message that they have only two options: OpenJDK or Commercial Use, which would require compatibility. I also explained that using Java in the context of customer-facing applications is considered by Sun to be commercial use. I also explained that if they choose the commercial use/compatibility option, it would have ramifications throughout Google, and I gave Android as an example.",
+    "context": "A Sun licensing manager reports telling Google it needed either OpenJDK or a compatible commercial license.",
+    "company": [
+      "Google",
+      "Oracle"
+    ],
+    "people": [
+      "Leo Cizek",
+      "Vineet Gupta",
+      "Martin Buchholz"
+    ],
+    "source": {
+      "title": "Oracle v. Google, N.D. Cal. No. 3:10-cv-03561, Dkt 1168 (Oracle Rule 50(a) motion, 2012-05-16)",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.231846/gov.uscourts.cand.231846.1168.0.pdf",
+      "locator": "p. 24 of 30, TX 531"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "oracle-google-2009-buchholz-android-2009-04-29",
+    "from": "Martin Buchholz",
+    "to": [],
+    "cc": [],
+    "date": "2009-04-29",
+    "subject": "Sun meeting",
+    "excerpt": "As expected, this does not look promising. Leo says Sun has an inflexible licensing model where Open JDK never gets any support of any kind, and the commercial version of the code does (and mostly Sun is thinking of support for binaries). Also, Sun would want any discussions with Google to involve other inter-company issues, in particular Android, which I’m sure we would want to keep separate. Android seems to be a big deal at Sun.",
+    "context": "A Google engineer's internal report of the same meeting with Sun.",
+    "company": [
+      "Google",
+      "Oracle"
+    ],
+    "people": [
+      "Martin Buchholz",
+      "Leo Cizek"
+    ],
+    "source": {
+      "title": "Oracle v. Google, N.D. Cal. No. 3:10-cv-03561, Dkt 1168 (Oracle Rule 50(a) motion, 2012-05-16)",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.231846/gov.uscourts.cand.231846.1168.0.pdf",
+      "locator": "p. 24 of 30, TX 1029"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "oracle-google-2009-lindholm-step-away-2009-04-29",
+    "from": "Tim Lindholm",
+    "to": [],
+    "cc": [],
+    "date": "2009-04-29",
+    "subject": "Re: Sun meeting",
+    "excerpt": "Actually, having said that I wonder whether this is too close to dangerous territory, and with too little chance of anything positive coming of it for us to be messing around? We really don’t want to inadvertently stir anything up for Android, and Leo has said pretty clearly that they don’t have anything for us as regards security patches. I suspect we should step away, and only respond further if Sun chases after us.",
+    "context": "A Google engineer, a former Sun employee, advises against more talks with Sun about Java.",
+    "company": [
+      "Google",
+      "Oracle"
+    ],
+    "people": [
+      "Tim Lindholm",
+      "Leo Cizek"
+    ],
+    "source": {
+      "title": "Oracle v. Google, N.D. Cal. No. 3:10-cv-03561, Dkt 1168 (Oracle Rule 50(a) motion, 2012-05-16)",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.231846/gov.uscourts.cand.231846.1168.0.pdf",
+      "locator": "p. 24 of 30, TX 1029"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "us-v-apple-2010-jobs-agent-model-2010-01-14",
+    "from": "Steve Jobs",
+    "to": [
+      "Eddy Cue"
+    ],
+    "cc": [],
+    "date": "2010-01-14",
+    "subject": "iBookstore pricing",
+    "excerpt": "move Amazon to the agent model too for new releases for the first year. If they don’t, I’m not sure we can be competitive.",
+    "context": "Jobs to Apple's head of services on the e-book price caps; the court notes Cue denied receiving it.",
+    "company": [
+      "Apple",
+      "Amazon"
+    ],
+    "people": [
+      "Steve Jobs",
+      "Eddy Cue"
+    ],
+    "source": {
+      "title": "United States v. Apple Inc., S.D.N.Y. No. 12 Civ. 2826 (DLC), Opinion & Order, Dkt 326, 2013-07-10",
+      "url": "https://www.justice.gov/atr/case-document/file/486691/dl",
+      "locator": "p. 50 of 160, n. 24 (PX email chain of 2010-01-14)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "us-v-apple-2010-jobs-murdoch-amazon-2010-01-23",
+    "from": "Steve Jobs",
+    "to": [
+      "James Murdoch"
+    ],
+    "cc": [],
+    "date": "2010-01-23",
+    "subject": "Re: iBookstore",
+    "excerpt": "2. All the major publishers tell us that Amazon’s $9.99 price for new releases is eroding the value perception of their products in customer’s minds, and they do not want this practice to continue for new releases. 3. Apple is proposing to give the cost benefits of a book without raw materials, distribution, remaindering, cost of capital, bad debt, etc., to the customer, not Apple.",
+    "context": "Jobs makes Apple's case to the parent of HarperCollins; the court later found the e-book price-fixing conspiracy proven.",
+    "company": [
+      "Apple",
+      "News Corp"
+    ],
+    "people": [
+      "Steve Jobs",
+      "James Murdoch"
+    ],
+    "source": {
+      "title": "United States v. Apple Inc., S.D.N.Y. No. 12 Civ. 2826 (DLC), Opinion & Order, Dkt 326, 2013-07-10",
+      "url": "https://www.justice.gov/atr/case-document/file/486691/dl",
+      "locator": "p. 79 of 160"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "us-v-apple-2010-jobs-murdoch-sustainable-2010-01-23",
+    "from": "Steve Jobs",
+    "to": [
+      "James Murdoch"
+    ],
+    "cc": [],
+    "date": "2010-01-23",
+    "subject": "Re: iBookstore",
+    "excerpt": "The current business model of companies like Amazon distributing ebooks below cost or without making a reasonable profit isn’t sustainable for long. As ebooks become a larger business, distributors will need to make at least a small profit, and you will want this too so that they invest in the future of the business with infrastructure, marketing, etc.",
+    "context": "The first of six points in Jobs's long reply to the HarperCollins parent's concerns.",
+    "company": [
+      "Apple",
+      "News Corp"
+    ],
+    "people": [
+      "Steve Jobs",
+      "James Murdoch"
+    ],
+    "source": {
+      "title": "United States v. Apple Inc., S.D.N.Y. No. 12 Civ. 2826 (DLC), Opinion & Order, Dkt 326, 2013-07-10",
+      "url": "https://www.justice.gov/atr/case-document/file/486691/dl",
+      "locator": "p. 79 of 160"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "us-v-apple-2010-jobs-murdoch-fail-2010-01-24",
+    "from": "Steve Jobs",
+    "to": [
+      "James Murdoch"
+    ],
+    "cc": [],
+    "date": "2010-01-24",
+    "subject": "Re: iBookstore",
+    "excerpt": "Heck, Amazon is selling these books at $9.99, and who knows, maybe they are right and we will fail even at $12.99. But we’re willing to try at the prices we’ve proposed. We are not willing to try at higher prices because we are pretty sure we’ll all fail.",
+    "context": "Jobs on Apple's e-book price caps; Apple's lawyers cited the \"maybe they are right\" line at trial.",
+    "company": [
+      "Apple",
+      "News Corp"
+    ],
+    "people": [
+      "Steve Jobs",
+      "James Murdoch"
+    ],
+    "source": {
+      "title": "United States v. Apple Inc., S.D.N.Y. No. 12 Civ. 2826 (DLC), Opinion & Order, Dkt 326, 2013-07-10",
+      "url": "https://www.justice.gov/atr/case-document/file/486691/dl",
+      "locator": "pp. 80-81 of 160"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "us-v-apple-2010-jobs-murdoch-choices-2010-01-24",
+    "from": "Steve Jobs",
+    "to": [
+      "James Murdoch"
+    ],
+    "cc": [],
+    "date": "2010-01-24",
+    "subject": "Re: iBookstore",
+    "excerpt": "As I see it, HC has the following choices: 1. Throw in with apple and see if we can all make a go of this to create a real mainstream ebooks market at $12.99 and $14.99. 2. Keep going with Amazon at $9.99. You will make a bit more money in the short term, but in the medium term Amazon will tell you they will be paying you 70% of $9.99. They have shareholders too.",
+    "context": "Jobs lays out HarperCollins's options three days before the iPad launch.",
+    "company": [
+      "Apple",
+      "News Corp"
+    ],
+    "people": [
+      "Steve Jobs",
+      "James Murdoch"
+    ],
+    "source": {
+      "title": "United States v. Apple Inc., S.D.N.Y. No. 12 Civ. 2826 (DLC), Opinion & Order, Dkt 326, 2013-07-10",
+      "url": "https://www.justice.gov/atr/case-document/file/486691/dl",
+      "locator": "p. 81 of 160"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "us-v-apple-2010-jobs-murdoch-piracy-2010-01-24",
+    "from": "Steve Jobs",
+    "to": [
+      "James Murdoch"
+    ],
+    "cc": [],
+    "date": "2010-01-24",
+    "subject": "Re: iBookstore",
+    "excerpt": "Hold back your books from Amazon. Without a way for customers to buy your ebooks, they will steal them. This will be the start of piracy and once started there will be no stopping it. Trust me, I’ve seen this happen with my own eyes. Maybe I’m missing something, but I don’t see any other alternatives. Do you?",
+    "context": "The third option in Jobs's email to Murdoch, and his closing question.",
+    "company": [
+      "Apple",
+      "News Corp"
+    ],
+    "people": [
+      "Steve Jobs",
+      "James Murdoch"
+    ],
+    "source": {
+      "title": "United States v. Apple Inc., S.D.N.Y. No. 12 Civ. 2826 (DLC), Opinion & Order, Dkt 326, 2013-07-10",
+      "url": "https://www.justice.gov/atr/case-document/file/486691/dl",
+      "locator": "p. 81 of 160"
+    }
+  }
+]

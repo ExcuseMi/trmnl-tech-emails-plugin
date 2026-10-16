@@ -1,0 +1,1619 @@
+[
+  {
+    "kind": "email",
+    "id": "openai-musk-2015-11-20-ai-docs",
+    "from": "Elon Musk",
+    "to": [
+      "Sam Altman"
+    ],
+    "cc": [],
+    "date": "2015-11-20",
+    "subject": "Re: AI docs",
+    "excerpt": "I think this should be independent from (but supported by) YC, not what sounds like a subsidiary. Also, the structure doesn’t seem optimal. In particular, the YC stock along with a salary from the nonprofit muddies the alignment of incentives. Probably better to have a standard C corp with a parallel nonprofit.",
+    "context": "Musk reacts to the first plan for OpenAI, then called YC AI, and asks for a for-profit company next to the nonprofit.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Sam Altman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'November 2015: OpenAI started as a nonprofit, which Elon questioned'"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-altman-2015-11-20-ai-docs",
+    "from": "Sam Altman",
+    "to": [
+      "Elon Musk"
+    ],
+    "cc": [],
+    "date": "2015-11-20",
+    "subject": "Re: AI docs",
+    "excerpt": "Plan is to have you, me, and Ilya on the Board of Directors for YC AI, which will be a Delaware non-profit. We will also state that we plan to elect two other outsiders by majority vote of the Board. We will write into the bylaws that any technology that potentially compromises the safety of humanity has to get consent of the Board to be released, and we will reference this in the researchers’ employment contracts.",
+    "context": "Sam Altman sketches the first governance of what became OpenAI, including a board veto on unsafe technology.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Sam Altman",
+      "Elon Musk",
+      "Ilya Sutskever"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'November 2015: OpenAI started as a nonprofit, which Elon questioned'"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2015-11-22-follow-up-from-call",
+    "from": "Elon Musk",
+    "to": [
+      "Greg Brockman"
+    ],
+    "cc": [
+      "Sam Altman"
+    ],
+    "date": "2015-11-22",
+    "subject": "follow up from call",
+    "excerpt": "We need to go with a much bigger number than $100M to avoid sounding hopeless relative to what Google or Facebook are spending. I think we should say that we are starting with a $1B funding commitment. This is real. I will cover whatever anyone else doesn't provide.",
+    "context": "Before the launch of OpenAI, Musk asks to announce a $1B funding commitment instead of the $100M that was planned.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Greg Brockman",
+      "Sam Altman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'OpenAI and Elon Musk', 2024-03-05 (emails published by OpenAI)",
+      "url": "https://openai.com/index/openai-elon-musk/",
+      "locator": "Email [1]"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2016-02-19-deepmind",
+    "from": "Elon Musk",
+    "to": [
+      "Ilya Sutskever"
+    ],
+    "cc": [
+      "Greg Brockman",
+      "Sam Altman"
+    ],
+    "date": "2016-02-19",
+    "subject": "Re: Followup thoughts",
+    "excerpt": "The probability of DeepMind creating a deep mind increases every year. Maybe it doesn’t get past 50% in 2 to 3 years, but it likely moves past 10%. That doesn’t sound crazy to me, given their resources. In any event, I have found that it is far better to overestimate than underestimate competitors.",
+    "context": "Musk presses OpenAI's researchers to treat Google's DeepMind as the benchmark competitor.",
+    "company": [
+      "OpenAI",
+      "Google"
+    ],
+    "people": [
+      "Elon Musk",
+      "Ilya Sutskever",
+      "Greg Brockman",
+      "Sam Altman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Early 2017' (email Feb 19, 2016 12:05 AM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2016-02-19-urgency",
+    "from": "Elon Musk",
+    "to": [
+      "Ilya Sutskever"
+    ],
+    "cc": [
+      "Greg Brockman",
+      "Sam Altman"
+    ],
+    "date": "2016-02-19",
+    "subject": "Re: Followup thoughts",
+    "excerpt": "This doesn’t mean we should rush out and hire weak talent. I agree that nothing good would be achieved by that. What we need to do is redouble our efforts to seek out the best people in the world, do whatever it takes to bring them on board and imbue the company with a high sense of urgency. It will be important for OpenAI to achieve something significant in the next 6 to 9 months to show that we are for real.",
+    "context": "A few months after launch, Musk asks the OpenAI team for a visible result within 6 to 9 months.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Ilya Sutskever"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Early 2017' (email Feb 19, 2016 12:05 AM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-sutskever-2016-02-19-key-ideas",
+    "from": "Ilya Sutskever",
+    "to": [
+      "Elon Musk"
+    ],
+    "cc": [
+      "Greg Brockman",
+      "Sam Altman"
+    ],
+    "date": "2016-02-19",
+    "subject": "Re: Followup thoughts",
+    "excerpt": "We can’t build AI today because we lack key ideas (computers may be too slow, too, but we can’t tell). Powerful ideas are produced by top people. Massive clusters help, and are very worth getting, but they play a less important role.",
+    "context": "OpenAI's chief scientist answers Musk and argues that ideas matter more than compute, a view that changed within a year.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Ilya Sutskever",
+      "Elon Musk"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Early 2017' (email Feb 19, 2016 10:28 AM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-sutskever-2017-06-12-bi-weekly-compute",
+    "from": "Ilya Sutskever",
+    "to": [
+      "Greg Brockman",
+      "Elon Musk"
+    ],
+    "cc": [],
+    "date": "2017-06-12",
+    "subject": "Bi-weekly updates",
+    "excerpt": "TLDR: What matters is the size and speed of our experiments. In the old days, a big cluster could not let anyone run a larger experiment quickly. Today, a big cluster lets us run a large experiment 100x faster.",
+    "context": "Ilya Sutskever explains to Musk why OpenAI now needs far more compute than before.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Ilya Sutskever",
+      "Greg Brockman",
+      "Elon Musk"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Early 2017' (email Jun 12, 2017 10:39 PM; subject is the blog's label for the thread)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-sutskever-2017-06-12-self-play",
+    "from": "Ilya Sutskever",
+    "to": [
+      "Greg Brockman",
+      "Elon Musk"
+    ],
+    "cc": [],
+    "date": "2017-06-12",
+    "subject": "Bi-weekly updates",
+    "excerpt": "Self play in multiagent environments is magical: if you place agents into an environment, then no matter how smart (or not smart) they are, the environment will provide them with the exact level of challenge, which can be faced only by outsmarting the competition.",
+    "context": "From OpenAI's first bi-weekly update to Musk: why self-play looked like a key path to AGI.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Ilya Sutskever",
+      "Elon Musk"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Early 2017' (email Jun 12, 2017 10:39 PM; subject is the blog's label for the thread)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2017-06-13-compute",
+    "from": "Elon Musk",
+    "to": [
+      "Ilya Sutskever"
+    ],
+    "cc": [
+      "Greg Brockman"
+    ],
+    "date": "2017-06-13",
+    "subject": "Bi-weekly updates",
+    "excerpt": "Ok. Let’s figure out the least expensive way to ensure compute power is not a constraint…",
+    "context": "Musk's one-line reply to the compute request in OpenAI's bi-weekly update.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Ilya Sutskever"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Early 2017' (email Jun 13, 2017 10:24 AM; subject is the blog's label for the thread)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-sutskever-2017-07-12-agi-in-four-years",
+    "from": "Ilya Sutskever",
+    "to": [
+      "Elon Musk",
+      "Greg Brockman"
+    ],
+    "cc": [],
+    "date": "2017-07-12",
+    "subject": "The business of building AGI",
+    "excerpt": "In as little as four years, each overnight experiment will feasibly use so much compute capacity that there’s an actual chance of waking up to AGI, given the right algorithm — and figuring out the algorithm will actually happen within 2–4 further years of experimenting with this compute in a competitive multiagent simulation.",
+    "context": "A 2017 forecast from OpenAI's chief scientist to Musk and Brockman about how soon AGI could arrive.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Ilya Sutskever",
+      "Elon Musk",
+      "Greg Brockman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Early 2017' (email Jul 12, 2017 1:36 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-sutskever-2017-07-12-gpus",
+    "from": "Ilya Sutskever",
+    "to": [
+      "Elon Musk",
+      "Greg Brockman"
+    ],
+    "cc": [],
+    "date": "2017-07-12",
+    "subject": "The business of building AGI",
+    "excerpt": "Increase our GPU cluster from 600 GPUs to 5000 GPUs ASAP. As an upper bound, this will require a capex of $12M and an opex of $5–6M over the next year. Each year, we’ll need to exponentially increase our hardware spend, but we have reason to believe AGI can ultimately be built with less than $10B in hardware.",
+    "context": "The hardware ask OpenAI put to Musk in July 2017, with a $10B ceiling for AGI hardware.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Ilya Sutskever",
+      "Elon Musk",
+      "Greg Brockman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Early 2017' (email Jul 12, 2017 1:36 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-sutskever-2017-07-12-brain-gpus",
+    "from": "Ilya Sutskever",
+    "to": [
+      "Elon Musk",
+      "Greg Brockman"
+    ],
+    "cc": [],
+    "date": "2017-07-12",
+    "subject": "The business of building AGI",
+    "excerpt": "Over the past year, Google Brain produced impressive results because they have an order of magnitude or two more GPUs than anyone. We estimate that Brain has around 100k GPUs, FAIR has around 15–20k, and DeepMind allocates 50 per researcher on question asking, and rented 5k GPUs from Brain for AlphaGo.",
+    "context": "OpenAI's own estimate of how much compute Google Brain, Facebook AI Research and DeepMind had in 2017.",
+    "company": [
+      "OpenAI",
+      "Google",
+      "Meta"
+    ],
+    "people": [
+      "Ilya Sutskever",
+      "Elon Musk",
+      "Greg Brockman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Early 2017' (email Jul 12, 2017 1:36 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-sutskever-2017-07-12-capital",
+    "from": "Ilya Sutskever",
+    "to": [
+      "Elon Musk",
+      "Greg Brockman"
+    ],
+    "cc": [],
+    "date": "2017-07-12",
+    "subject": "The business of building AGI",
+    "excerpt": "2/3/4 will ultimately require large amounts of capital. If we can secure the funding, we have a real chance at setting the initial conditions under which AGI is born. Increased funding needs will come lockstep with increased magnitude of results.",
+    "context": "The closing argument of the July 2017 paper that led to the for-profit talks.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Ilya Sutskever",
+      "Elon Musk",
+      "Greg Brockman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Early 2017' (email Jul 12, 2017 1:36 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2017-07-21-china",
+    "from": "Elon Musk",
+    "to": [
+      "Greg Brockman",
+      "Ilya Sutskever"
+    ],
+    "cc": [],
+    "date": "2017-07-21",
+    "subject": "",
+    "excerpt": "They will do whatever it takes to obtain what we develop. Maybe another reason to change course.",
+    "context": "Musk forwards a news article about China's AI plans and hints that OpenAI should change its course.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Greg Brockman",
+      "Ilya Sutskever"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Summer 2017' (email Jul 21, 2017 3:34 AM; no subject shown)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-brockman-2017-07-21-path",
+    "from": "Greg Brockman",
+    "to": [
+      "Elon Musk"
+    ],
+    "cc": [
+      "Ilya Sutskever"
+    ],
+    "date": "2017-07-21",
+    "subject": "",
+    "excerpt": "100% agreed. We think the path must be: AI research non-profit (through end of 2017) AI research + hardware for-profit (starting 2018) Government project (when: ??)",
+    "context": "Greg Brockman answers Musk with a three-stage plan: nonprofit, for-profit, then a government project.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Greg Brockman",
+      "Elon Musk",
+      "Ilya Sutskever"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Summer 2017' (email Jul 21, 2017 1:18 PM; no subject shown)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2017-08-11-triggering-event",
+    "from": "Elon Musk",
+    "to": [
+      "Greg Brockman",
+      "Ilya Sutskever",
+      "Sam Altman"
+    ],
+    "cc": [
+      "Shivon Zilis"
+    ],
+    "date": "2017-08-11",
+    "subject": "Tomorrow afternoon",
+    "excerpt": "Are you guys able to meet or do a conf call tomorrow afternoon? Time to make the next step for OpenAI. This is the triggering event.",
+    "context": "Musk writes the night OpenAI's bot beat the best Dota 2 players in 1v1, and asks for talks on the for-profit step.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Greg Brockman",
+      "Ilya Sutskever",
+      "Sam Altman",
+      "Shivon Zilis"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Summer 2017' (email Aug 11, 2017 9:17 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2017-09-13-initial-control",
+    "from": "Elon Musk",
+    "to": [
+      "Ilya Sutskever"
+    ],
+    "cc": [
+      "Greg Brockman"
+    ],
+    "date": "2017-09-13",
+    "subject": "Re: Current State",
+    "excerpt": "I think that the Preferred A investment round (supermajority me) should have the right to appoint four (not three) seats. I would not expect to appoint them immediately, but, like I said I would unequivocally have initial control of the company, but this will change quickly.",
+    "context": "Musk lays out a board structure for the planned OpenAI for-profit in which he holds initial control.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Ilya Sutskever",
+      "Greg Brockman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Fall 2017' (email Sep 13, 2017 12:40 AM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2017-09-13-board-size",
+    "from": "Elon Musk",
+    "to": [
+      "Ilya Sutskever"
+    ],
+    "cc": [
+      "Greg Brockman"
+    ],
+    "date": "2017-09-13",
+    "subject": "Re: Current State",
+    "excerpt": "The rough target would be to get to a 12 person board (probably more like 16 if this board really ends up deciding the fate of the world) where each board member has a deep understanding of technology, at least a basic understanding of AI and strong & sensible morals.",
+    "context": "Musk on the size and makeup of the board he wanted for the OpenAI for-profit.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Ilya Sutskever",
+      "Greg Brockman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Fall 2017' (email Sep 13, 2017 12:40 AM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2017-09-13-comfort-level",
+    "from": "Elon Musk",
+    "to": [
+      "Ilya Sutskever"
+    ],
+    "cc": [
+      "Greg Brockman"
+    ],
+    "date": "2017-09-13",
+    "subject": "Re: Current State",
+    "excerpt": "I’m super tired and don’t want to overcomplicate things, but this seems approx right. At the sixteen person board level, we would have 7/16 votes and I’d have a 25% influence, which is my min comfort level. That sounds about right to me. If everyone else we asked to join our board is truly against us, we should probably lose.",
+    "context": "Musk states the minimum influence he would accept in a restructured OpenAI.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Ilya Sutskever",
+      "Greg Brockman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Fall 2017' (email Sep 13, 2017 12:40 AM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-sutskever-2017-09-20-absolute-control",
+    "from": "Ilya Sutskever",
+    "to": [
+      "Elon Musk",
+      "Sam Altman",
+      "Greg Brockman"
+    ],
+    "cc": [],
+    "date": "2017-09-20",
+    "subject": "Honest Thoughts",
+    "excerpt": "The current structure provides you with a path where you end up with unilateral absolute control over the AGI. You stated that you don’t want to control the final AGI, but during this negotiation, you’ve shown to us that absolute control is extremely important to you.",
+    "context": "Sutskever and Brockman tell Musk why they cannot accept his terms for the OpenAI for-profit.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Ilya Sutskever",
+      "Elon Musk",
+      "Sam Altman",
+      "Greg Brockman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'September 2017: We rejected Elon's terms' (email Sep 20, 2017 2:08 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-sutskever-2017-09-20-agi-dictatorship",
+    "from": "Ilya Sutskever",
+    "to": [
+      "Elon Musk",
+      "Sam Altman",
+      "Greg Brockman"
+    ],
+    "cc": [],
+    "date": "2017-09-20",
+    "subject": "Honest Thoughts",
+    "excerpt": "The goal of OpenAI is to make the future good and to avoid an AGI dictatorship. You are concerned that Demis could create an AGI dictatorship. So do we. So it is a bad idea to create a structure where you could become a dictator if you chose to, especially given that we can create some other structure that avoids this possibility.",
+    "context": "From the same letter: the case against giving any one person control of OpenAI.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Ilya Sutskever",
+      "Elon Musk",
+      "Sam Altman",
+      "Greg Brockman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'September 2017: We rejected Elon's terms' (email Sep 20, 2017 2:08 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-sutskever-2017-09-20-counterbalance",
+    "from": "Ilya Sutskever",
+    "to": [
+      "Elon Musk",
+      "Sam Altman",
+      "Greg Brockman"
+    ],
+    "cc": [],
+    "date": "2017-09-20",
+    "subject": "Honest Thoughts",
+    "excerpt": "We believe that OpenAI the non-profit was successful because both you and Sam were in it. Sam acted as a genuine counterbalance to you, which has been extremely fruitful. Greg and I, at least so far, are much worse at being a counterbalance to you.",
+    "context": "Sutskever tells Musk and Altman who he thinks held OpenAI's early balance of power.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Ilya Sutskever",
+      "Elon Musk",
+      "Sam Altman",
+      "Greg Brockman"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'September 2017: We rejected Elon's terms' (email Sep 20, 2017 2:08 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2017-09-20-final-straw",
+    "from": "Elon Musk",
+    "to": [
+      "Ilya Sutskever"
+    ],
+    "cc": [
+      "Sam Altman",
+      "Greg Brockman",
+      "Shivon Zilis"
+    ],
+    "date": "2017-09-20",
+    "subject": "Honest Thoughts",
+    "excerpt": "Guys, I’ve had enough. This is the final straw. Either go do something on your own or continue with OpenAI as a nonprofit. I will no longer fund OpenAI until you have made a firm commitment to stay or I’m just being a fool who is essentially providing free funding for you to create a startup. Discussions are over.",
+    "context": "Nine minutes after Sutskever's letter, Musk ends the for-profit talks and stops funding.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Ilya Sutskever",
+      "Sam Altman",
+      "Greg Brockman",
+      "Shivon Zilis"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'September 2017: We rejected Elon's terms' (email Sep 20, 2017 2:17 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2018-01-31-certain-failure",
+    "from": "Elon Musk",
+    "to": [
+      "Greg Brockman",
+      "Ilya Sutskever",
+      "Sam Altman"
+    ],
+    "cc": [
+      "Shivon Zilis"
+    ],
+    "date": "2018-01-31",
+    "subject": "Fwd: Top AI institutions today",
+    "excerpt": "OpenAI is on a path of certain failure relative to Google. There obviously needs to be immediate and dramatic action or everyone except for Google will be consigned to irrelevance.",
+    "context": "Musk warns the OpenAI founders in early 2018 that the lab is losing to Google.",
+    "company": [
+      "OpenAI",
+      "Google"
+    ],
+    "people": [
+      "Elon Musk",
+      "Greg Brockman",
+      "Ilya Sutskever",
+      "Sam Altman",
+      "Shivon Zilis"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'January 2018' (email Jan 31, 2018 2:02 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2018-01-31-ico",
+    "from": "Elon Musk",
+    "to": [
+      "Greg Brockman",
+      "Ilya Sutskever",
+      "Sam Altman"
+    ],
+    "cc": [
+      "Shivon Zilis"
+    ],
+    "date": "2018-01-31",
+    "subject": "Fwd: Top AI institutions today",
+    "excerpt": "I have considered the ICO approach and will not support it. In my opinion, that would simply result in a massive loss of credibility for OpenAI and everyone associated with the ICO. If something seems too good to be true, it is. This was, in my opinion, an unwise diversion.",
+    "context": "Musk rejects a token sale as a way for OpenAI to raise money.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Greg Brockman",
+      "Ilya Sutskever",
+      "Sam Altman",
+      "Shivon Zilis"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'January 2018' (email Jan 31, 2018 2:02 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2018-01-31-reduce-association",
+    "from": "Elon Musk",
+    "to": [
+      "Greg Brockman",
+      "Ilya Sutskever",
+      "Sam Altman"
+    ],
+    "cc": [
+      "Shivon Zilis"
+    ],
+    "date": "2018-01-31",
+    "subject": "Fwd: Top AI institutions today",
+    "excerpt": "Either we fix things and my engagement increases a lot or we don’t and I will drop to near zero and publicly reduce my association. I will not be in a situation where the perception of my influence and time doesn’t match the reality.",
+    "context": "Musk sets a condition for his continued involvement in OpenAI, a month before he left.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Greg Brockman",
+      "Ilya Sutskever",
+      "Sam Altman",
+      "Shivon Zilis"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'January 2018' (email Jan 31, 2018 2:02 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-brockman-2018-01-31-moral-high-ground",
+    "from": "Greg Brockman",
+    "to": [
+      "Elon Musk"
+    ],
+    "cc": [
+      "Ilya Sutskever",
+      "Sam Altman",
+      "Shivon Zilis"
+    ],
+    "date": "2018-01-31",
+    "subject": "Re: Fwd: Top AI institutions today",
+    "excerpt": "Our biggest tool is the moral high ground. To retain this, we must: Try our best to remain a non-profit. AI is going to shake up the fabric of society, and our fiduciary duty should be to humanity. Put increasing effort into the safety/control problem, rather than the fig leaf you’ve noted in other institutions. It doesn’t matter who wins if everyone dies.",
+    "context": "Greg Brockman's answer to Musk argues that OpenAI should stay a nonprofit.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Greg Brockman",
+      "Elon Musk",
+      "Ilya Sutskever",
+      "Sam Altman",
+      "Shivon Zilis"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'January 2018' (email Jan 31, 2018 10:56 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-altman-2018-12-17-microsoft",
+    "from": "Sam Altman",
+    "to": [
+      "Elon Musk"
+    ],
+    "cc": [],
+    "date": "2018-12-17",
+    "subject": "Re: OpenAI update",
+    "excerpt": "Finally, I am working on a deal to move our computing from Google to Microsoft (in addition to our own data centers). Also happy to talk about fundraising (we should have enough for the next ~2 years even with aggressive growth) and evolving hardware thoughts if helpful, would prefer not to put either of those in email but maybe next time you’re at Pioneer?",
+    "context": "Altman tells Musk about the planned move from Google to Microsoft for compute. Musk answered 'Sounds good'.",
+    "company": [
+      "OpenAI",
+      "Microsoft",
+      "Google"
+    ],
+    "people": [
+      "Sam Altman",
+      "Elon Musk"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'December 2018' (email Dec 17, 2018 3:42 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2018-12-26-billions-per-year",
+    "from": "Elon Musk",
+    "to": [
+      "Ilya Sutskever",
+      "Greg Brockman"
+    ],
+    "cc": [
+      "Sam Altman",
+      "Shivon Zilis"
+    ],
+    "date": "2018-12-26",
+    "subject": "I feel I should reiterate",
+    "excerpt": "My probability assessment of OpenAI being relevant to DeepMind/Google without a dramatic change in execution and resources is 0%. Not 1%. I wish it were otherwise.\n\nEven raising several hundred million won’t be enough. This needs billions per year immediately or forget it.",
+    "context": "Musk's last big message to the OpenAI leaders before the capped-profit company of 2019.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Ilya Sutskever",
+      "Greg Brockman",
+      "Sam Altman",
+      "Shivon Zilis"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'OpenAI and Elon Musk', 2024-03-05 (emails published by OpenAI)",
+      "url": "https://openai.com/index/openai-elon-musk/",
+      "locator": "Email [3]"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2018-12-26-blue-origin",
+    "from": "Elon Musk",
+    "to": [
+      "Ilya Sutskever",
+      "Greg Brockman"
+    ],
+    "cc": [
+      "Sam Altman",
+      "Shivon Zilis"
+    ],
+    "date": "2018-12-26",
+    "subject": "I feel I should reiterate",
+    "excerpt": "OpenAI reminds me of Bezos and Blue Origin. They are hopelessly behind SpaceX and getting worse, but the ego of Bezos has him insanely thinking that they are not!\n\nI really hope I’m wrong.\n\nElon",
+    "context": "Musk compares OpenAI's position against Google to Blue Origin's against SpaceX.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk",
+      "Ilya Sutskever",
+      "Greg Brockman",
+      "Sam Altman",
+      "Shivon Zilis"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'December 2018' (email Dec 26, 2018 12:07 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2018-02-cash-cow",
+    "from": "Elon Musk",
+    "to": [],
+    "cc": [],
+    "date": "2018-02",
+    "subject": "",
+    "excerpt": "exactly right… Tesla is the only path that could even hope to hold a candle to Google. Even then, the probability of being a counterweight to Google is small. It just isn’t zero",
+    "context": "OpenAI says Musk forwarded an email in early February 2018 suggesting OpenAI attach to Tesla, and added this comment.",
+    "company": [
+      "OpenAI",
+      "Tesla"
+    ],
+    "people": [
+      "Elon Musk"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'OpenAI and Elon Musk', 2024-03-05 (emails published by OpenAI)",
+      "url": "https://openai.com/index/openai-elon-musk/",
+      "locator": "Body text and email [2] (quoted by OpenAI)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "openai-musk-2019-03-no-financial-interest",
+    "from": "Elon Musk",
+    "to": [],
+    "cc": [],
+    "date": "2019-03",
+    "subject": "",
+    "excerpt": "Please be explicit that I have no financial interest in the for-profit arm of OpenAI.",
+    "context": "OpenAI says this was Musk's only feedback on the draft announcement of the capped-profit OpenAI LP.",
+    "company": [
+      "OpenAI"
+    ],
+    "people": [
+      "Elon Musk"
+    ],
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'March 2019' (quoted by OpenAI)"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "openai-brockman-zilis-2017-07-13-structure",
+    "title": "Greg Brockman texts Shivon Zilis after a meeting with Elon Musk",
+    "date": "2017-07-13",
+    "people": [
+      "Greg Brockman",
+      "Shivon Zilis",
+      "Elon Musk"
+    ],
+    "company": [
+      "OpenAI"
+    ],
+    "messages": [
+      {
+        "from": "Greg Brockman",
+        "text": "gpus: said do what we need to do"
+      },
+      {
+        "from": "Greg Brockman",
+        "text": "cerebras: we talked about the reverse merger idea a bit. independent of cerebras, turned into talking about structure (he said non-profit was def the right one early on, may not be the right one now — ilya and I agree with this for a number of reasons)."
+      }
+    ],
+    "context": "Brockman's recap to Musk's liaison Shivon Zilis of a talk in which Musk said a nonprofit may no longer be the right structure.",
+    "source": {
+      "title": "OpenAI blog post 'Elon Musk wanted an OpenAI for-profit', 2024-12-13 (emails and texts published by OpenAI)",
+      "url": "https://openai.com/index/elon-musk-wanted-an-openai-for-profit/",
+      "locator": "Section 'Summer 2017' (iMessage screenshot, Jul 13, 2017 10:35 PM)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-fb-instagram-2012-02-27",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "David Ebersman"
+    ],
+    "cc": [],
+    "date": "2012-02-27",
+    "subject": "(no subject)",
+    "excerpt": "The businesses are nascent but the networks are established, the brands are already meaningful and if they grow to a large scale they could be very disruptive to us. These entrepreneurs don't want to sell (largely inspired our success), but at a high enough price -- like $500m or $1b -- they'd have to consider it. Given that we think our own valuation is fairly aggressive right now and that we're vulnerable in mobile, I'm curious if we should consider going after one or two of them. What do you think about this?",
+    "context": "Zuckerberg asks his CFO whether Facebook should buy mobile photo startups such as Instagram and Path, weeks before the Instagram deal.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "David Ebersman"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0006322000063223.pdf",
+      "locator": "FB-HJC-ACAL-00063220"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-fb-instagram-2012-02-28-ebersman",
+    "from": "David Ebersman",
+    "to": [
+      "Mark Zuckerberg"
+    ],
+    "cc": [],
+    "date": "2012-02-28",
+    "subject": "(no subject)",
+    "excerpt": "So for these two ideas specifically, I would ask you to find a compelling elucidation of what you are trying to accomplish. 1) neutralize a potential competitor? Bad reason in my book since someone else will spring up immediately in their place. There will always be consumers who are instinctively negative about the industry leaders and want to work with the upstarts.",
+    "context": "Facebook's CFO questions the idea of buying a rival only to neutralize it.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "David Ebersman",
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0006322000063223.pdf",
+      "locator": "FB-HJC-ACAL-00063221"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-fb-instagram-2012-02-28-buying-time",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "David Ebersman"
+    ],
+    "cc": [],
+    "date": "2012-02-28",
+    "subject": "(no subject)",
+    "excerpt": "By a combination of (1) and (3), one way of looking at this is that what we're really buying is time. Even if some new competitors springs up, buying Instagram, Path, Foursquare, etc now will give us a year or more to integrate their dynamics before anyone can get close to their scale again.",
+    "context": "Zuckerberg's reply to the CFO about why to buy startups. The committee cited it as showing an aim to neutralize competitors.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "David Ebersman"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0006322000063223.pdf",
+      "locator": "FB-HJC-ACAL-00063222"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-fb-instagram-2012-02-28-clarification",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "David Ebersman"
+    ],
+    "cc": [],
+    "date": "2012-02-28",
+    "subject": "(no subject)",
+    "excerpt": "Above, I didn't mean to imply that we'd be buying them to prevent them from competing with us in any way. Buying them would give us the people and time to incorporate their innovations into our core products, which is how we'd do the integration rather than actually combining the products.",
+    "context": "Zuckerberg follows up his own email within the hour to say the purpose was integration, not blocking competition.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "David Ebersman"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0006322000063223.pdf",
+      "locator": "FB-HJC-ACAL-00063223"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-fb-instagram-2012-04-09-just-buy",
+    "from": "Mark Zuckerberg",
+    "to": [],
+    "cc": [],
+    "date": "2012-04-09",
+    "subject": "RE: CONFIDENTIAL ANNOUNCEMENT",
+    "excerpt": "Thanks. One reason people underestimate the importance of watching Google is that we can likely always just buy any competitive startups, but it'll be a while before we can buy Google.",
+    "context": "Zuckerberg replies to a colleague's note on the day Facebook announced it would buy Instagram.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0006760000067601.pdf",
+      "locator": "FB-HJC-ACAL-00067600"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-fb-instagram-2012-04-09-announcement",
+    "from": "Mark Zuckerberg",
+    "to": [],
+    "cc": [],
+    "date": "2012-04-09",
+    "subject": "CONFIDENTIAL ANNOUNCEMENT",
+    "excerpt": "We are committed to keeping the Instagram brand and growing their app independently. We will also continue on our FB Camera work. Over time we can build these two products to move closer together as it makes sense.",
+    "context": "Zuckerberg tells Facebook staff about the Instagram acquisition.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0006760000067601.pdf",
+      "locator": "FB-HJC-ACAL-00067600"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-fb-renren-2012-03-30",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "Chris Cox",
+      "Mike Schroepfer"
+    ],
+    "cc": [],
+    "date": "2012-03-30",
+    "subject": "(no subject)",
+    "excerpt": "Overall, seeing all this and the pace that new mobile apps seem to be coming out from other companies makes me think we're moving very slowly. If we were moving faster, then we might be able to build out more of the social use cases ourselves and prevent our competitors from getting footholds.",
+    "context": "After meeting Chinese tech founders, Zuckerberg asks why Facebook is so slow against mobile startups.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "Chris Cox",
+      "Mike Schroepfer"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0005351500053516.pdf",
+      "locator": "FB-HJC-ACAL-00053516"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-fb-sandberg-2012-03-30",
+    "from": "Sheryl Sandberg",
+    "to": [
+      "Mark Zuckerberg"
+    ],
+    "cc": [],
+    "date": "2012-03-30",
+    "subject": "RE:",
+    "excerpt": "It is hard not to agree that it is better to do more and move faster, especially if that means you don't have competitors build products that takes some of our users. So of course I agree. The issue is how do we get this to happen.",
+    "context": "Sheryl Sandberg replies to Zuckerberg's note about the pace of mobile competitors.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Sheryl Sandberg",
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0005351500053516.pdf",
+      "locator": "FB-HJC-ACAL-00053515"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-fb-mobile-apps-2014-02-16",
+    "from": "Mark Zuckerberg",
+    "to": [],
+    "cc": [],
+    "date": "2014-02-16",
+    "subject": "100m+ MAU apps",
+    "excerpt": "Do guys have a list of all mobile apps with >100m MAU globally? I'm really curious to see this",
+    "context": "Zuckerberg asks for a ranking of the biggest mobile apps. Days later Facebook agreed to buy WhatsApp, code-named Cobalt in these papers.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0004541200045414.pdf",
+      "locator": "FB-HJC-ACAL-00045414"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-fb-systrom-2012-03-offer",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "Kevin Systrom"
+    ],
+    "cc": [],
+    "date": "2012-03",
+    "subject": "(Facebook message)",
+    "excerpt": "I'm really excited about what we can do to grow Instagram as an independent brand and product while also having you take on a major leadership role within Facebook that spans all of our photos products, including mobile photos, desktop photos, private photo sharing and photo searching and browsing.",
+    "context": "Zuckerberg's pitch to Instagram's CEO a few weeks before Facebook bought Instagram for about $1 billion.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "Kevin Systrom"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0009164800091654.pdf",
+      "locator": "FB-HJC-ACAL-00091648"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-fb-systrom-2012-03-20-reply",
+    "from": "Kevin Systrom",
+    "to": [
+      "Mark Zuckerberg"
+    ],
+    "cc": [],
+    "date": "2012-03-20",
+    "subject": "(Facebook message)",
+    "excerpt": "To be clear, you've been nothing but helpful. When asked if it made sense for you to think about acquiring our company, there wasn't any fuss around it — it was a straightforward yes/no decision that you made with confidence and for that I'm thankful.",
+    "context": "Instagram's CEO tells Zuckerberg he wants to stay independent for now, three weeks before accepting the deal.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Kevin Systrom",
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0009164800091654.pdf",
+      "locator": "FB-HJC-ACAL-00091649"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "house-2020-fb-chat-zuckerberg-schroepfer-2012-03-09",
+    "title": "Zuckerberg and Schroepfer on buying Instagram",
+    "date": "2012-03-09",
+    "people": [
+      "Mark Zuckerberg",
+      "Mike Schroepfer"
+    ],
+    "company": [
+      "Meta"
+    ],
+    "messages": [
+      {
+        "from": "Mike Schroepfer",
+        "text": "not losing strategic position in photos is worth a lot of money"
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "I generally think we should do this. I think we should be willing to pay even more -- unless we learn something about their business that is weaker than we'd thought."
+      },
+      {
+        "from": "Mike Schroepfer",
+        "text": "ok - what's next steps?"
+      },
+      {
+        "from": "Mike Schroepfer",
+        "text": "the biggest risk imho is that we either quickly or slowly kill instagram but not investing in i - and open up a window"
+      },
+      {
+        "from": "Mike Schroepfer",
+        "text": "for a new entrant."
+      },
+      {
+        "from": "Mike Schroepfer",
+        "text": "1) Do we keep the brand?"
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "Yes"
+      },
+      {
+        "from": "Mike Schroepfer",
+        "text": "2) Do we keep the ability to publish to multiple networks (twitter, et. all)"
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "I think the real question is whether we still launch Snap."
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "I think yes on (2) as well."
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "I'd just keep it running. Insurance."
+      },
+      {
+        "from": "Mike Schroepfer",
+        "text": "and invest a few more engineers in it"
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "By insurance I don't mean starve it. Just let it run relatively independently."
+      }
+    ],
+    "context": "A chat between Facebook's CEO and its engineering chief, about a month before the deal, on whether to buy Instagram and what to do with it.",
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0006318000063197.pdf",
+      "locator": "FB-HJC-ACAL-00063180 to -00063197"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "house-2020-fb-chat-zuckerberg-2012-04-05",
+    "title": "Zuckerberg on whether to buy Instagram",
+    "date": "2012-04-05",
+    "people": [
+      "Mark Zuckerberg"
+    ],
+    "company": [
+      "Meta"
+    ],
+    "messages": [
+      {
+        "from": "Mark Zuckerberg",
+        "text": "I just need to decide if we're going to buy Instagram"
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "We have this big issue right now because gaming is shifting from us to mobile platforms. It's causing all this negative momentum in a bunch of ways around gamer overall user engagement, ad spend from gamers, overall revenue, etc."
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "Pinterest and Foursquare are likely more valuable markets than photos."
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "Instagram can hurt us meaningfully without becoming a huge business though. For the others, if they become big we'll just regret not doing them."
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "Or we can buy them then, or build them along the way."
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "We're kind of already working on building some version of Foursquare."
+      }
+    ],
+    "context": "Zuckerberg's messages in a chat a few days before the Instagram deal; the other participant is redacted in the exhibit.",
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/0006331600063321.pdf",
+      "locator": "FB-HJC-ACAL-00063316 to -00063321"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-amazon-ring-2017-12-15-market-position",
+    "from": "Jeff Bezos",
+    "to": [
+      "Dave Limp"
+    ],
+    "cc": [
+      "Peter Krawiec",
+      "Nick Komorous",
+      "Jeff Helbling",
+      "Douglas Booms"
+    ],
+    "date": "2017-12-15",
+    "subject": "RE: Ring update",
+    "excerpt": "To be clear, my view here is that we’re buying market position — not technology. And that market position and momentum is very valuable.",
+    "context": "Bezos on why Amazon should buy the video doorbell maker Ring.",
+    "company": [
+      "Amazon"
+    ],
+    "people": [
+      "Jeff Bezos",
+      "Dave Limp"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/00173560.pdf",
+      "locator": "AMAZON-HJC-00173560"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-amazon-ring-2017-12-15-buy-now",
+    "from": "Jeff Bezos",
+    "to": [
+      "Dave Limp"
+    ],
+    "cc": [
+      "Peter Krawiec",
+      "Nick Komorous",
+      "Jeff Helbling",
+      "Douglas Booms"
+    ],
+    "date": "2017-12-15",
+    "subject": "RE: Ring update",
+    "excerpt": "I'd buy it right now.",
+    "context": "Bezos replies to an update from Amazon's devices chief on Ring's financing round.",
+    "company": [
+      "Amazon"
+    ],
+    "people": [
+      "Jeff Bezos",
+      "Dave Limp"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/00173560.pdf",
+      "locator": "AMAZON-HJC-00173560"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-amazon-ring-blink-2017-10-11",
+    "from": "Jeff Helbling",
+    "to": [
+      "Dave Limp",
+      "Robert Williams",
+      "Nick Komorous",
+      "Brock Hayes",
+      "Erich Volkert",
+      "Charlie Tritschler",
+      "Peter Krawiec",
+      "Andrew Swartz",
+      "Susan Jong",
+      "Allen Parker",
+      "Jeff Blackburn"
+    ],
+    "cc": [
+      "Douglas Booms"
+    ],
+    "date": "2017-10-11",
+    "subject": "Notes: 10/10 Ring and Blink M&A discussion",
+    "excerpt": "Feel good about moving forward with Ring due diligence, willing to pay for market position as it's hard to catch the leader.",
+    "context": "Notes from an Amazon meeting with Jeff Bezos on buying two home camera companies.",
+    "company": [
+      "Amazon"
+    ],
+    "people": [
+      "Jeff Helbling",
+      "Dave Limp",
+      "Jeff Bezos"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/00170877.pdf",
+      "locator": "AMAZON-HJC-00170877"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-amazon-soap-2010-06-08-bezos",
+    "from": "Jeff Bezos",
+    "to": [
+      "Jeff Wilke",
+      "Diego Piacentini",
+      "Doug Herrington",
+      "Greg Hart",
+      "Jeff Blackburn"
+    ],
+    "cc": [],
+    "date": "2010-06-08",
+    "subject": "Soap.com",
+    "excerpt": "There's a techcrunch post yesterday about diapers.com's parent co launching soap.com. Tens of thousands of skus. What do we make of this?",
+    "context": "Bezos asks his managers about a new rival store, which led to Amazon's reply on pricing and the 'Amazon Mom' program.",
+    "company": [
+      "Amazon"
+    ],
+    "people": [
+      "Jeff Bezos",
+      "Doug Herrington"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/00132026.pdf",
+      "locator": "AMAZON-HJC-00132026"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-amazon-soap-2010-06-08-herrington",
+    "from": "Doug Herrington",
+    "to": [
+      "Jeff Bezos",
+      "Jeff Wilke",
+      "Diego Piacentini",
+      "Greg Hart",
+      "Jeff Blackburn"
+    ],
+    "cc": [],
+    "date": "2010-06-08",
+    "subject": "RE: Soap.com",
+    "excerpt": "Given diapers.com's strength and competencies, soap.com is our most significant short term competitor in the hpc space. What are we doing?",
+    "context": "An Amazon executive tells Bezos how Amazon will respond to the new competitor Soap.com.",
+    "company": [
+      "Amazon"
+    ],
+    "people": [
+      "Doug Herrington",
+      "Jeff Bezos"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/00132026.pdf",
+      "locator": "AMAZON-HJC-00132026"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-amazon-supplier-tenets-2016-06-02",
+    "from": "Doug Herrington",
+    "to": [
+      "Jeff Wilke",
+      "Sebastian Gunningham"
+    ],
+    "cc": [],
+    "date": "2016-06-02",
+    "subject": "Re: supplier tenets",
+    "excerpt": "We must have equal or better prices than SIC and IC competitors. We will give up non price competitive selection from a supplier in the short term to “hold out” for competitive pricing in the long term.",
+    "context": "A draft of Amazon's rules for suppliers, which later drew attention for price parity.",
+    "company": [
+      "Amazon"
+    ],
+    "people": [
+      "Doug Herrington",
+      "Jeff Wilke",
+      "Sebastian Gunningham"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/00190108.pdf",
+      "locator": "AMAZON-HJC-00190108"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-google-dell-2011-02",
+    "from": "Joan Braddi",
+    "to": [
+      "Jim Kolotouros",
+      "Jim Holden"
+    ],
+    "cc": [],
+    "date": "2011-02",
+    "subject": "Re: Feedback from Sundar on Dell",
+    "excerpt": "Let's discuss next week. We wish to move away from custom start pages so I don't like keeping this option. Dell only care about money anyway and our problem is we have been paying them too much.",
+    "context": "A Google search-distribution executive on the deal terms for Chrome and Google search on Dell PCs.",
+    "company": [
+      "Google"
+    ],
+    "people": [
+      "Joan Braddi",
+      "Jim Kolotouros",
+      "Jim Holden",
+      "Sundar Pichai"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/00013117.pdf",
+      "locator": "GOOG-HJC-00013117"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-apple-jobs-2011-02-06-ibooks",
+    "from": "Steve Jobs",
+    "to": [
+      "Eddy Cue"
+    ],
+    "cc": [
+      "Philip Schiller"
+    ],
+    "date": "2011-02-06",
+    "subject": "Re: Magazine subscription write up",
+    "excerpt": "I think this is all pretty simple - iBooks is going to be the only bookstore on iOS devices. We need to hold our heads high. One can read books bought elsewhere, just not buy/rent/subscribe from iOS without paying us, which we acknowledge is prohibitive for many things.",
+    "context": "Steve Jobs sets the App Store rule that digital books and subscriptions on iOS must go through Apple's payment system.",
+    "company": [
+      "Apple"
+    ],
+    "people": [
+      "Steve Jobs",
+      "Eddy Cue",
+      "Philip Schiller"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/014816.pdf",
+      "locator": "HJC-APPLE-014816"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-apple-cue-2011-02-06-in-app",
+    "from": "Eddy Cue",
+    "to": [],
+    "cc": [],
+    "date": "2011-02-06",
+    "subject": "Re: Magazine subscription write up",
+    "excerpt": "And many other would want it (e.g. magazines and games). The problem is many can afford 30% but others will say they can't. This is going to be a huge decision for us. We don't want to lose the apps from iOS and at the same time we don't want to compromise the app experience that we have (e.g. don't have to enter your info or payment everywhere).",
+    "context": "Apple's head of services weighs the 30 percent in-app purchase rule just before Jobs decides.",
+    "company": [
+      "Apple"
+    ],
+    "people": [
+      "Eddy Cue",
+      "Steve Jobs",
+      "Philip Schiller"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/014816.pdf",
+      "locator": "HJC-APPLE-014816"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "house-2020-apple-oppenheimer-2012-03-16",
+    "from": "Peter Oppenheimer",
+    "to": [
+      "Eric Gray"
+    ],
+    "cc": [
+      "Dean Migchelbrink",
+      "Eddy Cue"
+    ],
+    "date": "2012-03-16",
+    "subject": "Re: NYT article",
+    "excerpt": "What would we need to do to provide better responses to developers? In thinking about this, we should not let this sentiment become fact by virtue of our not responding to developers, especially if we can demonstrate that this is not accurate.",
+    "context": "Apple's CFO reacts to a New York Times article about developers who say Apple ignored their payment questions.",
+    "company": [
+      "Apple"
+    ],
+    "people": [
+      "Peter Oppenheimer",
+      "Eric Gray"
+    ],
+    "source": {
+      "title": "House Judiciary Subcommittee on Antitrust, documents released 2020-07-29",
+      "url": "https://web.archive.org/web/2021/https://judiciary.house.gov/uploadedfiles/007728.pdf",
+      "locator": "HJC-APPLE-007728"
+    }
+  }
+]
