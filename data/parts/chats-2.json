@@ -1,0 +1,835 @@
+[
+  {
+    "kind": "chat",
+    "id": "musk-openai-2017-09-19-zilis-forprofit",
+    "title": "Shivon Zilis texts about OpenAI going for-profit",
+    "date": "2017-09-19",
+    "people": [
+      "Shivon Zilis"
+    ],
+    "company": [
+      "OpenAI"
+    ],
+    "messages": [
+      {
+        "from": "Shivon Zilis",
+        "text": "Heads up"
+      },
+      {
+        "from": "Shivon Zilis",
+        "text": "Seems like Greg, llya, Elon a go on for profit"
+      },
+      {
+        "from": "Shivon Zilis",
+        "text": "Sam likely an investor to start"
+      },
+      {
+        "from": "Mr. President?",
+        "text": "Ok, i've already created the B corp"
+      },
+      {
+        "from": "Shivon Zilis",
+        "text": "OpenAI?"
+      },
+      {
+        "from": "Shivon Zilis",
+        "text": "Like that name?"
+      },
+      {
+        "from": "Mr. President?",
+        "text": "Open Artificial Intelligence Technologies, Inc."
+      }
+    ],
+    "context": "Text thread between Zilis and a contact shown as \"Mr. President?\", filed as a summary-judgment exhibit in Musk v. Altman.",
+    "source": {
+      "title": "Musk v. Altman, No. 4:24-cv-04722-YGR (N.D. Cal.): Exhibit 77 to ECF 379, filed 2026-01-06",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.379.32.pdf",
+      "locator": "Ex. 77, ZILIS-0001032 to -0001033"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "musk-openai-2019-03-11-zilis-teller-announcement",
+    "title": "Zilis and Teller on the OpenAI announcement",
+    "date": "2019-03-11",
+    "people": [
+      "Shivon Zilis",
+      "Sam Teller"
+    ],
+    "company": [
+      "OpenAI"
+    ],
+    "messages": [
+      {
+        "from": "Shivon Zilis",
+        "text": "FYI that Altman asked E if he had time to chat on the announcement and E told him he'd call later tonight (this was texts between them so I don't have anything to fwd)"
+      },
+      {
+        "from": "Shivon Zilis",
+        "text": "Hopefully all fine. I dunno if you had time to read the email he initially sent"
+      },
+      {
+        "from": "Sam Teller",
+        "text": "K"
+      },
+      {
+        "from": "Shivon Zilis",
+        "text": "Altman cleared everything with E on the phone. Said E had no edits but wanted them to say he was still helpful on background to reporters"
+      },
+      {
+        "from": "Sam Teller",
+        "text": "K"
+      },
+      {
+        "from": "Sam Teller",
+        "text": "Great"
+      },
+      {
+        "from": "Shivon Zilis",
+        "text": "Also, the press coverage I've seen so far has been either balanced or somewhat critical of OpenAI, but kind to Elon so far"
+      }
+    ],
+    "context": "Texts on the day OpenAI announced its capped-profit structure; \"E\" is Elon Musk, whose staff relayed updates.",
+    "source": {
+      "title": "Musk v. Altman, No. 4:24-cv-04722-YGR (N.D. Cal.): Exhibit 72 to ECF 379, filed 2026-01-06",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.379.30.pdf",
+      "locator": "Ex. 72, ZILIS-0000039 to -0000040"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "musk-openai-2023-01-14-altman-nadella-subscription",
+    "title": "Altman and Nadella on charging for ChatGPT",
+    "date": "2023-01-14",
+    "people": [
+      "Sam Altman",
+      "Satya Nadella"
+    ],
+    "company": [
+      "OpenAI",
+      "Microsoft"
+    ],
+    "messages": [
+      {
+        "from": "Satya Nadella",
+        "text": "Btw...when do you think you will activate your paid subscription for chatGPT?"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "we are hoping to be ready by end of jan , but we can be flexible beyond that. the only real reason for rushing it is we are just so out of capacity and delivering a bad user experience. DAUs still growing rapidly"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "any preference on when we do it?"
+      },
+      {
+        "from": "Satya Nadella",
+        "text": "Let me think about it and weigh in. Overall getting this in place sooner is best. At some level Bing is the scoped ad supported version. So we collectively have both in market on top of the same base model."
+      },
+      {
+        "from": "Sam Altman",
+        "text": "sounds good, i agree!"
+      }
+    ],
+    "context": "Texts between the OpenAI and Microsoft chief executives weeks after ChatGPT launched; one message in the middle of the thread is left out.",
+    "source": {
+      "title": "Musk v. Altman, No. 4:24-cv-04722-YGR (N.D. Cal.): Exhibit 38 to ECF 379, filed 2026-01-06",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.379.97.pdf",
+      "locator": "Ex. 38, OPENAI_MUSK00026473 to -26474"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "musk-openai-2023-01-29-altman-nadella-subs",
+    "title": "Altman tells Nadella ChatGPT is at capacity",
+    "date": "2023-01-29",
+    "people": [
+      "Sam Altman",
+      "Satya Nadella"
+    ],
+    "company": [
+      "OpenAI",
+      "Microsoft"
+    ],
+    "messages": [
+      {
+        "from": "Satya Nadella",
+        "text": "Btw ...how many subs have you guys added to chatGPT?"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "we are at 6mm DAU which is our capacity limit"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "have 50mm that have signed up ever but have to turn away"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "had to delay charging due to legal issues but it should go out this coming week"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "and then we can reenable growth"
+      },
+      {
+        "from": "Satya Nadella",
+        "text": "Got it. Will be very interesting to see how the sub levels of 42 and 20 do."
+      },
+      {
+        "from": "Sam Altman",
+        "text": "very"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "suspect we will need to enable personalization before a lot of people pay, but i'm sure some will now"
+      }
+    ],
+    "context": "Texts a few days before ChatGPT Plus launched; DAU means daily active users and mm means million.",
+    "source": {
+      "title": "Musk v. Altman, No. 4:24-cv-04722-YGR (N.D. Cal.): Exhibit 40 to ECF 379, filed 2026-01-06",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.379.99.pdf",
+      "locator": "Ex. 40, OPENAI_MUSK00026550 to -26551"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "musk-openai-2023-11-19-altman-taylor-nadella-plan",
+    "title": "Altman, Taylor and Nadella plan Altman's return",
+    "date": "2023-11-19",
+    "people": [
+      "Sam Altman",
+      "Bret Taylor",
+      "Satya Nadella"
+    ],
+    "company": [
+      "OpenAI",
+      "Microsoft"
+    ],
+    "messages": [
+      {
+        "from": "Sam Altman",
+        "text": "ok i think we get ready to go on the plan of mira rehiring me and greg while we work on the injunction. the board just won't give any timeline. this will stabilize things in the short term and everyone can come to work monday morning . ok with you?"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "if that blows up we can go on to the subsidiary"
+      },
+      {
+        "from": "Bret Taylor",
+        "text": "I don't have a specific short term role in this path - but supportive personally because I want OpenAI to exist on Monday!"
+      },
+      {
+        "from": "Satya Nadella",
+        "text": "This sounds good to me. I will call Brad just to talk through the injunction and have him call Jason."
+      },
+      {
+        "from": "Sam Altman",
+        "text": "adam called. they commit to answer by 5 pm. just trying to get clear on their legal risk. we do the above plan if not."
+      }
+    ],
+    "context": "Group text during the weekend OpenAI's board removed Altman; Taylor later became board chair.",
+    "source": {
+      "title": "Musk v. Altman, No. 4:24-cv-04722-YGR (N.D. Cal.): Exhibit 51 to ECF 379, filed 2026-01-06",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.379.103.pdf",
+      "locator": "Ex. 51, OPENAI_MUSK00027434 to -27435"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "musk-openai-2023-11-19-altman-taylor-nadella-silence",
+    "title": "Altman waits for the OpenAI board to answer",
+    "date": "2023-11-20",
+    "people": [
+      "Sam Altman",
+      "Bret Taylor",
+      "Satya Nadella"
+    ],
+    "company": [
+      "OpenAI",
+      "Microsoft"
+    ],
+    "messages": [
+      {
+        "from": "Sam Altman",
+        "text": "still silence from them; i've texted for an update a couple of times and not even read"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "still nothing from them"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "we have heard from other people they are trying to find a backup ceo if this doesn't resolve, but are still saying they think it can resolve peacefully"
+      },
+      {
+        "from": "Satya Nadella",
+        "text": "I guess we wait till 5 and get on a call"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "satya just talked to adam and thinks something is up"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "we are going to publish the statement saying mira has re hired us"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "board said they will call mira shortly to talk about the statement"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "they still haven't. they have asked to speak to her alone ."
+      },
+      {
+        "from": "Sam Altman",
+        "text": "mira still on with the board"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "mira still on with them, said it's not going well"
+      }
+    ],
+    "context": "Same group text overnight from 19 to 20 November 2023, while OpenAI's board had not yet answered.",
+    "source": {
+      "title": "Musk v. Altman, No. 4:24-cv-04722-YGR (N.D. Cal.): Exhibit 51 to ECF 379, filed 2026-01-06",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.379.103.pdf",
+      "locator": "Ex. 51, OPENAI_MUSK00027435 to -27436"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "musk-openai-2023-11-20-altman-nadella-lightcap-statement",
+    "title": "Altman, Nadella and Lightcap word a joint statement",
+    "date": "2023-11-20",
+    "people": [
+      "Sam Altman",
+      "Satya Nadella",
+      "Brad Lightcap"
+    ],
+    "company": [
+      "OpenAI",
+      "Microsoft"
+    ],
+    "messages": [
+      {
+        "from": "Sam Altman",
+        "text": "satya, brad lightcap suggested this rewrite. ok?"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "how about: satya and my top priority remains to save openai we are committed to fully providing continuity of operations to our partners and customers our partnership makes this very doable"
+      },
+      {
+        "from": "Satya Nadella",
+        "text": "How about Satya and my top priority remains to ensure OpenAI continues to thrive ....that will make it more positive"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "ok!"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "sending"
+      },
+      {
+        "from": "Brad Lightcap",
+        "text": "sam, ship it with satya's proposed change. I am good."
+      },
+      {
+        "from": "Sam Altman",
+        "text": "brad can you confirm to satya how much equity we would need to issue to employees in total dollar amount? and if satya says yes let's let team know"
+      },
+      {
+        "from": "Brad Lightcap",
+        "text": "calculating now"
+      }
+    ],
+    "context": "Texts while Altman and Nadella agreed the wording of a public statement during the OpenAI leadership crisis.",
+    "source": {
+      "title": "Musk v. Altman, No. 4:24-cv-04722-YGR (N.D. Cal.): Exhibit 59 to ECF 379, filed 2026-01-06",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.379.106.pdf",
+      "locator": "Ex. 59, OPENAI_MUSK00027459 to -27461"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "musk-openai-2023-11-19-altman-taylor-temporary-board",
+    "title": "Altman and Taylor on the temporary board",
+    "date": "2023-11-19",
+    "people": [
+      "Sam Altman",
+      "Bret Taylor"
+    ],
+    "company": [
+      "OpenAI"
+    ],
+    "messages": [
+      {
+        "from": "Sam Altman",
+        "text": "bret, satya, tasha. and adam here. bret and satya and i just texted. we need stability right now for this temporary board configuration and don't think adding someone new we don't know makes sense. tino does sound great and we would be excited to consider him for a future addition."
+      },
+      {
+        "from": "Bret Taylor",
+        "text": "This is Bret. I don't think we can decide the long term board overnight. The spirt of choosing interim directors is to find folks who can set up the right governance structure and appoint the right board members for the long term . Along those lines, I am personally very comfortable with Will, though I don't know him well. He seems high integrity and obviously knows the organization well. Like Satya, I just want to move forward to stabilize OpenAI. Available to speak any time."
+      }
+    ],
+    "context": "Group text with OpenAI board members about who should join an interim board.",
+    "source": {
+      "title": "Musk v. Altman, No. 4:24-cv-04722-YGR (N.D. Cal.): Exhibit 53 to ECF 379, filed 2026-01-06",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.379.104.pdf",
+      "locator": "Ex. 53, OPENAI_MUSK00027423 to -27424"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "musk-openai-2022-10-28-brockman-slack-board",
+    "title": "Brockman on who has helped the OpenAI board",
+    "date": "2022-10-28",
+    "people": [
+      "Greg Brockman"
+    ],
+    "company": [
+      "OpenAI"
+    ],
+    "messages": [
+      {
+        "from": "Greg Brockman",
+        "text": "btw one thing i didn't mention on the call — i think reid has been our single most value-add board member to date"
+      },
+      {
+        "from": "Greg Brockman",
+        "text": "maybe to help move forward our thinking on who the board should be, it'd useful to think through specific things each board member has actually done (in terms of thinking/support/connections)"
+      },
+      {
+        "from": "Greg Brockman",
+        "text": "reid has clearly been useful in terms of funding (taking on elon's $5m/quarter commit, helping with msft deal & relationship at various points), filling MSFT's board seat — actually a very big deal IMO, and i can't remember specifics but remember feeling that his weighing in during board meetings is generally quite on point"
+      }
+    ],
+    "context": "Slack direct message in a thread of Brockman, Sutskever and Altman; only Brockman's messages appear in the exhibit.",
+    "source": {
+      "title": "Musk v. Altman, No. 4:24-cv-04722-YGR (N.D. Cal.): Exhibit 74 to ECF 379, filed 2026-01-06",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.379.110.pdf",
+      "locator": "Ex. 74, OPENAI_MUSK00015262"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "musk-openai-2022-10-07-slack-board-member",
+    "title": "OpenAI leaders debate a board member's role",
+    "date": "2022-10-07",
+    "people": [
+      "Greg Brockman",
+      "Ilya Sutskever",
+      "Sam Altman",
+      "Mira Murati"
+    ],
+    "company": [
+      "OpenAI"
+    ],
+    "messages": [
+      {
+        "from": "Greg Brockman",
+        "text": "I am supportive of offering him the option to stay in exchange for severing ties! I actually do agree with Ilya; but honestly I do trust him more than many of our other board members & feel I know what motivates him. (He also consistently has added clear value and suggested good ways to navigate tradeoffs in the past.)"
+      },
+      {
+        "from": "Ilya Sutskever",
+        "text": "Perhaps it's the right call. But if so, I'm sad the bar for our board is so low"
+      },
+      {
+        "from": "Greg Brockman",
+        "text": "wonder if it'd be helpful for you (all three of us?) to talk to him about this directly, since maybe he would be able to explain in a way that is updateful for us in either direction"
+      },
+      {
+        "from": "Sam Altman",
+        "text": "haven't been able to read that email in detail yet, what do you make of it? specifically losing the lead?"
+      },
+      {
+        "from": "Greg Brockman",
+        "text": "My specific worry is just reading between the lines on what she'll do if it looks like we're losing"
+      },
+      {
+        "from": "Ilya Sutskever",
+        "text": "That felt manipulative"
+      },
+      {
+        "from": "Mira Murati",
+        "text": "Happy to weigh in on this if valuable but I've not updated my view so don't want to sound like a broken record"
+      }
+    ],
+    "context": "Slack direct messages among four OpenAI leaders about a board member who had started a competitor; the export marks deletions and edits.",
+    "source": {
+      "title": "Musk v. Altman, No. 4:24-cv-04722-YGR (N.D. Cal.): Exhibit 75 to ECF 379, filed 2026-01-06",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.379.111.pdf",
+      "locator": "Ex. 75, OPENAI_MUSK00016609 to -16613"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "goog-2020-07-28-samsung-next-search-carveout",
+    "title": "Samsung NEXT staff react to Google's search terms",
+    "date": "2020-07-28",
+    "people": [
+      "Patrick Chang",
+      "Jeff Chen"
+    ],
+    "company": [
+      "Samsung",
+      "Google"
+    ],
+    "messages": [
+      {
+        "from": "Patrick Chang",
+        "text": "Emily mentioned she brought it up during de direct"
+      },
+      {
+        "from": "Patrick Chang",
+        "text": "And this was shot down"
+      },
+      {
+        "from": "Patrick Chang",
+        "text": "The agreement is finalizing by August 1st"
+      },
+      {
+        "from": "Jeff Chen",
+        "text": "emily brought up at de directs?"
+      },
+      {
+        "from": "Patrick Chang",
+        "text": "She said she did? Maybe she didn't"
+      },
+      {
+        "from": "Jeff Chen",
+        "text": "is this about branch or in general a bad idea"
+      },
+      {
+        "from": "Patrick Chang",
+        "text": "Bad for branch and bad in general"
+      }
+    ],
+    "context": "Chat inside Samsung's venture arm about Google's revenue-share terms limiting on-device search; Branch was a partner company.",
+    "source": {
+      "title": "U.S. v. Google LLC, No. 1:20-cv-03010 (D.D.C.): trial exhibit UPX0663",
+      "url": "https://www.justice.gov/d9/2023-10/416941.pdf",
+      "locator": "UPX0663, NEXT-DOJ-LIT-00002469"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "goog-2020-08-21-samsung-next-spotlight",
+    "title": "David Eun on Google buying its way past rivals",
+    "date": "2020-08-21",
+    "people": [
+      "Patrick Chang",
+      "David Eun"
+    ],
+    "company": [
+      "Samsung",
+      "Google"
+    ],
+    "messages": [
+      {
+        "from": "David Eun",
+        "text": "Like Apple Spotlight? So how does Apple get billions in search rev share and can create this experience for their users, but we can't?"
+      },
+      {
+        "from": "David Eun",
+        "text": "Sorry to hear this. Outside of a potential antitrust action, I don't see Samsung being able to refuse the money ..."
+      },
+      {
+        "from": "David Eun",
+        "text": "Branch will have better luck with other OEMs who don't receive rev share from Google."
+      }
+    ],
+    "context": "Samsung NEXT chat after a meeting with Samsung's mobile team about Google's proposed search restrictions.",
+    "source": {
+      "title": "U.S. v. Google LLC, No. 1:20-cv-03010 (D.D.C.): trial exhibit UPX0690",
+      "url": "https://www.justice.gov/d9/2023-10/416947.pdf",
+      "locator": "UPX0690, NEXT-DOJ-LIT-00003427"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "goog-2020-10-23-samsung-next-doj-filing",
+    "title": "Samsung NEXT on Google's reaction to the DOJ suit",
+    "date": "2020-10-23",
+    "people": [
+      "Patrick Chang",
+      "Brandon Hoffman"
+    ],
+    "company": [
+      "Samsung",
+      "Google"
+    ],
+    "messages": [
+      {
+        "from": "Brandon Hoffman",
+        "text": "I figured this was still progressing nicely. Im sure itll cross the finish line not before long and is some thing that can and will be highlighted as a win and the right types of activities when mentioned at a workshop. GOOGL taking on the DOJ now maybe will have them less aggressive in strict interpretations of contracts? So maybe that helps in terms of timing to push Branch?"
+      },
+      {
+        "from": "Patrick Chang",
+        "text": "Actually the COMPLETE opposite. Google just did a fuck you to Samsung. After the doj filings, they submitted a new redline that went backwards in all negotiations with Samsung and was even more aggresssive in being restrictive"
+      },
+      {
+        "from": "Patrick Chang",
+        "text": "They basically don't feel the doj has a real case"
+      }
+    ],
+    "context": "Group chat days after the DOJ sued Google over search distribution deals.",
+    "source": {
+      "title": "U.S. v. Google LLC, No. 1:20-cv-03010 (D.D.C.): trial exhibit PSX00812",
+      "url": "https://www.justice.gov/d9/2023-10/416933.pdf",
+      "locator": "PSX00812, NEXT-DOJ-LIT-00003305"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "adtech-2016-11-10-bender-shodjai-margin",
+    "title": "Google ad leaders on a 32 percent margin",
+    "date": "2016-11-10",
+    "people": [
+      "Brad Bender",
+      "Payam Shodjai"
+    ],
+    "company": [
+      "Google"
+    ],
+    "messages": [
+      {
+        "from": "Brad Bender",
+        "text": "just found out"
+      },
+      {
+        "from": "Brad Bender",
+        "text": "that when DBM buys on AFC/AdMob"
+      },
+      {
+        "from": "Brad Bender",
+        "text": "we retain a 32% margin on AFC/AdMob"
+      },
+      {
+        "from": "Payam Shodjai",
+        "text": "yup"
+      },
+      {
+        "from": "Payam Shodjai",
+        "text": "that's the way it works"
+      },
+      {
+        "from": "Brad Bender",
+        "text": "So the total net == 32+9 or whatever"
+      },
+      {
+        "from": "Brad Bender",
+        "text": "is there a good reason for that?"
+      },
+      {
+        "from": "Payam Shodjai",
+        "text": "we make A LOT of money"
+      },
+      {
+        "from": "Payam Shodjai",
+        "text": "(btw, my point of view was that we should reduce it to 20%, but didn't feel strongly)"
+      }
+    ],
+    "context": "Google chat between two ad executives about the cut Google keeps when its buying tool purchases inventory on its own ad networks.",
+    "source": {
+      "title": "U.S. v. Google LLC, No. 1:23-cv-00108 (E.D. Va.): trial exhibit PTX1736",
+      "url": "https://www.justice.gov/atr/media/1367246/dl",
+      "locator": "PTX1736, GOOG-DOJ-02852767 to -2769"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "adtech-2020-02-11-korula-bhatnagar-adx-direct",
+    "title": "Google ad staff weigh PR risk of AdX Direct",
+    "date": "2020-02-11",
+    "people": [
+      "Nitish Korula",
+      "Deepti Bhatnagar"
+    ],
+    "company": [
+      "Google"
+    ],
+    "messages": [
+      {
+        "from": "Deepti Bhatnagar",
+        "text": "We just have to pick our battles this year very carefully"
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "Sure but is a budget the right model and to what extent would it be bad PR?"
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "To a point George made before, throwing engineers at PR problems is not great, either"
+      },
+      {
+        "from": "Deepti Bhatnagar",
+        "text": "yeah I don't disagree, I am just being realistic"
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "Also, they should see the actual list of publishers"
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "If we can move the top 20 manually, does that lower the PR risk?"
+      }
+    ],
+    "context": "Google chat about whether changing how AdX Direct traffic is labelled would draw bad press and antitrust attention.",
+    "source": {
+      "title": "U.S. v. Google LLC, No. 1:23-cv-00108 (E.D. Va.): trial exhibit PTX0933",
+      "url": "https://www.justice.gov/atr/media/1370331/dl",
+      "locator": "PTX0933, GOOG-DOJ-10310183"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "adtech-2019-08-12-korula-christian-adx-advantage",
+    "title": "Korula on AdX's information advantage over header bidding",
+    "date": "2019-08-12",
+    "people": [
+      "Nitish Korula",
+      "David Christian"
+    ],
+    "company": [
+      "Google"
+    ],
+    "messages": [
+      {
+        "from": "David Christian",
+        "text": "Could you explain the situation a bit more?"
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "The fact that AdX buyers can bid using information that comes out of DFP ranking (EDA price, remnant line items w/ their prices, etc.) is a significant informational advantage."
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "That reflects in their bidding"
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "Sending callouts before DFP ranking risks losing that"
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "It's a strategic advantage over Header Bidding"
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "Now, competition concerns will cause us to give up one part of that, but that part alone is an 8% decrease to AdX revenue (which we will mitigate through the 1p auction)"
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "But there's no reason to give up the other part, which may even be larger."
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "Btw, this is also sensitive from a competition perspective, so one should be careful about notes :)"
+      },
+      {
+        "from": "David Christian",
+        "text": "got it."
+      }
+    ],
+    "context": "Google chat on a design review for a unified auction; DFP is the publisher ad server and AdX the exchange.",
+    "source": {
+      "title": "U.S. v. Google LLC, No. 1:23-cv-00108 (E.D. Va.): trial exhibit PTX0816",
+      "url": "https://www.justice.gov/atr/media/1370321/dl",
+      "locator": "PTX0816, GOOG-DOJ-AT-00597161 to -97162"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "adtech-2020-09-16-lasala-islam-history-off",
+    "title": "Google ad managers move a talk to history off",
+    "date": "2020-09-16",
+    "people": [
+      "Chris LaSala",
+      "Nash Islam"
+    ],
+    "company": [
+      "Google"
+    ],
+    "messages": [
+      {
+        "from": "Chris LaSala",
+        "text": "essentially we pull any discussion of email"
+      },
+      {
+        "from": "Chris LaSala",
+        "text": "or log-in"
+      },
+      {
+        "from": "Chris LaSala",
+        "text": "right?"
+      },
+      {
+        "from": "Nash Islam",
+        "text": "yep"
+      },
+      {
+        "from": "Nash Islam",
+        "text": "aligned with the direction we're heading"
+      },
+      {
+        "from": "Nash Islam",
+        "text": "or too sensitive for email so keep on ping?"
+      },
+      {
+        "from": "Chris LaSala",
+        "text": "start a ping with history turned off"
+      },
+      {
+        "from": "Chris LaSala",
+        "text": "duke, naomi, alex, me"
+      }
+    ],
+    "context": "Google chat about what to leave out of a contract with Apple-related terms, ending with a move to a chat with history turned off.",
+    "source": {
+      "title": "U.S. v. Google LLC, No. 1:23-cv-00108 (E.D. Va.): trial exhibit PTX0992",
+      "url": "https://www.justice.gov/atr/media/1367891/dl",
+      "locator": "PTX0992, GOOG-DOJ-AT-01828942 to -1828943"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "adtech-2020-03-16-korula-bhatnagar-market-share",
+    "title": "Google ad staff ask how much share to give up",
+    "date": "2020-03-16",
+    "people": [
+      "Nitish Korula",
+      "Deepti Bhatnagar"
+    ],
+    "company": [
+      "Google"
+    ],
+    "messages": [
+      {
+        "from": "Nitish Korula",
+        "text": "How much market share should we be willing to give up in the short term?"
+      },
+      {
+        "from": "Deepti Bhatnagar",
+        "text": "yeah good discussion question"
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "If we move to a much better competition, privacy and identity space, is it worth giving up 5% market share? 10%? 20% in the short term?"
+      },
+      {
+        "from": "Nitish Korula",
+        "text": "And losing some market share is also positive from the point of demonstrating to regulators that viable alternatives exist/ we're not a monopoly"
+      }
+    ],
+    "context": "Google chat debating price equalization across demand sources and the short-term cost in market share.",
+    "source": {
+      "title": "U.S. v. Google LLC, No. 1:23-cv-00108 (E.D. Va.): trial exhibit PTX0949",
+      "url": "https://www.justice.gov/atr/media/1370336/dl",
+      "locator": "PTX0949, GOOG-DOJ-AT-00657480"
+    }
+  }
+]
