@@ -65,7 +65,7 @@ jobs:
           python scripts/merge.py
       - name: Open PR
         run: |
-          git add data/candidates.json data/extracted data/parts data/emails.json
+          git add -A -- data  # not a path list: data/extracted may not exist, and git add then fails
           if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
           branch="watch/$(date +%F)-${{ github.run_id }}"
           git config user.name "ExcuseMi"
