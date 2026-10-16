@@ -124,8 +124,68 @@ RSpec.describe 'Tech Emails' do
     end
   end
 
+  def subs(page)
+    page.evaluate(<<~JS)
+      (() => [...document.querySelectorAll('.tp-sub')].map((e) => {
+        const lh = parseFloat(getComputedStyle(e).lineHeight), box = document.querySelector('.tp-body').getBoundingClientRect(), b = e.getBoundingClientRect();
+        return { h: e.scrollHeight, lh, size: parseFloat(getComputedStyle(e).fontSize), text: e.textContent, full: e.getAttribute('data-full'), clear: box.bottom <= b.top + 1 };
+      }))()
+    JS
+  end
+
+  def longest(key)
+    data = JSON.parse(File.read(File.expand_path('../../data/emails.json', __dir__)))
+    data.max_by { |r| key.call(r).to_s.size }
+  end
+
+  it 'a short record with the longest source and context shows both in full, never cut while there is room' do
+    ctx = longest(->(r) { r['context'] })
+    src = longest(->(r) { r['source']['title'] })
+    DEVICES.each do |dev|
+      [ctx.merge('messages' => [{ 'from' => 'A', 'text' => 'Short.' }], 'kind' => 'chat'), email('source' => src['source'])].each do |rec|
+        page = screen('full', [rec], **dev)
+        page.has_css?('.tp-body')
+        subs(page).each do |l|
+          expect(l['text']).to eq(l['full'])
+          expect(l['text']).not_to end_with('...')
+          expect(l['clear']).to be(true)
+        end
+      end
+    end
+  end
+
+  it 'a record that needs the room cuts context and source to at most 2 lines (3 on the X) at a word end, and the body stays clear' do
+    src = longest(->(r) { r['source']['title'] })
+    DEVICES.each do |dev|
+      page = screen('full', [chat(12).merge('source' => src['source'], 'context' => src['context'].to_s * 2)], **dev)
+      page.has_css?('.tp-body')
+      subs(page).each do |l|
+        expect(l['h']).to be <= (dev[:device] == 'v2' ? 3 : 2) * l['lh'] + 6
+        expect(l['clear']).to be(true)
+        expect(l['text']).to eq(l['full']).or(satisfy { |t| t.end_with?('...') && l['full'].start_with?(t.delete_suffix('...') + ' ') })
+      end
+    end
+  end
+
+  it 'date and To scale with the body: at least the normal size and about 0.6 of the body, context at least its small size' do
+    DEVICES.each do |dev|
+      page = screen('full', [email('to' => %w[A B C])], **dev)
+      page.has_css?('.tp-body')
+      body = font(page)
+      normal = native(page, 'description')
+      sizes = page.evaluate("[...document.querySelectorAll('.tp-m')].map((e) => parseFloat(getComputedStyle(e).fontSize))")
+      expect(sizes.size).to eq(2)
+      sizes.each do |z|
+        expect(z).to be >= normal - 0.5
+        expect(z).to be >= body * 0.6 - 1.5
+      end
+      small = native(page, 'label label--small')
+      expect(subs(page).map { |l| l['size'] }.min).to be >= small - 0.5
+    end
+  end
+
   it 'a year-only date shows the year alone' do
-    expect(screen('full', [email('date' => '2012')])).to have_css(".label", exact_text: "2012")
+    expect(screen('full', [email('date' => '2012')])).to have_css(".tp-m", exact_text: "2012")
   end
 
   def font(page, sel = '.tp-text') = page.evaluate("parseFloat(getComputedStyle(document.querySelector('#{sel}')).fontSize)")

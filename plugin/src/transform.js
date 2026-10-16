@@ -71,7 +71,7 @@ function clean(r) {
   var date = typeof r.date === 'string' ? r.date.trim() : '';
   if (!DATE_RE.test(date)) return null;
   var src = r.source && typeof r.source === 'object' ? r.source : {};
-  var base = { to: names(r.to), cc: names(r.cc), date: date, date_label: dateLabel(date), context: str(r.context, 200), source: { title: str(src.title, 160) } };
+  var base = { to: names(r.to), cc: names(r.cc), date: date, date_label: dateLabel(date), context: str(r.context, 200), source: { title: str(src.title, 240) } };
   var messages, kind, title;
   if (Array.isArray(r.messages)) {
     messages = messagesOf(r.messages);

@@ -4,6 +4,7 @@
 {% assign show_context = true %}
 {% if sc == "false" or sc == "no" or sc == "0" or sc == "off" %}{% assign show_context = false %}{% endif %}
 {% comment %} the framework's own clamp script measures once at load and would cut a title whose size changes later: the title is clamped by CSS instead {% endcomment %}
+{% assign mline = "white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%" %}
 {% assign tclamp = "display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden" %}
 {% comment %} text_size is the smallest size; the script below picks the largest that fits (levels 0 to 5, the framework's own size classes) {% endcomment %}
 {% assign min_level = 0 %}
@@ -31,9 +32,9 @@
   {% else %}
   <div class="flex flex--col flex--left gap--none w--full shrink-0" data-head="1">
     <span class="text--left title title--small text--bold tp-t" style="{{ tclamp }}">{{ email.title | escape }}</span>
-    <span class="text--left label label--small lg:label--base">{{ email.date_label }}</span>
-    {% if email.to.size > 0 %}{% assign more = email.to.size | minus: 2 %}<span class="text--left label label--small lg:label--base" data-clamp="1">To: {{ email.to | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
-    {% if email.cc.size > 0 %}{% assign more = email.cc.size | minus: 2 %}<span class="text--left label label--small lg:label--base" data-clamp="1">Cc: {{ email.cc | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
+    <span class="text--left label label--small tp-m" style="{{ mline }}">{{ email.date_label }}</span>
+    {% if email.to.size > 0 %}{% assign more = email.to.size | minus: 2 %}<span class="text--left label label--small tp-m" style="{{ mline }}">To: {{ email.to | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
+    {% if email.cc.size > 0 %}{% assign more = email.cc.size | minus: 2 %}<span class="text--left label label--small tp-m" style="{{ mline }}">Cc: {{ email.cc | slice: 0, 2 | join: ", " | escape }}{% if more > 0 %} +{{ more }}{% endif %}</span>{% endif %}
   </div>
   <div class="border--h-black w--full shrink-0 mt--2 mb--2" data-rule="1"></div>
   {% endif %}
@@ -52,8 +53,8 @@
   </div>
   {% unless compact %}
   <div class="flex flex--col flex--left gap--none w--full shrink-0 pt--2" data-foot="1">
-    {% if show_context and email.context != blank %}<span class="text--left label label--small lg:label--base" style="font-style:italic" data-clamp="1">{{ email.context | escape }}</span>{% endif %}
-    {% if email.source.title != blank %}<span class="text--left label label--small lg:label--base" data-clamp="1">Source: {{ email.source.title | escape }}</span>{% endif %}
+    {% if show_context and email.context != blank %}<span class="text--left label label--small tp-sub" style="font-style:italic">{{ email.context | escape }}</span>{% endif %}
+    {% if email.source.title != blank %}<span class="text--left label label--small tp-sub">Source: {{ email.source.title | escape }}</span>{% endif %}
   </div>
   {% endunless %}
 </div>
@@ -88,9 +89,46 @@
       e.classList.add(TITLE[Math.min(k, Number(e.getAttribute('data-tcap') || TOP))]);
     });
   }
+  // Date, To and Cc grow with the body (about 0.6 of its size, never below the normal size); context and Source start at
+  // their small size and grow into free space.
+  var META = [['description'], ['description'], ['description'], ['description', 'description--large'], ['description', 'description--xxlarge'], ['text--xxlarge']];
+  var SUB = [['label', 'label--small'], ['description'], ['description', 'description--large']];
+  var ALL = ['label', 'label--small', 'description', 'description--large', 'description--xlarge', 'description--xxlarge', 'text--xxlarge'];
+  function setClasses(sel, set) {
+    document.querySelectorAll(sel).forEach(function (e) {
+      ALL.forEach(function (c) { e.classList.remove(c); });
+      set.forEach(function (c) { e.classList.add(c); });
+      e.classList.add('font--regular');
+    });
+  }
+  // context and Source: max = lines allowed (Infinity: the full text); a cut ends at a whole word with "..."
+  function subs(max) {
+    document.querySelectorAll('.tp-sub').forEach(function (el) {
+      if (!el.hasAttribute('data-full')) el.setAttribute('data-full', el.textContent);
+      var full = el.getAttribute('data-full');
+      el.textContent = full;
+      if (max === Infinity) return;
+      // the height of one line and of two, measured on this element (padding and line box included)
+      el.textContent = 'A';
+      var h1 = el.scrollHeight;
+      el.innerHTML = 'A<br>A';
+      var step = el.scrollHeight - h1 || 12;
+      function ok() { return el.scrollHeight <= h1 + (max - 1) * step + 1; }
+      el.textContent = full;
+      if (ok()) return;
+      var words = full.split(' '), lo = 1, hi = words.length - 1;
+      while (lo < hi) {
+        var mid = Math.ceil((lo + hi) / 2);
+        el.textContent = words.slice(0, mid).join(' ') + '...';
+        if (ok()) lo = mid; else hi = mid - 1;
+      }
+      el.textContent = words.slice(0, lo).join(' ') + '...';
+    });
+  }
   function fit() {
     var box = document.querySelector('.tp-body');
     if (!box) return;
+    var capLines = document.querySelector('.screen--lg, .screen--xl') ? 3 : 2;
     var msgs = [].slice.call(box.querySelectorAll('[data-msg]')), more = box.querySelector('[data-more]');
     msgs.forEach(function (m) { var t = m.querySelector('.tp-text'); ['display', 'webkitBoxOrient', 'overflow', 'webkitLineClamp', 'maxHeight'].forEach(function (p) { t.style[p] = ''; }); });
     function show(n, dots) {
@@ -98,13 +136,27 @@
       more.style.display = dots ? '' : 'none';
     }
     function fits() { return box.scrollHeight <= box.clientHeight + 0.5; }
-    var best = -1;
-    for (var k = TOP; k >= MIN; k--) {
-      level(k); show(msgs.length, false);
-      if (fits()) { best = k; break; }
+    function size(k) { level(k); setClasses('.tp-m', META[k]); }
+    function whole(from) {
+      for (var k = TOP; k >= MIN; k--) { size(k); show(msgs.length, false); if (fits()) return k; }
+      return -1;
     }
-    if (best >= 0) return;
-    level(MIN);
+    setClasses('.tp-sub', SUB[0]);
+    // 1. the context and Source at full length first; the body gets the rest. 2. the body does not fit even at its
+    // smallest: they are cut back to 2 lines (3 on a large screen) each, then the body is fitted again.
+    var cut = false, best;
+    subs(Infinity);
+    best = whole();
+    if (best < 0) { cut = true; subs(capLines); best = whole(); }
+    if (best >= 0) {
+      // free space left: the small lines grow, as far as the body still fits whole
+      for (var s = 1; s < SUB.length; s++) {
+        setClasses('.tp-sub', SUB[s]); subs(cut ? capLines : Infinity); show(msgs.length, false);
+        if (!fits()) { setClasses('.tp-sub', SUB[s - 1]); subs(cut ? capLines : Infinity); break; }
+      }
+      return;
+    }
+    size(MIN);
     var n = msgs.length;
     show(n, false);
     while (n > 0) { n--; show(n, true); if (fits()) break; }
