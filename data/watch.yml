@@ -1,13 +1,31 @@
 # Sources the weekly watcher checks. It only appends tips to data/candidates.json.
 # A person reviews candidates and writes records into data/parts/.
+# Checked 2026-10-16 (curl, browser user agent). CourtListener answers curl with a
+# bot challenge (HTTP 202), so its docket ids come from CourtListener's own docket
+# pages found by search; the v4 API needs COURTLISTENER_TOKEN (anonymous gets 401).
 courtlistener:
-  # docket ids from courtlistener.com/docket/<id>/ ; add as cases are picked
-  dockets: []
-  #  - {id: 0, name: "example docket"}
+  # ids from courtlistener.com/docket/<id>/ (not the PACER ids inside the storage URLs)
+  dockets:
+    # cases the dataset already draws from
+    - {id: 69013420, name: "Musk v. Altman, 4:24-cv-04722 (N.D. Cal.)", why: "ECF 379 exhibits in the dataset; more trial exhibits expected"}
+    - {id: 18735353, name: "FTC v. Meta Platforms, 1:20-cv-03590 (D.D.C.)", why: "PX trial exhibits quoted in filings; appeal pending"}
+    - {id: 18552824, name: "US v. Google (search), 1:20-cv-03010 (D.D.C.)", why: "remedies filings quote UPX exhibits"}
+    - {id: 66753787, name: "US v. Google (ad tech), 1:23-cv-00108 (E.D. Va.)", why: "PTX exhibits; remedies phase"}
+    - {id: 67494594, name: "FTC v. Microsoft, 3:23-cv-02880 (N.D. Cal.)", why: "PX exhibits quoted in findings of fact"}
+    - {id: 17442392, name: "Epic v. Apple, 4:20-cv-05640 (N.D. Cal.)", why: "PX/CX exhibits quoted in orders; enforcement rulings continue"}
+    - {id: 4609586, name: "Waymo v. Uber, 3:17-cv-00939 (N.D. Cal.)", why: "trial transcripts read exhibits into the record (closed, low change)"}
+    - {id: 7185174, name: "US v. Holmes and Balwani, 5:18-cr-00258 (N.D. Cal.)", why: "trial exhibits attached to motions (closed, low change)"}
+    - {id: 4177532, name: "Oracle v. Google, 3:10-cv-03561 (N.D. Cal.)", why: "Rule 50 motion exhibits (closed, low change)"}
+    # ongoing cases likely to release new tech emails
+    - {id: 68362334, name: "US v. Apple, 2:24-cv-04055 (D.N.J.)", why: "ongoing case, exhibits and filings quoting Apple emails likely", ongoing: true}
+    - {id: 67828404, name: "FTC v. Amazon, 2:23-cv-01495 (W.D. Wash.)", why: "ongoing case; trial exhibits and summary judgment records likely", ongoing: true}
 pages:
   # exhibit listing pages; links to PDFs or exhibits are tracked
-  - {name: "DOJ v. Google (search) trial exhibits", url: "https://www.justice.gov/atr/case/us-and-plaintiff-states-v-google-llc"}
-  - {name: "FTC v. Meta documents", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/191-0134-facebook-inc-ftc-v"}
+  - {name: "DOJ v. Google (search) trial exhibits", url: "https://www.justice.gov/atr/us-and-plaintiff-states-v-google-llc-2020-trial-exhibits", why: "source of the UPX/PSX records"}
+  - {name: "DOJ v. Google (ad tech) trial exhibits", url: "https://www.justice.gov/atr/us-and-plaintiff-states-v-google-llc-2023-trial-exhibits", why: "source of the PTX records"}
+  - {name: "DOJ v. Microsoft (1998) trial exhibits", url: "https://www.justice.gov/atr/us-v-microsoft-corporation-browser-and-middleware-trial-exhibits", why: "source of the government exhibit records"}
+  # FTC case page answers a browser but not curl (404 to a script); kept as the only FTC index
+  - {name: "FTC v. Meta documents", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/191-0134-facebook-inc-ftc-v-ftc-v-meta-platforms-inc", why: "PX exhibits and filings; 403 to scripts, unverified"}
 rss:
   # tips only, never copied
-  - {name: "techemails.com", url: "https://techemails.com/feed"}
+  - {name: "techemails.com", url: "https://techemails.com/feed", why: "tips for new public-record emails"}

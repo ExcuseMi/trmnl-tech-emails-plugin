@@ -50,3 +50,16 @@ def test_one_failing_source_does_not_stop_others():
 def test_garbage_response_is_an_error_not_a_crash():
     new, errors = watch.run(CONFIG, [], get=lambda u, h=None: "not json or xml <<<")
     assert len(errors) >= 1
+
+
+def test_courtlistener_auth_or_throttle_is_skipped_not_failed():
+    import urllib.error
+
+    def get(url, headers=None):
+        if "courtlistener" in url:
+            raise urllib.error.HTTPError(url, 401, "Unauthorized", {}, None)
+        return fake(url)
+    skipped = []
+    new, errors = watch.run(CONFIG, [], get=get, skipped=skipped)
+    assert errors == [] and len(skipped) == 1 and "401" in skipped[0]
+    assert len(new) == 2

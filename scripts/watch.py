@@ -7,6 +7,7 @@ Never writes data/emails.json. One failing source does not stop the others.
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import date
@@ -83,8 +84,11 @@ def items_rss(src, get):
     return out
 
 
-def run(config, candidates, get=http_get, today=None):
-    """Return (new_items, errors). `candidates` is the current list."""
+def run(config, candidates, get=http_get, today=None, skipped=None):
+    """Return (new_items, errors). `candidates` is the current list.
+
+    CourtListener answering 401/403/429 (no token, throttled) is not an error: the
+    source is appended to `skipped` and the run goes on."""
     today = today or date.today().isoformat()
     known = {c["url"] for c in candidates}
     new, errors = [], []
@@ -95,6 +99,12 @@ def run(config, candidates, get=http_get, today=None):
         label = src.get("name") or src.get("url") or src.get("id")
         try:
             found = fn(src, get)
+        except urllib.error.HTTPError as exc:
+            if kind == "courtlistener" and exc.code in (401, 403, 429) and skipped is not None:
+                skipped.append(f"{label}: HTTP {exc.code}")
+                continue
+            errors.append(f"{kind} {label}: {exc}")
+            continue
         except Exception as exc:  # one source must not stop the others
             errors.append(f"{kind} {label}: {exc}")
             continue
@@ -111,9 +121,12 @@ def main():
     cand_path = ROOT / "data" / "candidates.json"
     config = yaml.safe_load(cfg_path.read_text(encoding="utf-8")) or {}
     candidates = json.loads(cand_path.read_text(encoding="utf-8")) if cand_path.exists() else []
-    new, errors = run(config, candidates)
+    skipped = []
+    new, errors = run(config, candidates, skipped=skipped)
     for e in errors:
         print("WARN:", e, file=sys.stderr)
+    if skipped:
+        print(f"skipped {len(skipped)} CourtListener dockets (no token or throttled): {skipped[0]}")
     if new:
         cand_path.write_text(json.dumps(candidates + new, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"{len(new)} new candidates, {len(errors)} failed sources")
