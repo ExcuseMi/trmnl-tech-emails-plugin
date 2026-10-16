@@ -52,7 +52,7 @@ Plugin views (from `plugin/`):
 | Tests, every view on OG, X, BWRY and 7-color | `./bin/trmnlp test` |
 | Preview PNGs of all four views from the live data | `./bin/trmnlp build --png` (writes `_build/*.png`; `--color-depth 8` for gray) |
 | Live preview in the browser | `./bin/trmnlp serve` |
-| Same without Ruby, with Docker | `docker run --rm -p 4567:4567 -v "$PWD:/plugin" trmnl/trmnlp serve` |
+| Same without Ruby, with Docker | `docker run --rm --pull always -p 4567:4567 -v "$(pwd):/plugin" trmnl/trmnlp serve --bind 0.0.0.0` (`bin/trmnlp` itself falls back to this image when Ruby is missing) |
 
 `build --png` has no device option: BWRY and color looks are checked by the `trmnlp test` cases for `og_bwry` and `inky_impression_7_3`.
 
