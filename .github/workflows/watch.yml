@@ -48,7 +48,7 @@ jobs:
             (write [] when nothing is worth keeping). Change no other file.
       - name: Skip notice
         if: env.HAS_KEY != 'true'
-        run: echo "ANTHROPIC_API_KEY secret is not set: selection skipped, only candidates are updated."
+        run: echo "ANTHROPIC_API_KEY secret is not set, selection skipped, only candidates are updated."
       - name: Verify and merge
         run: |
           shopt -s nullglob

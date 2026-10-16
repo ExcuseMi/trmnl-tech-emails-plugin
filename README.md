@@ -10,7 +10,20 @@ Public-record tech emails. No backend: the plugin fetches the static `data/email
 | `data/candidates.json` | Watcher output: new items (url, title, source, first_seen, tip). Review only |
 | `scripts/merge.py` | `python scripts/merge.py` builds `emails.json`; exits 1 on any invalid record |
 | `scripts/watch.py` | No-AI watcher; never writes `emails.json` |
-| `.github/workflows/watch.yml` | Weekly run, opens a PR when `candidates.json` changes |
+| `scripts/extract.py` | No-AI: downloads new candidates, pdftotext, writes `data/sources/<id>.txt` (gitignored) and `data/extracted/<id>.json` (raw messages) |
+| `data/BRIEF.md` | Selection rules the Claude step follows (email and chat) |
+| `scripts/verify.py` | Guard: every excerpt and chat text must occur verbatim in its source text; url must be a known candidate |
+| `.github/workflows/watch.yml` | Weekly: watch, extract, select, verify, merge, open a PR (never pushes to main) |
+
+## Weekly pipeline
+
+| Step | Needs |
+|---|---|
+| watch, extract | nothing |
+| select (`anthropics/claude-code-action`, pinned to the commit of v1) | secret `ANTHROPIC_API_KEY`; without it the step is skipped with a log line |
+| verify, merge | a failure of either fails the job, no PR |
+
+Chat record: `kind: "chat"`, `messages: [{speaker, text}]` (at most 30, each <= 600). Email records may carry `kind: "email"` (default).
 
 ## Record
 
