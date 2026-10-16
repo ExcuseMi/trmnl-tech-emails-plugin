@@ -1,0 +1,400 @@
+[
+  {
+    "kind": "email",
+    "id": "holmes-trial-2010-gsk-holmes",
+    "from": "Elizabeth Holmes",
+    "to": [],
+    "cc": [],
+    "date": "2010-10-19",
+    "subject": "Re: GSK",
+    "excerpt": "Thanks all. I've just landed and will take a look as soon as the materials are circulated. Three points I will want to highlight and quantify as numerically as possible (by how much): - why and how our platform will be capable of the full range of assays and be at least as good as the CRO - why and how we'll achieve significant cost savings - why and how we'll accelerate studies significantly",
+    "context": "Theranos's CEO set out what a pitch to a drug company had to prove about its blood-testing platform.",
+    "company": [
+      "Theranos",
+      "GlaxoSmithKline"
+    ],
+    "people": [
+      "Elizabeth Holmes"
+    ],
+    "source": {
+      "title": "US v. Holmes and Balwani, N.D. Cal. 5:18-cr-00258-EJD, Dkt. 1470-3 (Balwani motion to admit trial exhibits), filed 2022-06-01",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.327950/gov.uscourts.cand.327950.1470.3.pdf",
+      "locator": "Ex. 2, ECF p. 7 (HOLMES0018922)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "holmes-trial-2010-gsk-gibbons",
+    "from": "Ian Gibbons",
+    "to": [
+      "Elizabeth Holmes",
+      "Surekha Gangakhedkar"
+    ],
+    "cc": [
+      "Daniel Young",
+      "Gary Frenzel",
+      "Sunny Balwani"
+    ],
+    "date": "2010-10-19",
+    "subject": "Re: GSK",
+    "excerpt": "I think we have demonstrated capabilities fully equivalent to lab. methods in areas where we have done assay development. Our immunoassays match the best that can be done in clinical labs and work with small blood samples. Generally our assays are faster by a factor of three to ten than kits.",
+    "context": "A Theranos scientist summed up for the CEO what the company's platform had shown ahead of a drug-company pitch.",
+    "company": [
+      "Theranos"
+    ],
+    "people": [
+      "Ian Gibbons",
+      "Elizabeth Holmes",
+      "Sunny Balwani"
+    ],
+    "source": {
+      "title": "US v. Holmes and Balwani, N.D. Cal. 5:18-cr-00258-EJD, Dkt. 1470-3 (Balwani motion to admit trial exhibits), filed 2022-06-01",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.327950/gov.uscourts.cand.327950.1470.3.pdf",
+      "locator": "Ex. 2, ECF p. 7"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "holmes-trial-2014-lab-directors-balwani",
+    "from": "Sunny Balwani",
+    "to": [
+      "Suraj Saksena"
+    ],
+    "cc": [],
+    "date": "2014-11-18",
+    "subject": "Re: Lab Personnel Update -- A/C Privileged",
+    "excerpt": "We need high complexity in California. You should begin this path. It won't be that difficult. Arizona is clearly very easy for moderate complexity and u r already qualified for that so we are going to pursue that now.",
+    "context": "Theranos's president told a lab-director candidate which lab licence to pursue as the company staffed its clinical labs.",
+    "company": [
+      "Theranos"
+    ],
+    "people": [
+      "Sunny Balwani"
+    ],
+    "source": {
+      "title": "US v. Holmes and Balwani, N.D. Cal. 5:18-cr-00258-EJD, Dkt. 1671-2 (Balwani sentencing response, exhibits), filed 2022-12-02",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.327950/gov.uscourts.cand.327950.1671.2.pdf",
+      "locator": "Ex. 8, ECF p. 23"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "holmes-trial-2014-ptinr-balwani-1",
+    "from": "Sunny Balwani",
+    "to": [
+      "Daniel Young"
+    ],
+    "cc": [
+      "Nishit Doshi"
+    ],
+    "date": "2014-08-25",
+    "subject": "RE: what was the POC PT/INR device we used before before we went live on tecan?",
+    "excerpt": "we need to get a reliable PT/INR POC for now and get off of Tecan as it is time consuming and seems like recently we have lost some physicians because of their lack of confidence in our PT results",
+    "context": "Theranos's president on problems with the company's blood-clotting (PT/INR) results in its own lab.",
+    "company": [
+      "Theranos"
+    ],
+    "people": [
+      "Sunny Balwani",
+      "Daniel Young"
+    ],
+    "source": {
+      "title": "US v. Holmes and Balwani, N.D. Cal. 5:18-cr-00258-EJD, Dkt. 1665-7 (Balwani sentencing memorandum, declaration exhibits), filed 2022-11-30",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.327950/gov.uscourts.cand.327950.1665.7.pdf",
+      "locator": "Ex. 34, ECF p. 347 (THPFM0001955521)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "holmes-trial-2014-ptinr-balwani-2",
+    "from": "Sunny Balwani",
+    "to": [
+      "Nishit Doshi",
+      "Daniel Young"
+    ],
+    "cc": [],
+    "date": "2014-08-25",
+    "subject": "RE: what was the POC PT/INR device we used before before we went live on tecan?",
+    "excerpt": "ok, if we are going to keep this on Tecan for now then we need to move on this rapidy and get high confidence on this.",
+    "context": "Theranos's president pressed staff to validate clotting tests run on a third-party analyzer.",
+    "company": [
+      "Theranos"
+    ],
+    "people": [
+      "Sunny Balwani",
+      "Nishit Doshi",
+      "Daniel Young"
+    ],
+    "source": {
+      "title": "US v. Holmes and Balwani, N.D. Cal. 5:18-cr-00258-EJD, Dkt. 1665-7 (Balwani sentencing memorandum, declaration exhibits), filed 2022-11-30",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.327950/gov.uscourts.cand.327950.1665.7.pdf",
+      "locator": "Ex. 34, ECF p. 346 (THPFM0001955520)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "holmes-trial-2013-dod-holmes",
+    "from": "Christian Holmes",
+    "to": [
+      "Jeffrey Blickman",
+      "Daniel Edlin"
+    ],
+    "cc": [],
+    "date": "2013-08-20",
+    "subject": "RE: DOD",
+    "excerpt": "Also the only press release this company has ever done has basically proclaimed that we have a close working relationship with DOD I don't disagree about not talking about it, but it is odd that we offer the information about our relationships and then ask not to talk about it. The Theranos way...",
+    "context": "A Theranos executive questioned the company's habit of advertising a Defense Department relationship while asking others not to discuss it.",
+    "company": [
+      "Theranos"
+    ],
+    "people": [
+      "Christian Holmes"
+    ],
+    "source": {
+      "title": "US v. Holmes and Balwani, N.D. Cal. 5:18-cr-00258-EJD, Dkt. 1396-4 (Balwani motion to exclude exhibits, Ex. 4 to declaration), filed 2022-04-08",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.327950/gov.uscourts.cand.327950.1396.4.pdf",
+      "locator": "Ex. 4, ECF p. 64 (THPFM0000610205)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "holmes-trial-2013-dod-edlin",
+    "from": "Daniel Edlin",
+    "to": [
+      "Christian Holmes",
+      "Jeffrey Blickman"
+    ],
+    "cc": [],
+    "date": "2013-08-20",
+    "subject": "RE: DOD",
+    "excerpt": "Totally agree. EAH will obviously handle this the right way and kill it, but she is the only person who can see the pathway to doing that",
+    "context": "A Theranos executive on how the CEO would handle press questions about the company's Defense Department ties.",
+    "company": [
+      "Theranos"
+    ],
+    "people": [
+      "Daniel Edlin"
+    ],
+    "source": {
+      "title": "US v. Holmes and Balwani, N.D. Cal. 5:18-cr-00258-EJD, Dkt. 1396-4 (Balwani motion to exclude exhibits, Ex. 4 to declaration), filed 2022-04-08",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.327950/gov.uscourts.cand.327950.1396.4.pdf",
+      "locator": "Ex. 4, ECF p. 64 (THPFM0000610205)"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "holmes-trial-2010-walgreens-demo",
+    "from": "a Walgreens project manager",
+    "to": [
+      "Daniel Young"
+    ],
+    "cc": [
+      "Sunny Balwani",
+      "a Walgreens colleague"
+    ],
+    "date": "2010-09-29",
+    "subject": "Re: today's demo",
+    "excerpt": "The kickoff was a success. The demos went fine. We shut the machines down in the middle of the assay. We spoke to Sunny about this last night. We had to move the machines back to our building that night and we didn't want to wait for the assays to complete and the business day was over. Our expectation is that we will not get any usable results from the assays that were started late yesterday afternoon.",
+    "context": "A Walgreens manager reported on a 2010 demo of Theranos devices at the start of the two companies' pilot.",
+    "company": [
+      "Walgreens",
+      "Theranos"
+    ],
+    "people": [
+      "Daniel Young",
+      "Sunny Balwani"
+    ],
+    "source": {
+      "title": "US v. Holmes and Balwani, N.D. Cal. 5:18-cr-00258-EJD, Dkt. 1406-3 (Balwani motion for curative instruction, Ex. 2), filed 2022-04-18",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.327950/gov.uscourts.cand.327950.1406.3.pdf",
+      "locator": "Ex. 2, ECF p. 13 (Trial Exh. 20441 p. 002; TS-0974879)"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "waymo-trial-2016-03-burn-the-village",
+    "title": "Kalanick and Levandowski, 'burn the village'",
+    "date": "2016-03-01",
+    "people": [
+      "Travis Kalanick",
+      "Anthony Levandowski"
+    ],
+    "company": [
+      "Uber"
+    ],
+    "messages": [
+      {
+        "from": "Travis Kalanick",
+        "text": "burn the village"
+      },
+      {
+        "from": "Anthony Levandowski",
+        "text": "Yup."
+      }
+    ],
+    "context": "Texts shown to Uber's then-CEO at trial; he said he did not recall what the first message meant.",
+    "source": {
+      "title": "Waymo v. Uber, N.D. Cal. 3:17-cv-00939-WHA, jury trial transcript vol. 4 (2018-02-07), Dkt. 2660; text read into the record from the trial exhibit",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.308136/gov.uscourts.cand.308136.2660.0.pdf",
+      "locator": "p. 653:21 to 654:16 (Trial Exh. 10275)"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "waymo-trial-2016-03-race",
+    "title": "Levandowski and Kalanick, 'second place is first loser'",
+    "date": "2016-03-01",
+    "people": [
+      "Travis Kalanick",
+      "Anthony Levandowski"
+    ],
+    "company": [
+      "Uber"
+    ],
+    "messages": [
+      {
+        "from": "Anthony Levandowski",
+        "text": "I just see this as a race and we need to win, second place is first loser."
+      },
+      {
+        "from": "Travis Kalanick",
+        "text": "agreed"
+      }
+    ],
+    "context": "Texts about the race to build self-driving cars, read at trial; Kalanick said he first heard the line from his high school football coach.",
+    "source": {
+      "title": "Waymo v. Uber, N.D. Cal. 3:17-cv-00939-WHA, jury trial transcript vol. 4 (2018-02-07), Dkt. 2660; text read into the record from the trial exhibit",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.308136/gov.uscourts.cand.308136.2660.0.pdf",
+      "locator": "p. 655:2-3 and 656:8-9 (Trial Exh. 10275)"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "waymo-trial-2016-01-destroy-him",
+    "title": "Levandowski to Lior Ron, 'Or else we destroy him'",
+    "date": "2016-01-22",
+    "people": [
+      "Anthony Levandowski",
+      "Lior Ron"
+    ],
+    "company": [
+      "Uber"
+    ],
+    "messages": [
+      {
+        "from": "Anthony Levandowski",
+        "text": "Or else we destroy him."
+      }
+    ],
+    "context": "Read to the jury by Levandowski's Otto co-founder during talks with Uber; he testified that 'him' meant Kalanick.",
+    "source": {
+      "title": "Waymo v. Uber, N.D. Cal. 3:17-cv-00939-WHA, jury trial transcript vol. 4 (2018-02-07), Dkt. 2660; text read into the record from the trial exhibit",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.308136/gov.uscourts.cand.308136.2660.0.pdf",
+      "locator": "p. 791:17-20"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "waymo-trial-2016-03-delete",
+    "title": "Levandowski to Lior Ron, delete the messages",
+    "date": "2016-03-09",
+    "people": [
+      "Anthony Levandowski",
+      "Lior Ron"
+    ],
+    "company": [
+      "Uber"
+    ],
+    "messages": [
+      {
+        "from": "Anthony Levandowski",
+        "text": "Make sure you delete all the messages tonight on both your PC and iPhone."
+      }
+    ],
+    "context": "Message from Waymo's former engineer to his Otto co-founder, read at trial as Waymo argued about concealment.",
+    "source": {
+      "title": "Waymo v. Uber, N.D. Cal. 3:17-cv-00939-WHA, jury trial transcript vol. 4 (2018-02-07), Dkt. 2660; text read into the record from the trial exhibit",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.308136/gov.uscourts.cand.308136.2660.0.pdf",
+      "locator": "p. 771:22-25 (Trial Exh. 5467)"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "waymo-trial-2016-01-pushed-out",
+    "title": "Levandowski to Lior Ron, 'set up evidence that I was pushed out'",
+    "date": "2016-01",
+    "people": [
+      "Anthony Levandowski",
+      "Lior Ron"
+    ],
+    "company": [
+      "Waymo"
+    ],
+    "messages": [
+      {
+        "from": "Anthony Levandowski",
+        "text": "Hey, can you write me an email I should send to Bryan of how he should announce that he is replacing me on the laser team."
+      },
+      {
+        "from": "Anthony Levandowski",
+        "text": "He asked me to do that, and I think it's a great opportunity to set up evidence that I was pushed out."
+      }
+    ],
+    "context": "Sent while Levandowski still worked at Google; read at trial. He left the company shortly after.",
+    "source": {
+      "title": "Waymo v. Uber, N.D. Cal. 3:17-cv-00939-WHA, jury trial transcript vol. 4 (2018-02-07), Dkt. 2660; text read into the record from the trial exhibit",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.308136/gov.uscourts.cand.308136.2660.0.pdf",
+      "locator": "p. 768:4-21 (Trial Exh. 5822)"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "waymo-trial-2015-lawyers",
+    "title": "Levandowski relays Uber's lawyer preference to Lior Ron",
+    "date": "2015",
+    "people": [
+      "Anthony Levandowski",
+      "Lior Ron"
+    ],
+    "company": [
+      "Uber"
+    ],
+    "messages": [
+      {
+        "from": "Anthony Levandowski",
+        "text": "From Cam, just double-checked with Legal and Orrick works for Lyft. So we wouldn't be able to share any info with them and would really prefer you choose O'Melveny or Goodwin Procter."
+      }
+    ],
+    "context": "Read at trial to show Uber steering which law firm Otto hired before the deal; 'Cam' was an Uber executive.",
+    "source": {
+      "title": "Waymo v. Uber, N.D. Cal. 3:17-cv-00939-WHA, jury trial transcript vol. 4 (2018-02-07), Dkt. 2660; text read into the record from the trial exhibit",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.308136/gov.uscourts.cand.308136.2660.0.pdf",
+      "locator": "p. 764:3-6 (Trial Exh. 5146)"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "waymo-trial-2016-03-wink",
+    "title": "Levandowski to Kalanick, 'wink, wink'",
+    "date": "2016-03-19",
+    "people": [
+      "Anthony Levandowski",
+      "Travis Kalanick"
+    ],
+    "company": [
+      "Uber"
+    ],
+    "messages": [
+      {
+        "from": "Anthony Levandowski",
+        "text": "Here's the speech you need to give, wink, wink."
+      }
+    ],
+    "context": "Quoted by Waymo's counsel in arguing for admission; the text linked a clip of the 'greed is good' speech from Wall Street.",
+    "source": {
+      "title": "Waymo v. Uber, N.D. Cal. 3:17-cv-00939-WHA, jury trial transcript vol. 3 (2018-02-06), Dkt. 2659; counsel describing the exhibit",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.308136/gov.uscourts.cand.308136.2659.0.pdf",
+      "locator": "p. 399:9-14"
+    }
+  }
+]

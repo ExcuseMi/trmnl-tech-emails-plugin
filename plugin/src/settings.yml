@@ -10,6 +10,7 @@ refresh_interval_floor: '5'
 polling_url: "{% if source_url != blank %}{{ source_url }}{% else %}https://raw.githubusercontent.com/ExcuseMi/trmnl-tech-emails-plugin/main/data/emails.json{% endif %}"
 polling_headers: ''
 polling_body: ''
+id: 509355
 oauth_enabled: 'false'
 oauth_pkce_enabled: 'no'
 custom_fields:
@@ -17,7 +18,7 @@ custom_fields:
   field_type: author_bio
   name: About This Plugin
   description: Shows one email or chat message exchange at a time from the public record of tech companies, as an email. Each one is credited to its source document.
-  category: tech
+  category: news,email
   github_url: https://github.com/ExcuseMi/trmnl-tech-emails-plugin
 - keyname: mode
   field_type: select
