@@ -2,6 +2,8 @@ import json
 
 import watch
 
+watch.CL_PAUSE_S = 0  # no real pauses in tests
+
 CONFIG = {
     "courtlistener": {"dockets": [{"id": 7, "name": "Case"}]},
     "pages": [{"name": "Page", "url": "https://x.gov/ex"}],
@@ -76,3 +78,17 @@ def test_baseline_marks_every_present_item_known():
 def test_normal_run_does_not_mark_baseline():
     new, _ = watch.run(CONFIG, [], get=fake)
     assert all("baseline" not in n for n in new)
+
+
+def test_courtlistener_429_is_retried_with_retry_after():
+    import urllib.error
+    w = watch
+    calls, slept = [], []
+
+    def get(url, headers=None):
+        calls.append(url)
+        if len(calls) == 1:
+            raise urllib.error.HTTPError(url, 429, "Too Many Requests", {"Retry-After": "7"}, None)
+        return '{"results": [{"entry_number": 5, "description": "Exhibit"}]}'
+    items = w.items_courtlistener({"id": 1, "name": "Case"}, get, sleep=slept.append)
+    assert len(calls) == 2 and 7 in slept and len(items) == 1

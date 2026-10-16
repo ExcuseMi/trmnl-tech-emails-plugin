@@ -7,6 +7,7 @@ Never writes data/emails.json.
 """
 import json
 import os
+import time
 import sys
 import urllib.error
 import urllib.request
@@ -50,11 +51,30 @@ class _Links(HTMLParser):
             self._href = None
 
 
-def items_courtlistener(src, get):
+CL_PAUSE_S = 3        # between CourtListener requests (2026-10-16: 6 of 7 dockets got 429 back to back)
+CL_TRIES = 3
+CL_WAIT_MAX_S = 60
+
+
+def cl_get(url, headers, get, sleep=time.sleep):
+    """One CourtListener request with a pause before it and a retry on 429 that honours Retry-After."""
+    for attempt in range(CL_TRIES):
+        sleep(CL_PAUSE_S)
+        try:
+            return get(url, headers)
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429 or attempt == CL_TRIES - 1:
+                raise
+            ra = (exc.headers or {}).get("Retry-After") if hasattr(exc, "headers") else None
+            wait = int(ra) if ra and str(ra).isdigit() else 10 * (attempt + 1)
+            sleep(min(wait, CL_WAIT_MAX_S))
+
+
+def items_courtlistener(src, get, sleep=time.sleep):
     token = os.environ.get("COURTLISTENER_TOKEN")
     headers = {"Authorization": f"Token {token}"} if token else {}
     did = src["id"]
-    data = json.loads(get(f"{CL_API}?docket={did}&order_by=-date_filed", headers))
+    data = json.loads(cl_get(f"{CL_API}?docket={did}&order_by=-date_filed", headers, get, sleep))
     out = []
     for e in data.get("results", []):
         n = e.get("entry_number")
