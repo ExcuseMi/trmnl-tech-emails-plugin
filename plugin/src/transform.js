@@ -80,9 +80,11 @@ function clean(r) {
     title = str(r.title, 120) || str(r.subject, 200) || chatTitle(messages, base.to);
   } else {
     var from = str(r.from, 80), subject = str(r.subject, 200), excerpt = str(r.excerpt, 700);
-    if (!from || !subject || !excerpt || r.kind === 'chat') return null;
+    if (!from || !excerpt || r.kind === 'chat') return null;
     kind = 'email';
-    title = subject;
+    // no subject (or the placeholder): the record's title, else "<from> emails <first recipient>"
+    if (/^\(?\s*no subject\s*\)?$/i.test(subject)) subject = '';
+    title = subject || str(r.title, 120) || (base.to.length ? from + ' emails ' + base.to[0] : from + ' writes');
     messages = [{ from: from, text: excerpt, p: 0 }];
   }
   base.kind = kind;

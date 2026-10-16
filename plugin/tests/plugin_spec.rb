@@ -115,6 +115,15 @@ RSpec.describe 'Tech Emails' do
     expect(screen('half_horizontal', [email])).to have_no_text('Source:')
   end
 
+  it 'an email without a subject gets a readable title, never "(no subject)"' do
+    DEVICES.each do |dev|
+      page = screen('full', [email('subject' => '(no subject)')], **dev)
+      page.has_css?('.tp-t')
+      expect(page.evaluate("document.querySelector('.tp-t').textContent")).to eq('Mark Zuckerberg emails David Ebersman')
+      expect(page).to have_no_text('no subject')
+    end
+  end
+
   it 'a year-only date shows the year alone' do
     expect(screen('full', [email('date' => '2012')])).to have_css(".label", exact_text: "2012")
   end

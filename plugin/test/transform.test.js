@@ -194,3 +194,12 @@ test('a text over the limit is cut at a word end with an ellipsis, never inside 
   assert.ok(out.length <= 700);
   assert.match(out, /alpha…$/);
 });
+
+test('title without a subject: the record title, else "<from> emails <first to>", never "(no subject)"', () => {
+  const t = (x) => run(input([{ ...rec(1), ...x }], 'newest')).email.title;
+  assert.equal(t({ subject: '(no subject)' }), 'Person 1 emails A');
+  assert.equal(t({ subject: '' }), 'Person 1 emails A');
+  assert.equal(t({ subject: undefined, title: 'Given title' }), 'Given title');
+  assert.equal(t({ subject: '(No Subject)', to: [] }), 'Person 1 writes');
+  assert.equal(t({ subject: 'Real' }), 'Real');
+});
