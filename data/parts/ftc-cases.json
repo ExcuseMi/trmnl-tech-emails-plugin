@@ -1,0 +1,804 @@
+[
+  {
+    "kind": "email",
+    "id": "ftc-meta-2008-06-22-zuckerberg-better-to-buy",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "Chris Cox"
+    ],
+    "cc": [],
+    "date": "2008-06-22",
+    "subject": "assembling the people who apparently didn’t say the things in my memories",
+    "excerpt": "the answer to your question of why it is better to buy than compete is network effects. This decision doesn’t reflect a lack of confidence in our product or anything like that. It’s just that once someone has saturated a demographic somewhere, it’s harder to compete with them. We see this even when the incumbent’s product is way less efficient than our own.",
+    "context": "Zuckerberg explained a 2008 acquisition to colleagues; Meta says the email concerned a company in Germany.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "Chris Cox"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX1901",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX1901, FB_FTC_CID_05992062 at -062; PDF p. 986"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2012-02-28-zuckerberg-network-effects",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "David Ebersman"
+    ],
+    "cc": [],
+    "date": "2012-02-28",
+    "subject": "null",
+    "excerpt": "Once someone wins at a specific mechanic, it’s difficult for others to supplant them without doing something different.",
+    "context": "Zuckerberg to Facebook's CFO on why social products are hard to dislodge, weeks before the Instagram deal.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "David Ebersman"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX1136",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX1136, FB_FTC_CID_01543961 at -961; PDF p. 986"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2012-04-09-zuckerberg-just-buy",
+    "from": "Mark Zuckerberg",
+    "to": [],
+    "cc": [],
+    "date": "2012-04-09",
+    "subject": "Confidential Announcement",
+    "excerpt": "One reason people underestimate the importance of watching Google is that we can likely always just buy any competitive startups, but it’ll be a while before we can buy Google.",
+    "context": "Reply to a product manager who congratulated him on announcing the Instagram acquisition.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX1141",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX1141, FB_FTC_CID_01548343 at -343; PDF p. 1394"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2012-01-22-taylor-worry-instagram",
+    "from": "Bret Taylor",
+    "to": [
+      "Mark Zuckerberg"
+    ],
+    "cc": [],
+    "date": "2012-01-22",
+    "subject": "(no subject)",
+    "excerpt": "I don’t care as much about Path. I personally worry more about Instagram.",
+    "context": "Facebook's CTO tells Zuckerberg which rival worries him more, a month before Zuckerberg first raises buying Instagram.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Bret Taylor",
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX3362",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX3362, FB_FTC_CID_01543881 at -881; PDF p. 1342"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2012-02-08-zuckerberg-path-hype",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "Marc Andreessen"
+    ],
+    "cc": [],
+    "date": "2012-02-08",
+    "subject": "rumors du jour",
+    "excerpt": "Path has a huge amount of hype, but only a million or so people actually use it at all.",
+    "context": "Zuckerberg to a Facebook board member, dismissing a rival social app.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "Marc Andreessen"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX3363",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX3363, FB_FTC_CID_06305119 at -119; PDF p. 1342"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2012-04-06-sandberg-project-hurley",
+    "from": "Sheryl Sandberg",
+    "to": [],
+    "cc": [],
+    "date": "2012-04-06",
+    "subject": "TIME SENSITIVE – Project Hurley – a/c privileged",
+    "excerpt": "Mark will respond to this thread with the details he and Kevin agree to later tonight. This will be expensive – like 1.38%.",
+    "context": "Sandberg tells a small group that Facebook will try to buy Instagram; 1.38% is a share of Facebook's market value.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Sheryl Sandberg",
+      "Mark Zuckerberg",
+      "Kevin Systrom"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX2519",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX2519, FB_FTC_CID_08905112; PDF p. 1389"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2011-07-15-sandberg-real-competition",
+    "from": "Sheryl Sandberg",
+    "to": [
+      "Bizleads"
+    ],
+    "cc": [],
+    "date": "2011-07-15",
+    "subject": "HPM – a/c privileged",
+    "excerpt": "The most important thing to acknowledge is that for the first time, we have real competition and consumers have real choice. I think this will have the same impact on us as competition has in every industry — we will have to be better to win, our margins may go down over time, we will no longer be able to make as many mistakes and hold onto our core users.",
+    "context": "Sandberg to Facebook's business leads in the weeks after Google+ launched.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Sheryl Sandberg"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX2527",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX2527, FB_FTC_CID_08964773; PDF p. 1707"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2012-04-01-zuckerberg-whatsapp-big-deal",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "Peter Deng",
+      "Raymond Endres"
+    ],
+    "cc": [],
+    "date": "2012-04-01",
+    "subject": "Message summary",
+    "excerpt": "WhatsApp sends more mobile messages per day than we do by more than 2x, and they’re growing about 3x faster week-over-week. This is a big deal. Unfortunately for us, I don’t think there’s any way to directly minimize the advantage which is their momentum and growth rate.",
+    "context": "Zuckerberg to the Messenger team, as forwarded by a colleague, on WhatsApp's lead in mobile messaging.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "Peter Deng",
+      "Raymond Endres"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX1345",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX1345, FB_FTC_CID_06203576 at -579; PDF p. 1427"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2012-10-09-rose-biggest-threat",
+    "from": "Dan Rose",
+    "to": [
+      "Sheryl Sandberg"
+    ],
+    "cc": [],
+    "date": "2012-10-09",
+    "subject": "offsite topics",
+    "excerpt": "This might be the biggest threat we’ve ever faced as a company.",
+    "context": "Facebook's partnerships head on what to discuss at an offsite, referring to WhatsApp, KakaoTalk and Line.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Dan Rose",
+      "Sheryl Sandberg"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX11287",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX11287, FB_FTC_CID_06194835 at -835; PDF p. 1553"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2013-02-11-zuckerberg-board-ma-moat",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "Peter Thiel"
+    ],
+    "cc": [],
+    "date": "2013-02-11",
+    "subject": "Board Update",
+    "excerpt": "I think we could spend $1-2 billion over the next couple of years on such acquisitions.",
+    "context": "Zuckerberg's board update on using acquisitions to build a competitive moat on mobile and ads.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "Peter Thiel"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX10271",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX10271, FB_FTC_CID_08957288 at -789; PDF p. 1538"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2013-04-06-zuckerberg-koum-rumor",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "Jan Koum"
+    ],
+    "cc": [],
+    "date": "2013-04-06",
+    "subject": "Rumor",
+    "excerpt": "If you are thinking of having WhatsApp join another company, we’d of course love to talk at this price range and are almost certainly a better fit than Google!",
+    "context": "Zuckerberg to WhatsApp's CEO after a report that Google was negotiating a $1 billion offer.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "Jan Koum"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX1002",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX1002, FB_FTC_CID_00003688; PDF p. 1564"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2013-08-28-olivan-whatsapp-awake",
+    "from": "Javier Olivan",
+    "to": [
+      "Amin Zoufonoun"
+    ],
+    "cc": [],
+    "date": "2013-08-28",
+    "subject": "WhatsApp/FB sends",
+    "excerpt": "Trust me - this keeps me awake every night. We are definitely not playing in the same field as whatsapp does (as evidenced by the fact that we only have 200M messenger to messenger daily sends as opposed to their 12B daily sends by now).",
+    "context": "Facebook's head of growth tells its corporate development chief how far behind Messenger is.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Javier Olivan",
+      "Amin Zoufonoun"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX12127",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX12127, FB_FTC_CID_06085872 at -872; PDF p. 2608"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2014-06-22-zuckerberg-snapchat-stories",
+    "from": "Mark Zuckerberg",
+    "to": [
+      "Kevin Systrom"
+    ],
+    "cc": [],
+    "date": "2014-06-22",
+    "subject": "Snapchat Stories and ephemeral stories",
+    "excerpt": "Snapchat Stories serves the exact same use cases of sharing and consuming feeds of content that News Feed and Instagram deliver.",
+    "context": "Zuckerberg to Instagram's CEO and others on why Snapchat had become a direct competitor.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Mark Zuckerberg",
+      "Kevin Systrom"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX1009",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX1009, FB_FTC_02231566 at -567; PDF p. 169"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2017-04-14-systrom-lost-public-figures",
+    "from": "Kevin Systrom",
+    "to": [
+      "Mark Zuckerberg"
+    ],
+    "cc": [],
+    "date": "2017-04-14",
+    "subject": "Integrity HC @ IG",
+    "excerpt": "We have lost public figures over this, come under criticism from policy groups, and generally taken heat in the media. We need to focus a team around comment safety and integrity (not simply adding features), both giving control to post authors and automatically identifying and stopping abuse.",
+    "context": "Instagram's CEO asks Zuckerberg for headcount to fight abusive comments.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Kevin Systrom",
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX15225",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX15225, FB_FTC_CID_03123472; PDF p. 2278"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-meta-2018-10-17-parikh-privacy-note",
+    "from": "Jay Parikh",
+    "to": [
+      "Mark Zuckerberg"
+    ],
+    "cc": [],
+    "date": "2018-10-17",
+    "subject": "privacy note",
+    "excerpt": "I’m glad you mentioned that keeping only the data we need isn’t a tenable place for us to be as it will hurt our products, and I also don’t think we’re going to get much credit for it.",
+    "context": "A former Facebook engineering vice president replies to Zuckerberg on data minimisation.",
+    "company": [
+      "Meta"
+    ],
+    "people": [
+      "Jay Parikh",
+      "Mark Zuckerberg"
+    ],
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX3512",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX3512, FB_FTC_CID_06283872 at -872; PDF p. 1832"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "ftc-meta-2012-04-05-zuckerberg-sandberg-instagram-price",
+    "title": "Zuckerberg and Sandberg gut-check the Instagram price",
+    "date": "2012-04-05",
+    "people": [
+      "Mark Zuckerberg",
+      "Sheryl Sandberg"
+    ],
+    "company": [
+      "Meta"
+    ],
+    "messages": [
+      {
+        "from": "Mark Zuckerberg",
+        "text": "I think we’re going to buy Instagram at 1.3% or 1.4%"
+      },
+      {
+        "from": "Mark Zuckerberg",
+        "text": "just want to gut check that this is reasonable. Do you think it’s way too much?"
+      },
+      {
+        "from": "Sheryl Sandberg",
+        "text": "yes of course it is way too much . . . but we knew that."
+      }
+    ],
+    "context": "Messages on the eve of the Instagram deal; 1.3% to 1.4% is a share of Facebook's market value, and the filing elides words in the reply.",
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX2522",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX2522, FB_FTC_CID_09913973 at -973; PDF p. 1387"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "ftc-meta-2013-10-26-zuckerberg-sandberg-whatsapp",
+    "title": "Zuckerberg reports to Sandberg after dinner with WhatsApp's founder",
+    "date": "2013-10-26",
+    "people": [
+      "Mark Zuckerberg",
+      "Sheryl Sandberg"
+    ],
+    "company": [
+      "Meta"
+    ],
+    "messages": [
+      {
+        "from": "Mark Zuckerberg",
+        "text": "WhatsApp is a longer term project. I think I’m making progress and we might have our chance in Q1. I've been working on this for almost two years now."
+      }
+    ],
+    "context": "Sent after a dinner with Jan Koum, four months before Facebook announced the WhatsApp deal.",
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX15160",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX15160, FB_FTC_CID_08609556 at -557; PDF p. 1589"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "ftc-meta-2011-02-08-zuckerberg-cox-instagram-growing",
+    "title": "Zuckerberg flags Instagram's growth to Chris Cox",
+    "date": "2011-02-08",
+    "people": [
+      "Mark Zuckerberg",
+      "Chris Cox"
+    ],
+    "company": [
+      "Meta"
+    ],
+    "messages": [
+      {
+        "from": "Mark Zuckerberg",
+        "text": "Instagram seems like it’s growing quickly. In 4 months they’re up to 2m users and 300k daily photo uploads. That’s a lot. We need to track this closely."
+      }
+    ],
+    "context": "An early internal note on Instagram, more than a year before Facebook bought it.",
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX2892",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX2892, FB_FTC_CID_02437592; PDF p. 1353"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "ftc-meta-2012-04-09-zuckerberg-you-can-acquire-startups",
+    "title": "Zuckerberg on acquiring startups",
+    "date": "2012-04-09",
+    "people": [
+      "Mark Zuckerberg"
+    ],
+    "company": [
+      "Meta"
+    ],
+    "messages": [
+      {
+        "from": "Mark Zuckerberg",
+        "text": "I remember your internal post about how Instagram was our threat and not Google+. You were basically right. One thing about startups though is you can often acquire them."
+      }
+    ],
+    "context": "Sent privately to a colleague (name redacted) days after the Instagram acquisition was announced.",
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX2502",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX2502, FB_FTC_CID_01544079 at -080; PDF p. 1393"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "ftc-meta-2012-04-10-zuckerberg-whatsapp-ahead",
+    "title": "Zuckerberg to Zoufonoun on messaging",
+    "date": "2012-04-10",
+    "people": [
+      "Mark Zuckerberg",
+      "Amin Zoufonoun"
+    ],
+    "company": [
+      "Meta"
+    ],
+    "messages": [
+      {
+        "from": "Mark Zuckerberg",
+        "text": "I’m the most worried about messaging, WhatsApp is already ahead of us in messaging in the same way Instagram was ‘ahead’ of us in photos."
+      }
+    ],
+    "context": "One day after the Instagram deal was announced, Zuckerberg compares WhatsApp's position to Instagram's.",
+    "source": {
+      "title": "FTC v. Meta Platforms, No. 1:20-cv-03590 (D.D.C.): FTC's Reply to Meta's Response to the FTC's Counterstatement of Material Facts (ECF 379-2, public version filed 2024-09-20), quoting trial exhibit PX1127",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.224921/gov.uscourts.dcd.224921.379.2.pdf",
+      "locator": "PX1127, FB_FTC_CID_06214279; PDF p. 1451"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-ms-2021-09-spencer-minecraft-psnow",
+    "from": "Phil Spencer",
+    "to": [
+      "Microsoft Gaming Leadership team"
+    ],
+    "cc": [],
+    "date": "2021-09",
+    "subject": "",
+    "excerpt": "We have not allowed Minecraft to support PSNow as we do see PSNow as competition to XGP and don’t need to support their financial position with PSNow which would just allow them to compete more effectively with XGP.",
+    "context": "Microsoft's gaming chief explains why Minecraft stayed off Sony's PlayStation Now subscription service.",
+    "company": [
+      "Microsoft"
+    ],
+    "people": [
+      "Phil Spencer"
+    ],
+    "source": {
+      "title": "FTC v. Microsoft, No. 3:23-cv-02880 (N.D. Cal.): FTC's Final Proposed Findings of Fact (public redacted version, ECF 364), quoting trial exhibit PX1897",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.413969/gov.uscourts.cand.413969.364.0.pdf",
+      "locator": "PX1897 at 001; PDF p. 108"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-ms-2020-09-spencer-zenimax-strategy",
+    "from": "Phil Spencer",
+    "to": [
+      "Microsoft Gaming employees"
+    ],
+    "cc": [],
+    "date": "2020-09",
+    "subject": "",
+    "excerpt": "Our studio acquisition strategy has been to invest in a long-term plan and to have a consistent pipeline of quality, exclusive games for fans, and enriching the Xbox Game Pass portfolio.",
+    "context": "Sent to all Microsoft Gaming staff on the morning the ZeniMax acquisition was announced.",
+    "company": [
+      "Microsoft"
+    ],
+    "people": [
+      "Phil Spencer"
+    ],
+    "source": {
+      "title": "FTC v. Microsoft, No. 3:23-cv-02880 (N.D. Cal.): FTC's Final Proposed Findings of Fact (public redacted version, ECF 364), quoting trial exhibit PX1527",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.413969/gov.uscourts.cand.413969.364.0.pdf",
+      "locator": "PX1527 at -002; PDF p. 121"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-ms-2022-04-spencer-cloud-vanguard",
+    "from": "Phil Spencer",
+    "to": [
+      "Microsoft Gaming team"
+    ],
+    "cc": [],
+    "date": "2022-04",
+    "subject": "",
+    "excerpt": "Cloud will be at the vanguard of our expansion to billions of players we have not been able to serve before.",
+    "context": "Spencer on cloud gaming, cited by the FTC while Microsoft was trying to buy Activision.",
+    "company": [
+      "Microsoft"
+    ],
+    "people": [
+      "Phil Spencer"
+    ],
+    "source": {
+      "title": "FTC v. Microsoft, No. 3:23-cv-02880 (N.D. Cal.): FTC's Final Proposed Findings of Fact (public redacted version, ECF 364), quoting trial exhibit PX1038",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.413969/gov.uscourts.cand.413969.364.0.pdf",
+      "locator": "PX1038 at 002; PDF p. 83"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-ms-2020-kotick-dumb-email",
+    "from": "Bobby Kotick",
+    "to": [],
+    "cc": [],
+    "date": "2020",
+    "subject": "",
+    "excerpt": "This was an all around dumb email. Let’s make sure there is no confusion about our support for game pass or any other services that allow msft to unfairly compete against us.",
+    "context": "Activision's CEO reacts to Phil Spencer's ZeniMax announcement email; the filing gives no exact date.",
+    "company": [
+      "Activision Blizzard",
+      "Microsoft"
+    ],
+    "people": [
+      "Bobby Kotick",
+      "Phil Spencer"
+    ],
+    "source": {
+      "title": "FTC v. Microsoft, No. 3:23-cv-02880 (N.D. Cal.): FTC's Final Proposed Findings of Fact (public redacted version, ECF 364), quoting trial exhibit PX2006",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.413969/gov.uscourts.cand.413969.364.0.pdf",
+      "locator": "PX2006 at 001; PDF p. 140"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-epic-2013-cue-samsung-ecosystem",
+    "from": "Eddy Cue",
+    "to": [
+      "Tim Cook",
+      "Phil Schiller"
+    ],
+    "cc": [],
+    "date": "2013",
+    "subject": "",
+    "excerpt": "Who’s going to buy a Samsung phone if they have apps, movies, etc already purchased? They now need to spend hundreds more to get to where they are today",
+    "context": "Cue argues that iTunes and App Store purchases lock customers into Apple's ecosystem; the filing gives only the year.",
+    "company": [
+      "Apple"
+    ],
+    "people": [
+      "Eddy Cue",
+      "Tim Cook",
+      "Phil Schiller"
+    ],
+    "source": {
+      "title": "Epic Games v. Apple, No. 4:20-cv-05640 (N.D. Cal.): Epic's Proposed Findings of Fact (public redacted version, ECF 777-3, filed 2021-05-28), quoting trial exhibit PX-404",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.364265/gov.uscourts.cand.364265.777.3.pdf",
+      "locator": "PX-404.1; PDF p. 464"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-epic-2013-schiller-imessage-android",
+    "from": "Phil Schiller",
+    "to": [],
+    "cc": [],
+    "date": "2013",
+    "subject": "",
+    "excerpt": "iMessage was created as a feature of iOS that brings value to our iPhone users. It makes no revenue and is funded by our product margins.",
+    "context": "Schiller on why Apple should not bring iMessage to Android; the filing gives only the year.",
+    "company": [
+      "Apple"
+    ],
+    "people": [
+      "Phil Schiller"
+    ],
+    "source": {
+      "title": "Epic Games v. Apple, No. 4:20-cv-05640 (N.D. Cal.): Epic's Proposed Findings of Fact (public redacted version, ECF 777-3, filed 2021-05-28), quoting trial exhibit PX-408",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.364265/gov.uscourts.cand.364265.777.3.pdf",
+      "locator": "PX-408.1; PDF p. 28"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-epic-2016-03-schiller-imessage-hurt-us",
+    "from": "Phil Schiller",
+    "to": [
+      "Tim Cook"
+    ],
+    "cc": [],
+    "date": "2016-03",
+    "subject": "",
+    "excerpt": "note Joz and I think moving iMessage to Android will hurt us more than help us, this email illustrates why",
+    "context": "Schiller's note forwarding to Cook a former employee's account of iMessage lock-in; Joz is Greg Joswiak.",
+    "company": [
+      "Apple"
+    ],
+    "people": [
+      "Phil Schiller",
+      "Tim Cook",
+      "Greg Joswiak"
+    ],
+    "source": {
+      "title": "Epic Games v. Apple, No. 4:20-cv-05640 (N.D. Cal.): Epic's Proposed Findings of Fact (public redacted version, ECF 777-3, filed 2021-05-28), quoting trial exhibit PX-416",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.364265/gov.uscourts.cand.364265.777.3.pdf",
+      "locator": "PX-416.1; PDF p. 29"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-epic-2008-joswiak-terms-dont-allow",
+    "from": "Greg Joswiak",
+    "to": [],
+    "cc": [],
+    "date": "2008",
+    "subject": "",
+    "excerpt": "If this is accurate, it sounds like we’ll have to make sure our terms don’t allow this.",
+    "context": "Reply to a colleague's warning that developers could sell game levels and content outside iTunes billing.",
+    "company": [
+      "Apple"
+    ],
+    "people": [
+      "Greg Joswiak",
+      "C.K. Haun"
+    ],
+    "source": {
+      "title": "Epic Games v. Apple, No. 4:20-cv-05640 (N.D. Cal.): Epic's Proposed Findings of Fact (public redacted version, ECF 777-3, filed 2021-05-28), quoting trial exhibit PX-897",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.364265/gov.uscourts.cand.364265.777.3.pdf",
+      "locator": "PX-897.1-2; PDF p. 66"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-epic-2015-06-sweeney-cook-sole-arbiter",
+    "from": "Tim Sweeney",
+    "to": [
+      "Tim Cook"
+    ],
+    "cc": [],
+    "date": "2015-06",
+    "subject": "",
+    "excerpt": "it doesn’t seem tenable for Apple to be the sole arbiter of expression and commerce over an app platform approaching a billion users.",
+    "context": "Epic's CEO writes to Apple's CEO urging separation of App Store curation from distribution.",
+    "company": [
+      "Epic Games",
+      "Apple"
+    ],
+    "people": [
+      "Tim Sweeney",
+      "Tim Cook"
+    ],
+    "source": {
+      "title": "Epic Games v. Apple, No. 4:20-cv-05640 (N.D. Cal.): Epic's Proposed Findings of Fact (public redacted version, ECF 777-3, filed 2021-05-28), quoting trial exhibit PX-2374",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.364265/gov.uscourts.cand.364265.777.3.pdf",
+      "locator": "PX-2374.1; PDF p. 333"
+    }
+  },
+  {
+    "kind": "email",
+    "id": "ftc-epic-2011-schiller-ratchet-down",
+    "from": "Phil Schiller",
+    "to": [],
+    "cc": [],
+    "date": "2011",
+    "subject": "",
+    "excerpt": "once we are making over $1B a year in profit from the App Store, is that enough to then think about a model where we ratchet down from 70/30 to 75/25 or even 80/20 if we can maintain a $1B a year run rate?",
+    "context": "Schiller's internal question about lowering the App Store commission, quoted in the court's findings.",
+    "company": [
+      "Apple"
+    ],
+    "people": [
+      "Phil Schiller"
+    ],
+    "source": {
+      "title": "Epic Games v. Apple, No. 4:20-cv-05640 (N.D. Cal.): Findings of Fact and Conclusions of Law (ECF 812, 2021-09-10), quoting an Apple email",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.364265/gov.uscourts.cand.364265.812.0.pdf",
+      "locator": "Findings of Fact, discussion of the 30% commission; PDF p. 51"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "ftc-epic-2024-05-goldberg-our-store",
+    "title": "Apple communications director texts a colleague during the hearing",
+    "date": "2024-05",
+    "people": [
+      "Marni Goldberg"
+    ],
+    "company": [
+      "Apple"
+    ],
+    "messages": [
+      {
+        "from": "Marni Goldberg",
+        "text": "It’s Our F***ING STORE."
+      }
+    ],
+    "context": "Text sent during the first evidentiary hearings on Apple's compliance with the injunction, quoted by the court.",
+    "source": {
+      "title": "Epic Games v. Apple, No. 4:20-cv-05640 (N.D. Cal.): Order granting Epic's motion to enforce the injunction (ECF 1508, 2025-04-30), quoting exhibit CX-0244.38",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.364265/gov.uscourts.cand.364265.1508.0.pdf",
+      "locator": "CX-0244.38; PDF p. 6"
+    }
+  },
+  {
+    "kind": "chat",
+    "id": "ftc-epic-2021-11-16-slack-scary-warning-screen",
+    "title": "Apple employees draft the external-link warning screen",
+    "date": "2021-11-16",
+    "people": [
+      "Rafael Onak"
+    ],
+    "company": [
+      "Apple"
+    ],
+    "messages": [
+      {
+        "from": "Rafael Onak",
+        "text": "‘external website’ sounds scary, so execs will love it."
+      },
+      {
+        "from": "Apple employee A",
+        "text": "to make your version even worse you could add the developer name rather than the app name."
+      },
+      {
+        "from": "Apple employee B",
+        "text": "ooh - keep going."
+      }
+    ],
+    "context": "Slack messages on the warning shown when an app links to an outside payment site, quoted by the court.",
+    "source": {
+      "title": "Epic Games v. Apple, No. 4:20-cv-05640 (N.D. Cal.): Order granting Epic's motion to enforce the injunction (ECF 1508, 2025-04-30), quoting exhibit CX-206",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.364265/gov.uscourts.cand.364265.1508.0.pdf",
+      "locator": "CX-206.2, CX-206.4; PDF p. 36"
+    }
+  }
+]
