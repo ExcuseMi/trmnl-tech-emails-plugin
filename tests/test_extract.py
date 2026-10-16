@@ -66,3 +66,25 @@ def test_failed_download_is_reported_not_fatal(tmp_path):
 
 def test_html_is_stripped():
     assert "Hello" in extract.to_text(b"<html><script>x()</script><p>Hello</p></html>")
+
+
+def _setup(tmp_path, cands):
+    d = tmp_path / "data"
+    d.mkdir()
+    (d / "candidates.json").write_text(json.dumps(cands))
+    return d
+
+
+def test_run_processes_at_most_ten_oldest_first(tmp_path):
+    cands = [{"url": f"https://example.org/{i}.pdf", "first_seen": f"2026-10-{30 - i:02d}"} for i in range(25)]
+    d = _setup(tmp_path, cands)
+    new, errors = extract.run(d, lambda u: TEXT.encode())
+    assert errors == [] and len(new) == 10
+    assert new[0] == candidate_id("https://example.org/24.pdf")  # oldest date first
+    new2, _ = extract.run(d, lambda u: TEXT.encode())
+    assert len(new2) == 10 and not set(new) & set(new2)  # the rest wait for the next run
+
+
+def test_baseline_items_are_never_extracted(tmp_path):
+    d = _setup(tmp_path, [{"url": "https://example.org/old.pdf", "baseline": True}])
+    assert extract.run(d, lambda u: 1 / 0) == ([], [])

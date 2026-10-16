@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TIMEOUT = 60
 MAX_BYTES = 25_000_000
 MAX_BODY = 3000
+MAX_PER_RUN = 10  # new documents per run, oldest first; the rest wait for the next run
 UA = "tech-emails-extractor (+https://github.com/ExcuseMi)"
 
 FROM_RE = re.compile(r"^\s*From:\s*(\S.*)$")
@@ -168,19 +169,23 @@ def extract_candidate(cand, data_dir, fetch=download):
     return doc
 
 
-def run(data_dir, fetch=download):
-    """Return (new_ids, errors). Candidates already extracted are skipped."""
+def run(data_dir, fetch=download, limit=MAX_PER_RUN):
+    """Return (new_ids, errors). Extracted, baseline and tip candidates are skipped;
+    at most `limit` documents are tried, oldest first_seen first."""
     cands = json.loads((data_dir / "candidates.json").read_text(encoding="utf-8"))
     new, errors = [], []
+    pending = []
     for c in cands:
-        if c.get("tip"):
-            continue  # tips are leads only, never a source
-        cid = candidate_id(c["url"])
-        if (data_dir / "extracted" / f"{cid}.json").exists():
+        if c.get("tip") or c.get("baseline"):
+            continue  # tips are leads only; baseline items were seen before the first run
+        if (data_dir / "extracted" / f"{candidate_id(c['url'])}.json").exists():
             continue
+        pending.append(c)
+    pending.sort(key=lambda c: c.get("first_seen", ""))  # stable: file order within a day
+    for c in pending[:limit]:
         try:
             extract_candidate(c, data_dir, fetch)
-            new.append(cid)
+            new.append(candidate_id(c["url"]))
         except Exception as exc:  # one document must not stop the others
             errors.append(f"{c['url']}: {exc}")
     return new, errors

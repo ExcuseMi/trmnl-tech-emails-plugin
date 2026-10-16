@@ -63,3 +63,16 @@ def test_courtlistener_auth_or_throttle_is_skipped_not_failed():
     new, errors = watch.run(CONFIG, [], get=get, skipped=skipped)
     assert errors == [] and len(skipped) == 1 and "401" in skipped[0]
     assert len(new) == 2
+
+
+def test_baseline_marks_every_present_item_known():
+    new, errors = watch.run(CONFIG, [], get=fake, today="2026-10-16", baseline=True)
+    assert errors == [] and len(new) == 3
+    assert all(n["baseline"] is True for n in new)
+    again, _ = watch.run(CONFIG, new, get=fake)
+    assert again == []  # nothing is new after the baseline
+
+
+def test_normal_run_does_not_mark_baseline():
+    new, _ = watch.run(CONFIG, [], get=fake)
+    assert all("baseline" not in n for n in new)

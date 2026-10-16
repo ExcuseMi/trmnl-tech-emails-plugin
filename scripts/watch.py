@@ -2,7 +2,8 @@
 """Weekly watcher (no AI): find new items on watched sources.
 
 Appends {url, title, source, first_seen[, tip]} to data/candidates.json.
-Never writes data/emails.json. One failing source does not stop the others.
+Never writes data/emails.json.
+`--baseline` marks every item found as {"baseline": true}: known, never extracted. One failing source does not stop the others.
 """
 import json
 import os
@@ -84,7 +85,7 @@ def items_rss(src, get):
     return out
 
 
-def run(config, candidates, get=http_get, today=None, skipped=None):
+def run(config, candidates, get=http_get, today=None, skipped=None, baseline=False):
     """Return (new_items, errors). `candidates` is the current list.
 
     CourtListener answering 401/403/429 (no token, throttled) is not an error: the
@@ -112,7 +113,8 @@ def run(config, candidates, get=http_get, today=None, skipped=None):
             if it["url"] in known:
                 continue
             known.add(it["url"])
-            new.append({**it, "source": label, "first_seen": today})
+            extra = {"baseline": True} if baseline else {}
+            new.append({**it, "source": label, "first_seen": today, **extra})
     return new, errors
 
 
@@ -122,7 +124,8 @@ def main():
     config = yaml.safe_load(cfg_path.read_text(encoding="utf-8")) or {}
     candidates = json.loads(cand_path.read_text(encoding="utf-8")) if cand_path.exists() else []
     skipped = []
-    new, errors = run(config, candidates, skipped=skipped)
+    baseline = "--baseline" in sys.argv[1:]
+    new, errors = run(config, candidates, skipped=skipped, baseline=baseline)
     for e in errors:
         print("WARN:", e, file=sys.stderr)
     if skipped:

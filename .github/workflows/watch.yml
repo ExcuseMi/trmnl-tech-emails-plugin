@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: "17 5 * * 1"
   workflow_dispatch:
+    inputs:
+      baseline:
+        description: "Only record every item now listed as known (no extraction, no selection), open a PR"
+        type: boolean
+        default: false
 permissions:
   contents: write
   pull-requests: write
@@ -14,6 +19,7 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       HAS_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+      BASELINE: ${{ inputs.baseline && 'true' || 'false' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -24,17 +30,19 @@ jobs:
       - name: Tests
         run: python -m pytest -q
       - name: Watch sources
-        run: python scripts/watch.py
+        run: |
+          if [ "$BASELINE" = "true" ]; then python scripts/watch.py --baseline; else python scripts/watch.py; fi
         env:
           COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
-      - name: Extract new documents
+      - name: Extract new documents (at most 10 per run, oldest first)
         id: extract
         run: |
+          if [ "$BASELINE" = "true" ]; then : > new_ids.txt; echo "n=0" >> "$GITHUB_OUTPUT"; exit 0; fi
           python scripts/extract.py > new_ids.txt
           echo "n=$(grep -c . new_ids.txt || true)" >> "$GITHUB_OUTPUT"
       - name: Select records
         id: select
-        if: steps.extract.outputs.n != '0' && env.HAS_KEY == 'true'
+        if: steps.extract.outputs.n != '0' && env.HAS_KEY == 'true' && env.BASELINE != 'true'
         # pinned to the commit of tag v1
         uses: anthropics/claude-code-action@374f254f5efaf968abfe15d399fd90972e8138b9
         with:
@@ -42,12 +50,12 @@ jobs:
           claude_args: '--allowedTools "Read,Write,Glob,Grep" --max-turns 30'
           prompt: |
             Read data/BRIEF.md and follow its rules exactly.
-            Candidates: the files data/extracted/<id>.json for the ids in new_ids.txt.
+            Candidates (at most 10): the files data/extracted/<id>.json for the ids in new_ids.txt.
             Also read data/emails.json to skip what we already have.
             Write the result as a JSON array to data/parts/auto-${{ github.run_id }}.json
             (write [] when nothing is worth keeping). Change no other file.
       - name: Skip notice
-        if: env.HAS_KEY != 'true'
+        if: env.HAS_KEY != 'true' && env.BASELINE != 'true'
         run: echo "ANTHROPIC_API_KEY secret is not set, selection skipped, only candidates are updated."
       - name: Verify and merge
         run: |
@@ -63,7 +71,11 @@ jobs:
           git config user.name "ExcuseMi"
           git config user.email "ExcuseMi@users.noreply.github.com"
           git checkout -b "$branch"
-          git commit -m "Watcher run $(date +%F): candidates, new records"
+          msg="Watcher run $(date +%F): candidates, new records"
+          [ "$BASELINE" = "true" ] && msg="Baseline $(date +%F): current items recorded as known"
+          git commit -m "$msg"
           git push origin "$branch"
-          gh pr create --title "Watcher run $(date +%F)" --base "${GITHUB_REF_NAME}" \
+          title="Watcher run $(date +%F)"
+          [ "$BASELINE" = "true" ] && title="Baseline $(date +%F)"
+          gh pr create --title "$title" --base "${GITHUB_REF_NAME}" \
             --body "New candidates and records. Every excerpt was checked word for word against the saved source text (scripts/verify.py). A person reviews before merging."
