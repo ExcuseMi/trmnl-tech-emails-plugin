@@ -1,0 +1,13 @@
+# Sources the weekly watcher checks. It only appends tips to data/candidates.json.
+# A person reviews candidates and writes records into data/parts/.
+courtlistener:
+  # docket ids from courtlistener.com/docket/<id>/ ; add as cases are picked
+  dockets: []
+  #  - {id: 0, name: "example docket"}
+pages:
+  # exhibit listing pages; links to PDFs or exhibits are tracked
+  - {name: "DOJ v. Google (search) trial exhibits", url: "https://www.justice.gov/atr/case/us-and-plaintiff-states-v-google-llc"}
+  - {name: "FTC v. Meta documents", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/191-0134-facebook-inc-ftc-v"}
+rss:
+  # tips only, never copied
+  - {name: "techemails.com", url: "https://techemails.com/feed"}

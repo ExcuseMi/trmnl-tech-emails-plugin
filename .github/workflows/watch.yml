@@ -1,0 +1,34 @@
+name: watch
+on:
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python scripts/watch.py
+        env:
+          COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
+      - name: Open PR when candidates changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- data/candidates.json; then exit 0; fi
+          branch="watch/$(date +%F)"
+          git config user.name "ExcuseMi"
+          git config user.email "ExcuseMi@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add data/candidates.json
+          git commit -m "New watcher candidates $(date +%F)"
+          git push origin "$branch"
+          gh pr create --title "New watcher candidates $(date +%F)" --body "Tips for review. A person turns good ones into records in data/parts/." --base "${GITHUB_REF_NAME}"
