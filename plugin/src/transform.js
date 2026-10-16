@@ -83,7 +83,7 @@ function clean(r) {
     if (!from || !excerpt || r.kind === 'chat') return null;
     kind = 'email';
     // no subject (or the placeholder): the record's title, else "<from> emails <first recipient>"
-    if (/^\(?\s*no subject\s*\)?$/i.test(subject)) subject = '';
+    if (/^\(?\s*(no subject|null|none|undefined|n\/a)\s*\)?$/i.test(subject)) subject = '';
     title = subject || str(r.title, 120) || (base.to.length ? from + ' emails ' + base.to[0] : from + ' writes');
     messages = [{ from: from, text: excerpt, p: 0 }];
   }

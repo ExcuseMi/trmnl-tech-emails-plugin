@@ -242,6 +242,63 @@ RSpec.describe 'Tech Emails' do
     expect(r['h']).to be <= r['box']
   end
 
+  # --- every record of the data set, and the extreme records on every view and device ---------------------------
+
+  ALL = JSON.parse(File.read(File.expand_path('../../data/emails.json', __dir__))).freeze
+
+  # one render, every check: the page is the expensive part
+  def check_whole(page, view)
+    page.has_css?('.tp-body')
+    expect(page).to have_no_problems.and(have_no_leaked_text).and(have_no_overflow)
+    r = page.evaluate(<<~JS)
+      (() => {
+        const box = document.querySelector('.tp-body'), b = box.getBoundingClientRect();
+        const vis = [...box.querySelectorAll('[data-msg],[data-more]')].filter((e) => e.style.display !== 'none');
+        const last = vis[vis.length - 1].getBoundingClientRect();
+        const subs = [...document.querySelectorAll('.tp-sub')];
+        const subTop = subs.length ? Math.min(...subs.map((e) => e.getBoundingClientRect().top)) : Infinity;
+        const sub = subs.map((e) => ({ cut: e.textContent !== e.getAttribute('data-full') }));
+        const t = document.querySelector('.tp-text');
+        return { title: document.querySelector('.tp-t').textContent, inside: last.bottom <= b.bottom + 1, clipped: box.scrollHeight - box.clientHeight,
+                 clearOfSubs: b.bottom <= subTop + 1, anyCut: sub.some((x) => x.cut), bodyFont: parseFloat(getComputedStyle(t).fontSize), lh: parseFloat(getComputedStyle(t).lineHeight) };
+      })()
+    JS
+    expect(r['title']).not_to be_empty
+    expect(r['title']).not_to match(/no subject/i)
+    expect(r['inside']).to be(true)
+    expect(r['clipped']).to be <= 1
+    expect(r['clearOfSubs']).to be(true)
+    # context and Source are cut only when the body is already at its smallest size
+    expect(page.evaluate("parseFloat(getComputedStyle(document.querySelector('.tp-text')).fontSize)")).to be <= native(page, 'description') + 0.5 if view == 'full' && r['anyCut']
+  end
+
+  describe 'every record of data/emails.json, full view' do
+    DEVICES.each do |dev|
+      ALL.each_with_index do |rec, i|
+        it "record #{i} (#{rec['kind'] || 'email'}) on #{dev[:device]}" do
+          check_whole(screen('full', [rec], **dev), 'full')
+        end
+      end
+    end
+  end
+
+  describe 'extreme records on every view and device' do
+    longest_email = ALL.reject { |r| r['kind'] == 'chat' }.max_by { |r| r['excerpt'].size }
+    longest_chat = ALL.select { |r| r['kind'] == 'chat' }.max_by { |r| r['messages'].sum { |m| m['text'].size } }
+    thirty = { 'kind' => 'chat', 'date' => '2023-11-19', 'context' => 'A long thread.', 'source' => { 'title' => 'Court exhibit' },
+               'messages' => Array.new(30) { |i| { 'from' => %w[Sam Mira Ilya][i % 3], 'text' => "Message number #{i + 1} of the thread." } } }
+    short = ALL.reject { |r| r['kind'] == 'chat' }.min_by { |r| r['excerpt'].size }
+    { 'a short email' => short, 'the longest email' => longest_email, 'the longest chat' => longest_chat, 'a chat of 30' => thirty }.each do |name, rec|
+      (DEVICES + COLOR_DEVICES).each do |dev|
+        VIEWS.each do |view|
+          it "#{name}, #{view} on #{dev[:device]}" do
+            check_whole(screen(view, [rec], **dev), view)
+          end
+        end
+      end
+    end
+  end
+
   describe 'the poll fails' do
     let(:good) { email('subject' => 'Kept email', 'excerpt' => 'Kept body text.') }
 

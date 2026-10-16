@@ -201,5 +201,6 @@ test('title without a subject: the record title, else "<from> emails <first to>"
   assert.equal(t({ subject: '' }), 'Person 1 emails A');
   assert.equal(t({ subject: undefined, title: 'Given title' }), 'Given title');
   assert.equal(t({ subject: '(No Subject)', to: [] }), 'Person 1 writes');
+  assert.equal(t({ subject: 'null' }), 'Person 1 emails A');
   assert.equal(t({ subject: 'Real' }), 'Real');
 });
