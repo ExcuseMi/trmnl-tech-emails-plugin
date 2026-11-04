@@ -65,7 +65,8 @@
 {% endif %}
 <div class="title_bar">
   <img class="image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48dGl0bGU+VGVjaCBFbWFpbHM8L3RpdGxlPjxyZWN0IHg9IjQiIHk9IjEyIiB3aWR0aD0iNTYiIGhlaWdodD0iNDAiIHJ4PSI0IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik02IDE2IEwzMiAzOCBMNTggMTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+" />
-  {% unless narrow %}<span class="title">{{ trmnl.plugin_settings.instance_name | default: "Tech Emails" }}</span>{% endunless %}
+  {% comment %} a long name ends in "..." before the year, never under it {% endcomment %}
+  <span class="title" style="{{ mline }};min-width:0;flex-shrink:1">{{ trmnl.plugin_settings.instance_name | default: "Tech Emails" }}</span>
   {% if email.date != blank %}<span class="instance">{{ email.date | slice: 0, 4 }}</span>{% endif %}
 </div>
 <script>
@@ -176,6 +177,18 @@
   fit();
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
   window.addEventListener('load', fit);
+  // A preview can switch the device (OG to X) or resize the page without drawing it again: fit again when the screen's
+  // size or classes change. Only the screen is watched, never the body box, whose size fit() itself changes, and only
+  // a changed size or class list fits again, so a fit never starts another.
+  var scr = document.querySelector('.screen'), last = '';
+  function key() { return scr.className + ' ' + scr.clientWidth + 'x' + scr.clientHeight; }
+  function refit() { var k = key(); if (k !== last) { last = k; fit(); } }
+  if (scr) {
+    last = key();
+    if (window.ResizeObserver) new ResizeObserver(refit).observe(scr);
+    if (window.MutationObserver) new MutationObserver(refit).observe(scr, { attributes: true, attributeFilter: ['class', 'style'] });
+    window.addEventListener('resize', refit);
+  }
 })();
 </script>
 {% endtemplate %}

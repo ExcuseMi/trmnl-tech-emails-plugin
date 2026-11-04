@@ -213,6 +213,39 @@ RSpec.describe 'Tech Emails' do
     expect(font(page)).to eq(native(page, 'description'))
   end
 
+  # every view names the plugin in the title bar (half vertical and quadrant once left it out), and a long name is cut
+  # inside the bar, never under the year
+  it 'the title bar shows the name on every view, a long name stays clear of the year' do
+    long = 'Tech Emails from the public record of the biggest companies'
+    VIEWS.each do |view|
+      DEVICES.each do |dev|
+        page = screen(view, [email], **dev)
+        expect(page).to have_css('.title_bar .title', text: 'Tech Emails')
+        gap = page.evaluate("(() => { document.querySelector('.title_bar .title').textContent = '#{long}'; const t = document.querySelector('.title_bar .title').getBoundingClientRect(), i = document.querySelector('.title_bar .instance').getBoundingClientRect(), b = document.querySelector('.title_bar').getBoundingClientRect(); return [i.left - t.right, b.right - i.right, t.height <= b.height + 0.5 ? 1 : 0]; })()")
+        expect(gap[0]).to be >= 0, "#{view} on #{dev[:device]}: the title runs #{-gap[0]} px under the year"
+        expect(gap[1]).to be >= 0
+        expect(gap[2]).to eq(1), "#{view} on #{dev[:device]}: the title wraps"
+      end
+    end
+  end
+
+  # a preview that switches the device on a drawn page (OG to X) keeps the page: the size is fitted again, never left at
+  # the OG's choice (seen in TRMNL's preview, half vertical on the X, 2026-11-04)
+  it 'a page moved from the OG to the X is fitted again to the X size' do
+    short = [email('subject' => '', 'excerpt' => 'once we are making over $1B a year in profit from the App Store, is that enough to then think about a model where we ratchet down from 70/30 to 75/25?')]
+    %w[half_vertical quadrant full].each do |view|
+      x = screen(view, short, device: 'v2')
+      x.has_css?('.tp-body')
+      want = font(x)
+      page = screen(view, short)
+      page.has_css?('.tp-body')
+      expect(font(page)).to be < want
+      page.evaluate("(() => { const s = document.querySelector('.screen'); s.classList.remove('screen--1bit', 'screen--og_png', 'screen--md'); s.classList.add('screen--4bit', 'screen--v2', 'screen--lg'); return 1; })()")
+      30.times { break if font(page) == want; sleep 0.1 }
+      expect(font(page)).to eq(want), "#{view}: #{font(page)} px after the switch, #{want} px on the X"
+    end
+  end
+
   it 'text_size large is a minimum: a long text never goes below the large size' do
     long = email('excerpt' => ('We should talk about the plan for the next quarter and what it means. ' * 14).strip)
     page = screen('full', [long], fields: { 'text_size' => 'large' })
